@@ -62,14 +62,14 @@ nav {
 }
 
 .nav-logo {
-    height: 32px;
+    height: 24px;
     filter: drop-shadow(0 0 8px rgba(59, 91, 219, 0.5));
 }
 
 .logo-text {
     font-weight: 800;
-    font-size: 1.25rem;
-    letter-spacing: -0.5px;
+    font-size: 1.1rem;
+    letter-spacing: -0.2px;
     background: linear-gradient(90deg, #fff, #94A3B8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -79,7 +79,7 @@ nav {
     color: var(--text);
     text-decoration: none;
     margin-left: 32px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     transition: color 0.2s;
 }
@@ -90,7 +90,7 @@ nav {
 
 .btn-nav {
     background: var(--primary);
-    padding: 10px 20px;
+    padding: 8px 18px;
     border-radius: 10px;
     font-weight: 700 !important;
 }
@@ -116,11 +116,11 @@ nav {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 800;
-    line-height: 0.95;
+    line-height: 1.1;
     margin-bottom: 32px;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
 }
 
 .gradient-text {
@@ -187,10 +187,10 @@ h1 {
 }
 
 .story-text-premium h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 24px;
-    letter-spacing: -2px;
-    line-height: 1.1;
+    letter-spacing: -1px;
+    line-height: 1.2;
 }
 
 .story-text-premium p {
@@ -247,7 +247,7 @@ h1 {
 
 .title-fancy {
     font-size: 3.5rem;
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
 }
 
 .feature-grid-fancy {
@@ -316,7 +316,7 @@ h1 {
 .cta-glass-card h2 {
     font-size: 3.5rem;
     margin-bottom: 24px;
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
 }
 
 .cta-glass-card p {
