@@ -9,133 +9,128 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <div class="glow-bg"></div>
+    
     <nav>
-        <div class="container">
-            <div class="logo">🩸 GlycoTrace</div>
+        <div class="container nav-container">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
+                <span class="logo-text">GlycoTrace</span>
+            </div>
             <div class="nav-links">
-                <a href="#story">The Story</a>
+                <a href="#story">Our Story</a>
                 <a href="#features">Features</a>
-                <a href="mailto:team@glycotrace.co.uk" class="btn-secondary">team@glycotrace.co.uk</a>
+                <a href="#beta" class="btn-nav">Beta Access</a>
             </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <span class="badge">Finally, a CGM app that speaks your language.</span>
-            <h1>Stop Guessing.<br><span class="gradient-text">Find Stability.</span></h1>
-            <p>GlycoTrace turns your complex Libre data into a simple roadmap for blood sugar stability and Intermittent Fasting. <strong>No spreadsheets required.</strong></p>
-            <div class="hero-btns">
-                <a href="#beta" class="btn-primary">Join the Beta</a>
-                <a href="#features" class="btn-outline">How it Works</a>
+            <div class="hero-content">
+                <span class="badge-premium">v2.0 Beta • Now Reimagined</span>
+                <h1>Stop Guessing.<br><span class="gradient-text">Find Stability.</span></h1>
+                <p>GlycoTrace translates complex Libre data into a simple roadmap for stability and Intermittent Fasting. <strong>No spreadsheets required.</strong></p>
+                <div class="hero-btns">
+                    <a href="#beta" class="btn-primary-fancy">Join the Beta</a>
+                    <a href="#features" class="btn-glass">Explore Features</a>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="story" class="story">
         <div class="container">
-            <div class="story-grid">
-                <div class="story-image">
-                    <div class="photo-box">
-                        <span>[Leon's Photo]</span>
+            <div class="story-grid-fancy">
+                <div class="story-image-premium">
+                    <div class="photo-placeholder">
+                        <div class="glass-overlay">Your Photo Here</div>
                     </div>
                 </div>
-                <div class="story-content">
+                <div class="story-text-premium">
+                    <div class="section-tag">Founder's Story</div>
                     <h2>From Spreadsheets to Stability.</h2>
-                    <p>I’m <strong>Leon Wilkinson</strong>. When I was diagnosed with Type 3c diabetes, my relationship with my body changed overnight. I wanted to stay active and feel healthy, but my blood sugar felt like a puzzle where half the pieces were missing.</p>
-                    <p>I’ve learned a lot on this journey. I spent a year Intermittent Fasting with hardly any results, frustrated that the 'standard' advice wasn't working. I discovered the hard way that as a diabetic, things are different—I saw how eating high protein could unexpectedly spike my sugar, and how activity that should have dropped my levels sometimes did the opposite.</p>
-                    <p>I realized that for us, <strong>glucose, insulin, and activity all need to be in perfect alignment</strong> to see progress. I built <strong>GlycoTrace</strong> to highlight those connections. It’s a companion that helps you find the "Why" behind the numbers, so you can spend less time guessing and more time living.</p>
+                    <p>I’m <strong>Leon Wilkinson</strong>. When I was diagnosed with Type 3c diabetes, my relationship with my body changed overnight. I wanted to stay active, but my blood sugar felt like a puzzle where half the pieces were missing.</p>
+                    <p>I’ve learned a lot on this journey. I spent a year Intermittent Fasting with hardly any results, frustrated that the 'standard' advice wasn't working. I discovered that as a diabetic, things are different—I saw how high protein could unexpectedly spike my sugar, and how activity that should have dropped my levels sometimes did the opposite.</p>
+                    <p>I realized that for us, <strong>glucose, insulin, and activity all need to be in perfect alignment</strong> to see progress. I built <strong>GlycoTrace</strong> to highlight those connections.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="companion">
+    <section class="companion-premium">
         <div class="container">
-            <div class="companion-box">
+            <div class="glass-card main-highlight">
+                <div class="badge-glow">The Missing Lens</div>
                 <h2>Built for Intermittent Fasting.</h2>
-                <p>Standard trackers don't account for the unique metabolic needs of diabetics who fast. GlycoTrace provides a tailored <strong>"Fat Burning Forecast"</strong> that adapts to your classification—whether you're Type 1, Type 3c, or Pre-Diabetic—accounting for active insulin windows and glucose stability.</p>
+                <p>Standard trackers don't account for the unique metabolic needs of diabetics who fast. GlycoTrace provides a tailored <strong>"Fat Burning Forecast"</strong> that adapts to your classification—Type 1, Type 3c, or Pre-Diabetic—accounting for active insulin and glucose stability.</p>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features">
+    <section id="features" class="features-premium">
         <div class="container">
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon">⚡</div>
+            <div class="section-header">
+                <div class="section-tag">Capabilities</div>
+                <h2 class="title-fancy">Clarity at every step.</h2>
+            </div>
+            <div class="feature-grid-fancy">
+                <div class="glass-card feature-item">
+                    <div class="icon-glow">⚡</div>
                     <h3>Invisible Sync</h3>
-                    <p>Your data moves while you sleep. Automated background sync via LibreLinkUp for a seamless retrospective view.</p>
+                    <p>Automated background sync via LibreLinkUp. Your data moves while you sleep.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">⏳</div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow">⏳</div>
                     <h3>Fasting Intelligence</h3>
-                    <p>Go beyond the timer. See exactly how your glucose stability impacts your return to a fat-burning state.</p>
+                    <p>Go beyond the timer. See exactly how stability impacts your metabolic switch.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">📅</div>
-                    <h3>Cause & Effect Timeline</h3>
-                    <p>Everything in one view. We highlight exactly when your food and doses hit your system so you can see the correlation on the graph.</p>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow">📅</div>
+                    <h3>Timeline Correlation</h3>
+                    <p>We highlight exactly when food and doses hit your system so you see the 'Why'.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow">🔍</div>
                     <h3>The Mystery Solver</h3>
-                    <p>We find the spikes you missed and explain them in plain English. No complex medical jargon required.</p>
+                    <p>Spikes explained in plain English. No complex medical jargon required.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">⚖️</div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow">⚖️</div>
                     <h3>Metabolic Focus</h3>
-                    <p>Whether you're managing clinical stability or working toward reversal goals, the app adapts to your metabolic profile.</p>
+                    <p>Tailored modes for Clinical Stability or metabolic reversal goals.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">✨</div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow">✨</div>
                     <h3>Glucoflow AI 2.0</h3>
-                    <p>A personal metabolic analyst that connects the dots between your activity, your fasting, and your fuel.</p>
+                    <p>A personal metabolic analyst that connects the dots between your life and your levels.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="beta" class="cta">
+    <section id="beta" class="cta-fancy">
         <div class="container">
-            <div class="cta-box">
-                <h2>Help Me Build the Future of Metabolic Analysis.</h2>
-                <p>I’m looking for <strong>20 dedicated testers</strong>—especially FreeStyle Libre users—to join my closed beta for 14 days. Help me refine a tool built by a diabetic, for the community.</p>
+            <div class="cta-glass-card">
+                <h2>Help Build the Future.</h2>
+                <p>I’m looking for <strong>20 dedicated testers</strong> to join my 14-day closed beta. Help refine a tool built by a diabetic, for the community.</p>
                 
-                <div class="registration-form">
-                    <form action="https://formspree.io/f/team@glycotrace.co.uk" method="POST">
-                        <input type="email" name="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn-primary">Register Interest</button>
+                <div class="form-wrapper">
+                    <form action="https://formspree.io/f/team@glycotrace.co.uk" method="POST" class="fancy-form">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary-fancy">Register Interest</button>
                     </form>
-                    <p class="form-note">Join the waitlist for the 14-day closed beta.</p>
                 </div>
 
-                <div class="store-badge">
-                    <span class="coming-soon">Coming Soon to</span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" height="50">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Metabolic Questions Answered</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>Why is Type 3c management different?</h4>
-                    <p>Type 3c involves both insulin and glucagon deficiency, making stability much harder to predict. GlycoTrace highlights the subtle patterns other apps miss.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How does it support Fasting?</h4>
-                    <p>We use clinical markers to estimate when your body transitions between "Processing Fuel" and "Fat Burning," tailored specifically to your diabetes type.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Is my data private?</h4>
-                    <p>Absolutely. GlycoTrace is a retrospective analysis tool. We sync your data securely to provide insights, but you remain the sole owner of your health journey.</p>
+                <div class="badge-row">
+                    <div class="store-item">
+                        <span class="tag-soon">Google Play</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store" height="40">
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,10 +138,23 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 GlycoTrace Ltd. All rights reserved.</p>
-            <p class="footer-sub">Registered in England & Wales | Company No. 17048417</p>
-            <p class="footer-sub">Proprietary & Confidential | Not a medical device.</p>
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                    <p class="legal">Company No. 17048417 • Registered in England & Wales</p>
+                    <p class="disclaimer">Proprietary & Confidential • Not a medical device.</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        ScrollReveal().reveal('.glass-card', { delay: 200, distance: '50px', origin: 'bottom', interval: 100 });
+        ScrollReveal().reveal('h1', { delay: 100, distance: '30px', origin: 'top' });
+    </script>
 </body>
 </html>
