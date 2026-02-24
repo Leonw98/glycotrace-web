@@ -430,3 +430,6 @@ footer {
 @media (max-width: 768px) {
     .screenshot-grid { grid-template-columns: 1fr; }
 }
+
+/* Icon Styling */
+.icon-glow lucide-icon, .icon-glow i { width: 32px; height: 32px; color: var(--secondary); stroke-width: 2.5; filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.4)); }
