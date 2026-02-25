@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metabolic News Hub | GlycoTrace</title>
+    <meta name="description" content="The latest research on Type 3c diabetes, enzyme therapy, and metabolic health. Curated news for the GlycoTrace community.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="news-page">
+    <div class="glow-bg"></div>
+    
+    <nav>
+        <div class="container nav-container">
+            <div class="logo-wrapper" onclick="window.location.href='index.html'" style="cursor: pointer;">
+                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
+                <span class="logo-text">GlycoTrace</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#story">The Mission</a>
+                <a href="news.html" style="color: var(--secondary);">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Hire Me</a>
+                <a href="index.html#beta" class="btn-nav">Help me test</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-80 text-center">
+        <div class="container">
+            <div class="section-tag">Research & Updates</div>
+            <h1>Metabolic <span class="gradient-text">News Hub</span></h1>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--text-dim);">The latest breakthroughs in Type 3c management, enzyme therapy, and glucose science, curated for the community.</p>
+            
+            <div class="glass-card" style="margin-top: 40px; border-color: rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.05);">
+                <p style="font-size: 0.85rem; color: #FCA5A5;">
+                    <strong>Disclaimer:</strong> This feed provides summaries of external research for informational purposes. These summaries are not medical advice. Always consult your clinical team before changing your treatment plan.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-80">
+        <!-- Section 1: Curated Top Stories (Manual for SEO) -->
+        <section class="curated-news">
+            <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+                <div class="section-tag">Featured Analysis</div>
+                <h2>The GlycoTrace <span class="gradient-text">Take</span></h2>
+            </div>
+
+            <div class="glass-card" style="margin-bottom: 32px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+                    <span class="badge-premium" style="background: rgba(34, 211, 238, 0.1); color: var(--secondary);">LATEST RESEARCH</span>
+                    <span style="font-size: 0.8rem; color: var(--text-dim);">Feb 2026</span>
+                </div>
+                <h3 style="margin-bottom: 16px;">Beyond the Weight-Loss Hype: The Real Impact of GLP-1s</h3>
+                <p style="color: var(--text-dim); margin-bottom: 20px;">It’s hard to open a news app without seeing Wegovy or Ozempic framed as "the latest weight-loss trend." But as this recent NICE report reminds us, these aren't just lifestyle drugs—they are revolutionary tools for metabolic protection. While the world focuses on the scales, we're focusing on the fact that these treatments are significantly reducing heart disease and kidney failure in the diabetic community.</p>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <a href="https://www.nice.org.uk/news/articles/major-changes-to-type-2-diabetes-treatment-could-save-thousands-of-lives" target="_blank" class="btn-glass" style="padding: 8px 16px; font-size: 0.8rem;">Read NICE Article</a>
+                    <span style="font-size: 0.8rem; font-style: italic; color: var(--secondary);">Why it matters: At GlycoTrace, we value organ protection over "trends."</span>
+                </div>
+            </div>
+
+            <!-- Personal Discussion Prompt -->
+            <div class="glass-card" style="border-left: 4px solid var(--secondary); background: rgba(34, 211, 238, 0.02);">
+                <h4 style="margin-bottom: 12px; color: var(--secondary);">A Question for our Beta Testers...</h4>
+                <p style="font-size: 1rem; color: var(--text-dim); margin-bottom: 16px;">
+                    "I’d love to hear your experiences in getting the right treatment. While it appears 'easy' for non-diabetics to access these medications in the media, is the system actually working for those of us with chronic metabolic needs? I can’t use these medications myself due to my history with **pancreatitis**, so I’m relying on your data and stories to help GlycoTrace understand the real-world impact."
+                </p>
+                <a href="index.html#beta" class="btn-nav" style="display: inline-block; font-size: 0.8rem;">Join the conversation in the Beta</a>
+            </div>
+        </section>
+
+        <!-- Section 2: Automated Feed Placeholder -->
+        <section class="live-feed py-80">
+            <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+                <div class="section-tag">The Pulse</div>
+                <h2>Live Industry <span class="gradient-text">Headlines</span></h2>
+            </div>
+
+            <div id="news-feed-container" class="feature-grid-fancy">
+                <!-- Fallback content if JS fails -->
+                <div class="glass-card">
+                    <h3>Diabetes UK: Research Spotlights</h3>
+                    <p>Fetching the latest updates from Diabetes UK research laboratories...</p>
+                    <a href="https://www.diabetes.org.uk/about_us/news" class="btn-glass" style="margin-top: 16px; display: inline-block;">Go to source</a>
+                </div>
+                <div class="glass-card">
+                    <h3>NHS: Diabetes Policy</h3>
+                    <p>Tracking the latest NHS England updates on CGM accessibility and T3c care pathways.</p>
+                    <a href="https://www.england.nhs.uk/blog/category/diabetes/" class="btn-glass" style="margin-top: 16px; display: inline-block;">Go to source</a>
+                </div>
+                <div class="glass-card">
+                    <h3>JDRF Breakthroughs</h3>
+                    <p>Monitoring global news for immunotherapy and glucose-responsive insulin updates.</p>
+                    <a href="https://jdrf.org.uk/news/" class="btn-glass" style="margin-top: 16px; display: inline-block;">Go to source</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="news.html">News</a>
+                    <a href="freelance.html">Hire Me</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            
+            // Note: In a production environment, you would use a service like RSS2JSON 
+            // or your own Supabase Edge Function to fetch and clean these feeds.
+            // For now, these serve as your "Live Pulse" anchor links.
+        });
+    </script>
+</body>
+</html>

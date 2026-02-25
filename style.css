@@ -164,6 +164,13 @@ h1 {
     position: relative;
 }
 
+.founder-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%; /* This shifts the image up, effectively cropping the sky */
+}
+
 .glass-overlay {
     position: absolute;
     bottom: 20px; left: 20px; right: 20px;
@@ -429,6 +436,21 @@ footer {
 
 @media (max-width: 768px) {
     .screenshot-grid { grid-template-columns: 1fr; }
+}
+
+/* Freelance Page Variant */
+.freelance-page {
+    background-color: #161426; /* Slightly lighter than the main #0F0C1D */
+}
+
+.freelance-page .glow-bg {
+    background: radial-gradient(circle at 50% -20%, rgba(129, 140, 248, 0.2), transparent 60%),
+                radial-gradient(circle at 100% 100%, rgba(59, 91, 219, 0.1), transparent 50%);
+}
+
+.freelance-page .glass-card {
+    background: rgba(255, 255, 255, 0.04); /* Slightly more visible cards */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Icon Styling */

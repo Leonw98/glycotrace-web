@@ -12,9 +12,17 @@
     <div class="glow-bg"></div>
     <nav>
         <div class="container nav-container">
-            <div class="logo-wrapper">
+            <div class="logo-wrapper" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
-                <a href="index.html" class="logo-text">GlycoTrace</a>
+                <span class="logo-text">GlycoTrace</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#story">The Mission</a>
+                <a href="news.html">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Hire Me</a>
+                <a href="tutorials.html" style="color: var(--secondary);">Tutorials</a>
+                <a href="index.html#beta" class="btn-nav">Help me test</a>
             </div>
         </div>
     </nav>
@@ -39,8 +47,24 @@
         </div>
     </main>
     <footer>
-        <div class="container text-center">
-            <p>&copy; 2026 GlycoTrace Ltd.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="news.html">News</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="freelance.html">Hire Me</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                </div>
+            </div>
         </div>
     </footer>
     <script>

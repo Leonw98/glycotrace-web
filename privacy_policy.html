@@ -11,9 +11,17 @@
     <div class="glow-bg"></div>
     <nav>
         <div class="container nav-container">
-            <div class="logo-wrapper">
+            <div class="logo-wrapper" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
-                <a href="index.html" class="logo-text">GlycoTrace</a>
+                <span class="logo-text">GlycoTrace</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#story">The Mission</a>
+                <a href="news.html">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Hire Me</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="index.html#beta" class="btn-nav">Help me test</a>
             </div>
         </div>
     </nav>
@@ -28,13 +36,31 @@
             <p>We collect metabolic data (glucose, insulin, meals) only for the purpose of providing retrospective analysis and patterns to you.</p>
             <h3>How We Use Your Data</h3>
             <p>Your data is synced securely with our backend for processing by our analysis engine and Glucoflow AI. We do not use your data for advertising.</p>
+            <h3>Cookies and Tracking</h3>
+            <p>We use Google Analytics to understand how visitors interact with our website. This involves the use of cookies to collect anonymous information such as page views and session duration. You can opt-out of tracking via your browser settings.</p>
             <h3>Data Deletion</h3>
             <p>You can delete your account and all associated data at any time from within the app settings.</p>
         </section>
     </main>
     <footer>
-        <div class="container text-center">
-            <p>&copy; 2026 GlycoTrace Ltd.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="news.html">News</a>
+                    <a href="tutorials.html">Tutorials</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="freelance.html">Hire Me</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
