@@ -1,14 +1,23 @@
-# Project Handover Context: GlycoTrace v1.1
+# Project Handover Context: GlycoTrace v2.0 (Master Sync)
 
 ## 📌 Overview
-**GlycoTrace** is a Flutter-based retrospective metabolic analysis tool optimized for FreeStyle Libre users. It allows users to import glucose history via CSV and log food/insulin to discover cause-and-effect patterns in their metabolic health.
+**GlycoTrace** is a Flutter-based metabolic analysis platform. It has transitioned from reactive monitoring to **Retrospective Auditing**, allowing users to reconcile live sensor data (LibreLinkUp) against backfilled CSV truth-data for better metabolic clarity.
 
 ## 🛠 Tech Stack
 - **Frontend:** Flutter (v3.10+) - Multi-platform (Android prioritized).
 - **Backend:** Supabase (Auth, PostgreSQL, Edge Functions).
-- **AI/ML:** Google ML Kit (On-device Text Recognition for Garmin reports).
-- **Local Storage:** `sqflite` for caching and `shared_preferences` for user goals.
-- **Notifications:** `flutter_local_notifications` (v20) for scheduled check-ins.
+- **AI/ML:** 
+    - **Glucoflow AI 2.0:** Groq (Llama 3.3 70B) for momentum-aware analysis.
+    - **OCR:** Google ML Kit (On-device for Garmin reports).
+- **Security:** Biometric Auth + Supabase RLS.
+
+## 🧠 Master Logic & Paradigm
+1. **Retrospective Auditing:** The core philosophy shift. Identifying patterns and "Near Misses" by comparing live sensor streams against post-hoc CSV ground truth.
+2. **Momentum Analysis ($G_{v}$):** Incorporating Glucose Velocity into analysis to factor in downward/upward trends.
+3. **The Phantom Auditor:** A synchronization layer that identifies discrepancies between asynchronous LLU data and manual logs.
+4. **Safety-Aware Fasting:** Automatic "Safety Pivot" that pauses fasting timers and prioritizes metabolic stability if glucose drops below 4.0 mmol/L.
+5. **Separation of Averages:** Critical UI requirement to split **Basal** and **Bolus** averages for clear insulin sensitivity insights.
+6. **Visual Standards:** Minimalist, high-contrast mmol/L graphs with color-coded thresholds (Red <3.9, Green 3.9-10, Amber 10.1-13, Dark Red >13).
 
 ## ✅ Completed in this Session
 1. **Branding:** Renamed project from "Glucose Tracker" to **GlycoTrace** across all platforms. Generated production icons.
@@ -56,7 +65,8 @@
 16. **Web Infrastructure:**
     - Migrated landing page to a dedicated repository (`glycotrace-web`) for clean separation.
     - Integrated **Google Analytics** (G-R2E0YZX9L4) and switched to professional **Lucide SVG icons**.
-    - Refined mission statement to focus on personal story and "all-in-one" convenience.
+    - Refined mission statement to focus on personal story and functional clarity.
+17. **Support Pivot:** Transitioned the "Hire Me" page to a **Technical Support & Projects** model, focusing on practical data and operations support.
 18. **Firebase Test Lab Optimization (Feb 24, 2026):**
     - Updated 40 test cases in `firebase_test_cases.yaml` with explicit navigation goals (e.g., "Navigate to History tab").
     - Refined `robo_script.json` to guide the AI crawler through all major tabs post-login for 100% feature coverage.
@@ -64,10 +74,9 @@
     - Evaluated **Firebase Vertex AI (Gemini)** migration for improved security (App Check) and remote prompt management.
     - Decision: Maintain current Supabase Edge Function setup for closed beta, then migrate for public launch.
 20. **Identified Stability Issues (Feb 24, 2026):**
-    - Regression in **Graph Zoom** functionality on the `CauseEffectChartScreen`.
+    - Regression in **Graph Zoom** functionality on the `cause_effect_chart_screen.dart`.
     - **Data Persistence:** Intermittent loss of Weight/Height profile and Fasting state (suspected SQL/DB issue).
     - **Settings:** "Reset Averages" (Fresh Start) logic failing to zero out daily metrics.
-
 ## 📂 Current Architecture
 - `lib/screens/`: Contains all UI screens (Dashboard, Quick Log, Exercise, Insights, etc.).
 - `lib/database_service.dart`: Main gateway for Supabase operations and metabolic calculations.
