@@ -1,0 +1,33 @@
+# GlycoTrace: Metabolic Analysis Platform
+
+GlycoTrace is a specialized retrospective metabolic analysis platform designed for FreeStyle Libre users, with specific expertise in Type 3c Diabetes, enzyme therapy, and high-performance weightlifting.
+
+## Core Philosophy
+- **Retrospective Auditing:** Moving from reactive, real-time monitoring to post-hoc analysis. Identifying "Near Misses" by reconciling live sensor data (LibreLinkUp) with backfilled CSV "ground truth."
+- **Momentum Analysis ($G_{v}$):** Factoring in Glucose Velocity to understand trends (upward/downward) before making dosing or dietary interventions.
+- **Elite Data Discipline:** A minimalist, ADHD-friendly approach to chronic health data that reduces the mental burden of management.
+
+## Key Features
+- **The Phantom Auditor:** A synchronization engine that identifies discrepancies between asynchronous sensor streams and manual logs.
+- **Safety-Aware Fasting:** Automatic "Safety Pivot" logic that pauses fasting timers if blood glucose drops below 4.0 mmol/L to prioritize stability.
+- **Separation of Averages:** Critical UI distinction between Basal and Bolus averages to provide clear insulin sensitivity insights.
+- **Enzyme Therapy Tracking:** Specialized tracking for pancreatic insufficiency (Type 3c).
+- **OCR Garmin Import:** Automated exercise logging from Garmin screenshots via on-device text recognition.
+
+## Target Audience
+- **Type 3c Diabetics:** Those managing pancreatic-related metabolic conditions.
+- **High-Performance Athletes:** Weightlifters and professionals using data to optimize metabolic stability during physical stress.
+- **Wellness Enthusiasts:** Individuals seeking a clean, logical calorie and glucose tracker without medical jargon.
+
+## Technical Standards
+- High-contrast mmol/L graphs.
+- Color-coded glucose thresholds:
+  - Red: <3.9 mmol/L (Hypo risk)
+  - Green: 3.9 - 10.0 mmol/L (Stability range)
+  - Amber: 10.1 - 13.0 mmol/L (Mild spike)
+  - Dark Red: >13.0 mmol/L (High risk)
+
+## Contact & Consultation
+- Found by Leon Wilkinson, specializing in Technical Operations and Metabolic Data Architecture.
+- Official Website: https://glycotrace.co.uk
+- Enquiries: leon@glycotrace.co.uk
