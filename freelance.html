@@ -11,6 +11,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Professional Consulting Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://glycotrace.co.uk/freelance.html#leon",
+          "name": "Leon Wilkinson",
+          "jobTitle": "Technical Operations & Project Support Specialist",
+          "url": "https://glycotrace.co.uk/freelance.html",
+          "sameAs": [
+            "https://www.linkedin.com/in/leon-wilkinson-a233a15a/"
+          ],
+          "knowsAbout": [
+            "Data Engineering",
+            "Process Automation",
+            "UX Design",
+            "Technical Operations",
+            "Metabolic Data Architecture"
+          ]
+        },
+        {
+          "@type": "Service",
+          "name": "Technical Operations & Project Support",
+          "provider": { "@id": "https://glycotrace.co.uk/freelance.html#leon" },
+          "description": "Expert technical support for organizations, focusing on data extraction, process automation, and pragmatic UX/UI design.",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Consulting Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Data & Ops Architecture",
+                  "description": "Extracting, cleaning, and structuring data to make it actionable for organizations."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Process Automation",
+                  "description": "Building functional workflows using Python and automation tools to eliminate manual friction."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Pragmatic UX & UI",
+                  "description": "Designing tools and interfaces that prioritize function and clarity."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="freelance-page">
     <div class="glow-bg"></div>
@@ -50,7 +112,7 @@
             <div class="glass-card">
                 <i data-lucide="database" style="color: var(--secondary); margin-bottom: 16px;"></i>
                 <h3>Data & Ops Architecture</h3>
-                <p>Helping organizations extract, clean, and structure their data. Whether it's web scraping or CRM cleansing, I focus on making data actionable.</p>
+                <p>Specialized in extracting and reconciling fragmented health data. I build the pipelines that turn messy CGM streams into the 'Ground Truth' required for high-stakes monitoring, such as the <strong>Civil Service GFiE Carers Pathway</strong>.</p>
             </div>
             <div class="glass-card">
                 <i data-lucide="zap" style="color: var(--secondary); margin-bottom: 16px;"></i>

@@ -21,6 +21,67 @@
       gtag('js', new Date());
       gtag('config', 'G-R2E0YZX9L4');
     </script>
+
+    <!-- Advanced SEO Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://glycotrace.co.uk/#app",
+          "name": "GlycoTrace",
+          "operatingSystem": "Android",
+          "applicationCategory": "HealthApplication",
+          "description": "Specialized metabolic analysis platform for Type 3c diabetes. Features include retrospective auditing, momentum analysis (Gv), and enzyme therapy tracking.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Leon",
+            "jobTitle": "Founder & Lead Developer",
+            "knowsAbout": ["Type 3c Diabetes", "Metabolic Health", "Data Science", "Enzyme Therapy"]
+          },
+          "featureList": [
+            "Retrospective Auditing",
+            "Phantom 3.0 Auditor",
+            "Predictive Momentum Analysis (Gv)",
+            "Enzyme Therapy Tracker",
+            "Garmin Photo Import (OCR)",
+            "Safety-Aware Fasting Pivot"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://glycotrace.co.uk/#organization",
+          "name": "GlycoTrace Ltd",
+          "url": "https://glycotrace.co.uk/",
+          "logo": "https://glycotrace.co.uk/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "UK"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "technical support",
+            "email": "team@glycotrace.co.uk"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://glycotrace.co.uk/",
+          "url": "https://glycotrace.co.uk/",
+          "name": "GlycoTrace | Specialized Type 3c Diabetes App",
+          "isPartOf": { "@id": "https://glycotrace.co.uk/#organization" },
+          "about": { "@id": "https://glycotrace.co.uk/#app" },
+          "description": "Manage Type 3c blood sugar with GlycoTrace, the specialized Type 3c diabetes app. Track enzyme therapy, glucose stability, and gym performance in one place."
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="glow-bg"></div>
@@ -37,7 +98,7 @@
                 <a href="resources.html">Resources</a>
                 <a href="freelance.html">Project Support</a>
                 <a href="tutorials.html">Tutorials</a>
-                <a href="#beta" class="btn-nav">Help me test</a>
+                <a href="apply.html" class="btn-nav">Help me test</a>
             </div>
         </div>
     </nav>
@@ -49,7 +110,7 @@
                 <h1>Introducing <span class="gradient-text">Glycoflow</span>.<br>The Metabolic Logic Engine.</h1>
                 <p>GlycoTrace is the dedicated <strong>metabolic analysis platform</strong> designed for <strong>retrospective auditing</strong> of blood sugar, enzyme therapy, and glucose velocity during heavy lifting.</p>  
                 <div class="hero-btns">
-                    <a href="#beta" class="btn-primary-fancy">Join the conversation</a>   
+                    <a href="apply.html" class="btn-primary-fancy">Join the conversation</a>   
                     <a href="#features" class="btn-glass">Explore features</a>
                 </div>
             </div>
@@ -69,7 +130,7 @@
                     <h2>I built this because I was tired of jumping between apps to find the 'Why'.</h2>
                     <p>GlycoTrace started as a personal project. When I was diagnosed with <strong>Type 3c diabetes</strong>, I quickly realized how much of our care is a "missing puzzle." I discovered vital treatments like <strong>Enzyme Therapy</strong> through my own research—it was never mentioned by my clinicians, and I know others in the UK facing the same silence.</p>
                     <p>I built GlycoTrace to move from reactive monitoring to <strong>Retrospective Auditing</strong>. By comparing live sensor data against backfilled CSV truth-data, we identify the patterns and "Near Misses" that standard alarms can often miss.</p>
-                    <p>Whether you're T1, T2, T3c, or simply looking for a <strong>clear way to track</strong> how your lifestyle impacts your metabolism, GlycoTrace is designed for you. I want to make metabolic health logical, accessible, and community-driven.</p>
+                    <p>Whether you're T1, T2, T3c, or a professional on the <strong>Civil Service GFiE Carers Pathway</strong>, GlycoTrace is designed for you. I want to make metabolic health logical, accessible, and community-driven.</p>
                 </div>
             </div>
         </div>
@@ -172,6 +233,7 @@
             </div>
         </div>
     </section>
+
     <section id="beta" class="cta-fancy">
         <div class="container">
             <div class="cta-glass-card">
@@ -182,13 +244,11 @@
                     <p style="margin: 0; font-size: 0.9rem;"><strong>🚀 Pilot Scope:</strong> This build is <strong>Android-only</strong> (hardened on Pixel 9). iOS support is deferred as I'm a solo founder with a zero-budget hardware stack—if you've got a spare MacBook gathering dust, let's talk!</p>
                 </div>
 
-                <div class="form-wrapper">
-                    <form action="https://formspree.io/f/team@glycotrace.co.uk" method="POST" class="fancy-form">
-                        <input type="email" name="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn-primary-fancy">Apply for Beta</button>
-                    </form>
+                <div style="margin-top: 40px;">
+                    <a href="apply.html" class="btn-primary-fancy" style="display: inline-block; font-size: 1.2rem; padding: 22px 48px;">Apply for the Beta Intake</a>
                 </div>
-                <p class="disclaimer" style="margin-top: 24px; max-width: 100%; font-size: 0.75rem; opacity: 0.7;">
+                
+                <p class="disclaimer" style="margin-top: 32px; max-width: 100%; font-size: 0.75rem; opacity: 0.7;">
                     <strong>Community Disclaimer:</strong> GlycoTrace is a retrospective analysis tool, not a medical device. Peer insights are for informational purposes only. Consult your doctor before changing dosages or exercise.
                 </p>
             </div>
@@ -212,8 +272,8 @@
                 <div class="footer-info">
                     <p>&copy; 2026 GlycoTrace Ltd.</p>
                     <p class="legal">England & Wales Co. No. 17048417</p>
-                    <div class="privacy-notice" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); pt-15px;">
-                        <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 10px;"><strong>Privacy & Cookies:</strong> Glycoflow is built to be privacy-first. We use strictly necessary session cookies for security and Google Analytics to help us improve the experience for our testers. Your health data is stored securely in our encrypted PostgreSQL database and is never shared with third parties or used for advertising.</p>
+                    <div class="privacy-notice" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+                        <p style="font-size: 0.8rem; opacity: 0.8;"><strong>Privacy & Cookies:</strong> Glycoflow is built to be privacy-first. Your health data is stored securely in our encrypted PostgreSQL database and is never shared with third parties or used for advertising.</p>
                     </div>
                 </div>
             </div>
@@ -230,10 +290,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
