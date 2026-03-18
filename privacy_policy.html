@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | GlycoTrace</title>
     <link rel="icon" type="image/png" href="logo.png">
-    <meta name="description" content="Learn how GlycoTrace protects your metabolic health data and maintains your privacy.">
+    <meta name="description" content="Learn how GlycoTrace protects your metabolic health data and maintains your privacy. UK GDPR compliant.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .legal-section ul { list-style: none; padding: 0; margin-bottom: 20px; }
+        .legal-section li { color: var(--text-dim); padding: 6px 0 6px 20px; position: relative; }
+        .legal-section li::before { content: ""; position: absolute; left: 0; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: var(--secondary); }
+        .legal-section li strong { color: #fff; }
+        .legal-table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; }
+        .legal-table th, .legal-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--glass-border); }
+        .legal-table th { color: var(--secondary); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .legal-table td { color: var(--text-dim); font-size: 0.9rem; }
+        .legal-table a { color: var(--accent); text-decoration: none; }
+        .legal-table a:hover { text-decoration: underline; }
+        .legal-highlight { background: rgba(59, 91, 219, 0.1); border-left: 3px solid var(--primary); padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .legal-highlight strong { color: #fff; }
+        .legal-highlight p { margin: 0; }
+        .legal-note { background: rgba(34, 211, 238, 0.08); border-left: 3px solid var(--secondary); padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .legal-note strong { color: var(--secondary); }
+        .legal-note p { margin: 0; }
+    </style>
 </head>
 <body class="legal-page">
     <div class="glow-bg"></div>
@@ -17,6 +35,7 @@
                 <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
                 <span class="logo-text">GlycoTrace</span>
             </div>
+            <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
             <div class="nav-links">
                 <a href="index.html#story">The Mission</a>
                 <a href="news.html">News</a>
@@ -27,23 +46,213 @@
             </div>
         </div>
     </nav>
+
     <main class="container py-80">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: March 9, 2026</p>
-        
+        <p class="last-updated">Last Updated: 18 March 2026</p>
+
         <section class="legal-section glass-card">
-            <h2>Your Data is Yours.</h2>
-            <p>At GlycoTrace, we believe your health data is private. We do not sell your data to third parties.</p>
-            <h3>Information We Collect</h3>
-            <p>We collect metabolic data (glucose, insulin, meals) only for the purpose of providing retrospective analysis and patterns to you. This data is stored in our encrypted PostgreSQL database.</p>
-            <h3>How We Use Your Data</h3>
-            <p>Your data is processed by our analysis engine and Glycoflow AI to identify metabolic momentum ($G_{v}$). We do not use your data for advertising.</p>
-            <h3>Cookies and Tracking</h3>
-            <p>We use strictly necessary session cookies to maintain your security. We also use Google Analytics to understand how visitors interact with our website (e.g., page views and session duration). This helps us improve the platform for our pilot testers. You can opt-out of tracking via your browser settings.</p>
-            <h3>Data Deletion</h3>
-            <p>You can delete your account and all associated data at any time from within the app settings.</p>
+            <p>GlycoTrace ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and safeguard your health and personal data when you use the GlycoTrace mobile application ("the App").</p>
+            <p>GlycoTrace is operated from the United Kingdom. Our processing of personal data is governed by the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>. Where users are located in the European Economic Area (EEA), EU GDPR also applies.</p>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>1. Data We Collect</h2>
+
+            <h3>1.1 Data You Provide</h3>
+            <ul>
+                <li><strong>Account Information:</strong> Email address (collected via Supabase Auth at sign-up).</li>
+                <li><strong>Health Data (Special Category):</strong> Blood glucose readings (manual entry or imported via LibreLink), food intake (calories, carbohydrates, protein, fat), insulin dosages (rapid-acting and long-acting, recorded separately), body weight, and exercise activity (type, duration, intensity).</li>
+                <li><strong>Health Goals:</strong> User-configured targets for time in range, post-meal glucose, CV%, and weight management.</li>
+                <li><strong>Preferences:</strong> Notification settings, fasting style, display preferences.</li>
+            </ul>
+
+            <h3>1.2 Data Collected Automatically</h3>
+            <ul>
+                <li><strong>Device Data:</strong> Operating system version, device model, and app version for debugging and performance monitoring.</li>
+                <li><strong>Advertising Identifiers:</strong> Google Advertising ID, collected by Google AdMob for serving personalised or non-personalised ads (see Section 5).</li>
+                <li><strong>Crash and Performance Data:</strong> Anonymous crash reports to improve app stability.</li>
+            </ul>
+
+            <h3>1.3 Data We Do NOT Collect</h3>
+            <ul>
+                <li>We do not collect your name, address, phone number, or date of birth.</li>
+                <li>We do not access your device contacts, camera, microphone, or location.</li>
+                <li>We do not read or store images from your device (ML Kit text recognition runs entirely on-device).</li>
+            </ul>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>2. Legal Basis for Processing</h2>
+            <table class="legal-table">
+                <tr><th>Processing Activity</th><th>Legal Basis (UK GDPR)</th></tr>
+                <tr><td>Core app functionality (storing and analysing your health data)</td><td><strong>Explicit consent</strong> (Article 9(2)(a)) &mdash; provided when you create an account and begin logging health data</td></tr>
+                <tr><td>AI-powered insights (Glycoflow AI chat)</td><td><strong>Explicit consent</strong> &mdash; you choose to use the AI feature; anonymised data only</td></tr>
+                <tr><td>LibreLink glucose import</td><td><strong>Explicit consent</strong> &mdash; you initiate the connection in Settings</td></tr>
+                <tr><td>Advertising (AdMob)</td><td><strong>Legitimate interest</strong> (free tier) / consent for personalised ads</td></tr>
+                <tr><td>Subscription management (RevenueCat)</td><td><strong>Contract performance</strong> (Article 6(1)(b))</td></tr>
+                <tr><td>Anonymised research data (see Section 7)</td><td><strong>Explicit opt-in consent</strong> (Article 9(2)(a))</td></tr>
+            </table>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>3. How We Use Your Data</h2>
+            <p>Your data is used to provide the core functionality of the App:</p>
+            <ul>
+                <li>Generating metabolic insights: time in range, glycaemic variability (CV%), estimated HbA1c (GMI), post-meal glucose response, and insulin sensitivity (observed drop).</li>
+                <li>Tracking fasting state and metabolic phase transitions.</li>
+                <li>Producing monthly PDF health reports (generated on-device, not uploaded).</li>
+                <li>Providing AI-powered dietary and exercise context via the Glycoflow AI chat.</li>
+                <li>Sending local notifications for glucose checks, fasting alerts, and medication reminders.</li>
+                <li>Displaying advertisements to free-tier users.</li>
+            </ul>
+            <div class="legal-highlight">
+                <p><strong>We do not sell your health data to third parties.</strong> Your individual health records are never shared with advertisers, data brokers, or any commercial third party.</p>
+            </div>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>4. Data Storage and Security</h2>
+
+            <h3>4.1 Where Your Data Is Stored</h3>
+            <p>Your data is stored securely using <strong>Supabase</strong> (cloud infrastructure). Supabase utilises industry-standard encryption (AES-256 at rest, TLS 1.2+ in transit) and PostgreSQL Row Level Security (RLS) to ensure that only your authenticated account can access your records.</p>
+
+            <h3>4.2 Security Measures</h3>
+            <ul>
+                <li><strong>Row Level Security (RLS):</strong> Database policies enforce that each user can only read/write their own data.</li>
+                <li><strong>No secrets in the app:</strong> API keys for AI and external services are stored as server-side secrets, never bundled in the app binary.</li>
+                <li><strong>Biometric authentication:</strong> Optional fingerprint/face unlock protects app access on-device.</li>
+                <li><strong>LibreLink credentials:</strong> Your LibreLink bearer token is stored server-side only and never sent to the client device.</li>
+            </ul>
+
+            <h3>4.3 Data Retention</h3>
+            <ul>
+                <li><strong>Active accounts:</strong> Your data is retained for as long as your account is active.</li>
+                <li><strong>Deleted accounts:</strong> When you delete your account (Settings &rarr; Delete My Account &amp; Data), all your data is permanently and irreversibly removed from our servers within 24 hours. There is no recovery period.</li>
+                <li><strong>Inactive accounts:</strong> Accounts with no activity for 24 months may be flagged for deletion. We will attempt to notify you by email before any action is taken.</li>
+            </ul>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>5. Third-Party Services</h2>
+            <table class="legal-table">
+                <tr><th>Service</th><th>Purpose</th><th>Data Shared</th><th>Policy</th></tr>
+                <tr>
+                    <td><strong>Supabase</strong></td>
+                    <td>Authentication, database, Edge Functions</td>
+                    <td>Email, all health data (encrypted, RLS-protected)</td>
+                    <td><a href="https://supabase.com/privacy">Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Groq</strong></td>
+                    <td>AI chat analysis (Glycoflow AI)</td>
+                    <td>Anonymised metabolic summaries only. <strong>No PII.</strong></td>
+                    <td><a href="https://groq.com/privacy-policy">Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google AdMob</strong></td>
+                    <td>Ads for free-tier users</td>
+                    <td>Device advertising ID, ad interaction data. <strong>No health data.</strong></td>
+                    <td><a href="https://policies.google.com/privacy">Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>RevenueCat</strong></td>
+                    <td>Subscription management</td>
+                    <td>Anonymous user ID, purchase receipts. <strong>No health data.</strong></td>
+                    <td><a href="https://www.revenuecat.com/privacy">Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>LibreLink Up</strong></td>
+                    <td>CGM glucose import (user-initiated)</td>
+                    <td>Credentials sent to Abbott API via server-side Edge Function</td>
+                    <td><a href="https://www.librelinkup.com/privacy-policy">Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google ML Kit</strong></td>
+                    <td>On-device text recognition</td>
+                    <td><strong>None</strong> &mdash; all processing runs locally</td>
+                    <td><a href="https://developers.google.com/ml-kit/terms">Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>OpenFoodFacts</strong></td>
+                    <td>Food database searches</td>
+                    <td>Search queries only. No user identifiers.</td>
+                    <td><a href="https://world.openfoodfacts.org/privacy">Link</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>6. Your Rights</h2>
+            <p>Under the UK GDPR and EU GDPR, you have the following rights:</p>
+            <ul>
+                <li><strong>Access (Article 15):</strong> You can view all your data within the App at any time. You may also request a copy by contacting us.</li>
+                <li><strong>Portability (Article 20):</strong> You can export your data as a PDF health report from within the App.</li>
+                <li><strong>Rectification (Article 16):</strong> You can edit or correct any health entry directly in the App.</li>
+                <li><strong>Erasure (Article 17):</strong> You can permanently delete all your data using the "Delete My Account &amp; Data" button in Settings. This is instant and irreversible.</li>
+                <li><strong>Restrict Processing (Article 18):</strong> You can stop using specific features (e.g., AI chat, LibreLink sync) without deleting your account.</li>
+                <li><strong>Withdraw Consent (Article 7(3)):</strong> You may withdraw consent at any time by deleting your account. Withdrawal does not affect the lawfulness of processing before withdrawal.</li>
+                <li><strong>Object (Article 21):</strong> You may object to processing based on legitimate interest (e.g., advertising) by contacting us.</li>
+                <li><strong>Complaint:</strong> You have the right to lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong> at <a href="https://ico.org.uk" style="color: var(--accent);">ico.org.uk</a>.</li>
+            </ul>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>7. Research and Academic Partnerships</h2>
+            <div class="legal-note">
+                <p><strong>This section applies only if you explicitly opt in.</strong> No data is shared for research purposes without your separate, informed consent.</p>
+            </div>
+            <p>GlycoTrace may partner with universities, NHS trusts, or other scientific research bodies to advance understanding of glucose management, nutrition, and metabolic health.</p>
+
+            <h3>7.1 What May Be Shared</h3>
+            <ul>
+                <li><strong>Anonymised, aggregated data only.</strong> Individual-level health records are never shared with research partners unless you provide explicit, separate written consent for a specific study.</li>
+                <li>Aggregated data means statistical summaries (e.g., "average TIR across 500 users aged 30-40") that cannot identify any individual.</li>
+                <li>Anonymisation follows the <strong>ICO Anonymisation Code of Practice</strong> and is irreversible &mdash; re-identification is not possible.</li>
+            </ul>
+
+            <h3>7.2 Safeguards</h3>
+            <ul>
+                <li>All research partnerships require approval from an accredited <strong>Research Ethics Committee (REC)</strong> or equivalent institutional review board.</li>
+                <li>A <strong>Data Processing Agreement (DPA)</strong> will be in place with any research partner before any data is shared.</li>
+                <li>Research partners may not attempt to re-identify individuals, combine data with other datasets for identification purposes, or use data for commercial purposes.</li>
+                <li>Any published research will use aggregated statistics only and will not identify individual users.</li>
+            </ul>
+
+            <h3>7.3 Your Control</h3>
+            <ul>
+                <li>Participation in any research programme is entirely voluntary and requires <strong>separate opt-in consent</strong> within the App.</li>
+                <li>You may withdraw your research consent at any time without affecting your use of the App.</li>
+                <li>If you withdraw, your data will be excluded from any future analyses. Data already included in published, anonymised, aggregated results cannot be retrospectively removed (as it is no longer identifiable).</li>
+            </ul>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>8. Children's Privacy</h2>
+            <p>GlycoTrace is not directed at children under 16. We do not knowingly collect data from children under 16. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>9. International Data Transfers</h2>
+            <p>Your data may be processed in countries outside the UK/EEA where our third-party providers operate (e.g., Supabase infrastructure, Groq AI). Where this occurs, we ensure appropriate safeguards are in place, including Standard Contractual Clauses (SCCs) or equivalent protections as required by UK GDPR.</p>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Material changes will be communicated via an in-app notification. The "Last Updated" date at the top of this page reflects the most recent revision.</p>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>11. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, wish to exercise your rights, or need to report a data concern:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:privacy@glycotrace.co.uk" style="color: var(--accent);">privacy@glycotrace.co.uk</a></li>
+                <li><strong>Website:</strong> <a href="https://glycotrace.co.uk" style="color: var(--accent);">glycotrace.co.uk</a></li>
+                <li><strong>Supervisory Authority:</strong> Information Commissioner's Office (ICO), Wycliffe House, Water Lane, Wilmslow, SK9 5AF &mdash; <a href="https://ico.org.uk" style="color: var(--accent);">ico.org.uk</a></li>
+            </ul>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="footer-grid">
