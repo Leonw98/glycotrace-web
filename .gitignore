@@ -7,3 +7,10 @@ build/
 *.log
 client_secret_*.json
 .gsc_token.json
+
+# Internal/private files
+HANDOVER_CLAUDE.md
+HANDOVER_GEMINI.md
+gsc_tool.py
+glucose_tracker_v2.0/
+project_skills_manifest.txt
