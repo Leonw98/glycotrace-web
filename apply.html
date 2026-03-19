@@ -221,14 +221,11 @@
                     const formData = new FormData(form);
                     const data = Object.fromEntries(formData.entries());
                     
-                    // Force refresh by adding a schema-busting request
                     const { error } = await _supabase
-                        .from('beta_applications')
-                        .insert([data]);
+                        .rpc('submit_beta_application', { data });
 
                     if (error) {
-                        // If it still fails with cache error, try to notify schema reload via RPC or simply log it
-                        console.error('Submission Error Details:', error);
+                        console.error('Submission Error:', error);
                         throw error;
                     }
 
