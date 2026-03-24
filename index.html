@@ -9,11 +9,11 @@
     <meta name="keywords" content="Type 3c diabetes app, glucose tracker, diabetes management, blood sugar tracker, Type 1 diabetes app, insulin tracker, LibreLink companion, CGM tracker, glucose variability, time in range">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://glycotrace.co.uk/">
-    <meta property="og:title" content="GlycoTrace — Glucose Tracker & Metabolic Insights">
+    <meta property="og:title" content="GlycoTrace: Glucose Tracker & Metabolic Insights">
     <meta property="og:description" content="Track glucose, insulin, food, and exercise. Get AI-powered insights, time in range analysis, and monthly health reports. Free for all diabetes types.">
     <meta property="og:image" content="https://glycotrace.co.uk/Assets/Dash.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GlycoTrace — Glucose Tracker & Metabolic Insights">
+    <meta name="twitter:title" content="GlycoTrace: Glucose Tracker & Metabolic Insights">
     <meta name="twitter:description" content="Track glucose, insulin, food, and exercise. AI-powered insights for all diabetes types.">
     <meta name="twitter:image" content="https://glycotrace.co.uk/Assets/Dash.png">
     <link rel="canonical" href="https://glycotrace.co.uk/">
@@ -67,8 +67,8 @@
           ]
         },
         {
-          "@type": "Organization",
-          "@id": "https://glycotrace.co.uk/#organization",
+          "@type": "Organisation",
+          "@id": "https://glycotrace.co.uk/#organisation",
           "name": "GlycoTrace Ltd",
           "url": "https://glycotrace.co.uk/",
           "logo": "https://glycotrace.co.uk/logo.png",
@@ -87,7 +87,7 @@
           "@id": "https://glycotrace.co.uk/",
           "url": "https://glycotrace.co.uk/",
           "name": "GlycoTrace | Glucose Tracker & Diabetes Management App",
-          "isPartOf": { "@id": "https://glycotrace.co.uk/#organization" },
+          "isPartOf": { "@id": "https://glycotrace.co.uk/#organisation" },
           "about": { "@id": "https://glycotrace.co.uk/#app" },
           "description": "Free glucose tracker for Type 1, Type 2, and Type 3c diabetes. Track blood sugar, insulin, food, and exercise. AI-powered insights and monthly health reports."
         }
@@ -107,6 +107,7 @@
             <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
             <div class="nav-links">
                 <a href="#story">The Mission</a>
+                <a href="science.html">The Science</a>
                 <a href="news.html">News</a>
                 <a href="resources.html">Resources</a>
                 <a href="freelance.html">Project Support</a>
@@ -141,7 +142,7 @@
                 <div class="story-text-premium">
                     <div class="section-tag">The Backstory</div>
                     <h2>I built this because I was tired of jumping between apps to find the 'Why'.</h2>
-                    <p>GlycoTrace started as a personal project. When I was diagnosed with <strong>Type 3c diabetes</strong>, I quickly realized how much of our care is a "missing puzzle." I discovered vital treatments like <strong>Enzyme Therapy</strong> through my own research—it was never mentioned by my clinicians, and I know others in the UK facing the same silence.</p>
+                    <p>GlycoTrace started as a personal project. When I was diagnosed with <strong>Type 3c diabetes</strong>, I quickly realised how much of our care is a "missing puzzle." I discovered vital treatments like <strong>Enzyme Therapy</strong> through my own research: it was never mentioned by my clinicians, and I know others in the UK facing the same silence.</p>
                     <p>I built GlycoTrace to move from reactive monitoring to <strong>Retrospective Auditing</strong>. By comparing live sensor data against backfilled CSV truth-data, we identify the patterns and "Near Misses" that standard alarms can often miss.</p>
                     <p>Whether you're T1, T2, T3c, or simply looking for a <strong>clear way to track</strong> how your lifestyle impacts your metabolism, GlycoTrace is designed for you. I want to make metabolic health logical, accessible, and community-driven.</p>
                 </div>
@@ -156,7 +157,7 @@
                     <div class="section-tag">Metabolic Momentum</div>
                     <h2>The Math of Flow: Identifying change before the sensor screams.</h2>
                     <p>A simple logbook can't handle metabolic momentum. We treat your biology like an enterprise data problem, tracking the <strong>Rate of Change</strong> to distinguish between a dietary spike and exercise-induced stress.</p>
-                    <p>By analyzing the velocity of your glucose trends, Glycoflow identifies the patterns that standard alarms often miss, giving you the clarity to act with precision.</p>
+                    <p>By analysing the velocity of your glucose trends, Glycoflow identifies the patterns that standard alarms often miss, giving you the clarity to act with precision.</p>
                 </div>
                 <div class="momentum-image-premium">
                     <div class="photo-placeholder">
@@ -169,6 +170,17 @@
 
     <section id="features" class="features-premium">
         <div class="container">
+            <!-- Featured Insight Teaser -->
+            <div class="glass-card" style="margin-bottom: 60px; border-color: var(--secondary); background: rgba(34, 211, 238, 0.05); display: flex; align-items: center; gap: 30px; padding: 30px;">
+                <div class="insight-icon" style="font-size: 2.5rem;">🧬</div>
+                <div class="insight-text">
+                    <div class="section-tag" style="margin-bottom: 5px;">Latest Insight</div>
+                    <h3 style="margin-bottom: 10px;">The 14-Day Gap: Why Insulin "Stops Working"</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 15px;">Discover why muscle glucose uptake drops after a break from the gym and how to audit your new baseline.</p>
+                    <a href="news.html" class="btn-glass" style="font-size: 0.8rem; padding: 8px 16px;">Read the Analysis</a>
+                </div>
+            </div>
+
             <div class="section-header">
                 <div class="section-tag">How it helps</div>
                 <h2 class="title-fancy">Features for Everyone.</h2>
@@ -192,7 +204,7 @@
                 <div class="glass-card feature-item">
                     <div class="icon-glow">🔥</div>
                     <h3>Fasting Intelligence</h3>
-                    <p>Safety-Aware timers with an automatic "Safety Pivot" that prioritizes metabolic stability if glucose drops below 4.0 mmol/L.</p>
+                    <p>Safety-Aware timers with an automatic "Safety Pivot" that prioritises metabolic stability if glucose drops below 4.0 mmol/L.</p>
                 </div>
                 <div class="glass-card feature-item">
                     <div class="icon-glow">🥗</div>
@@ -241,7 +253,7 @@
                 </div>
                 <div class="screenshot-item glass-card">
                     <img src="Assets/Feature toggles.png" alt="Features Screenshot">
-                    <h4>Customized for You</h4>
+                    <h4>Customised for You</h4>
                 </div>
             </div>
         </div>
@@ -254,7 +266,14 @@
                 <p>The app is in early beta, and I'm looking for <strong>20 testers</strong> to help me refine it. Whether you're a data nerd or just want an easier way to track, your voice matters.</p>
 
                 <div class="pilot-constraints" style="margin: 20px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                    <p style="margin: 0; font-size: 0.9rem;"><strong>🚀 Pilot Scope:</strong> This build is <strong>Android-only</strong> (hardened on Pixel 9). iOS support is deferred as I'm a solo founder with a zero-budget hardware stack—if you've got a spare MacBook gathering dust, let's talk!</p>
+                    <p style="margin: 0; font-size: 0.9rem;"><strong>🚀 Pilot Scope:</strong> This build is <strong>Android-only</strong> (hardened on Pixel 9). iOS support is deferred as I'm a solo founder with a zero-budget hardware stack.</p>
+                </div>
+
+                <!-- Urgency Widget -->
+                <div class="spots-remaining" style="margin: 30px 0; padding: 20px; background: rgba(34, 211, 238, 0.1); border: 1px solid var(--secondary); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--secondary); margin-bottom: 5px;">Current Intake</div>
+                    <div style="font-size: 2rem; font-weight: 800; color: #fff;"><span class="gradient-text">16 / 20</span> Spots Filled</div>
+                    <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Join the final 4 testers in the March cohort.</p>
                 </div>
 
                 <div style="margin-top: 40px;">
@@ -276,6 +295,7 @@
                     <span>GlycoTrace</span>
                 </div>
                 <div class="footer-links">
+                    <a href="science.html">The Science</a>
                     <a href="tutorials.html">Tutorials</a>
                     <a href="resources.html">Resources</a>
                     <a href="freelance.html">Project Support</a>

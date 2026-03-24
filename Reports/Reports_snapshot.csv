@@ -1,0 +1,136 @@
+# ----------------------------------------
+# Reports snapshot
+# Account: GlycoTrace Ltd
+# Property: GlycoTrace Website
+# ----------------------------------------
+#  
+# Start date: 20260224
+# End date: 20260323
+Active users,New users,Average engagement time per active user,Event count
+117,117,9.205128205128204,471
+
+#  
+# Start date: 20260224
+# End date: 20260323
+Page title and screen class,Views,Active users,Event count,Bounce rate
+GlycoTrace | Specialized Type 3c Diabetes App,86,68,283,0.8048780487804879
+GlycoTrace | Built for the community,41,37,141,0.8157894736842105
+GlycoTrace | Glucose Tracker & Diabetes Management App,14,13,47,0.7857142857142857
+
+#  
+# Start date: 20260224
+# End date: 20260323
+First user source / medium,Active users
+(direct) / (none),106
+google / cpc,7
+biztools.corp.google.com / referral,2
+google / organic,2
+
+#  
+# Start date: 20260224
+# End date: 20260323
+Session source/medium,Sessions
+(direct) / (none),113
+google / cpc,7
+glyco-trace.web.app / referral,3
+google / organic,3
+porkbun.com / referral,3
+biztools.corp.google.com / referral,2
+upwork.com / referral,2
+
+#  
+# Start date: 20260224
+# End date: 20260323
+Nth day,new,returning
+0000,33,0
+0001,6,1
+0002,7,0
+0003,4,0
+0004,3,0
+0005,1,0
+0006,6,0
+0007,3,0
+0008,5,0
+0009,3,0
+0010,1,1
+0011,1,0
+0012,3,0
+0013,0,1
+0014,1,0
+0015,6,0
+0016,4,1
+0017,3,1
+0018,2,1
+0019,2,0
+0020,6,1
+0021,3,0
+0022,1,2
+0023,4,0
+0024,5,1
+0025,1,0
+0026,2,0
+0027,1,0
+
+# How does activity on your platforms compare?
+# Start date: 20260224
+# End date: 20260323
+Platform,Key events
+
+
+#  
+# Start date: 20260224
+# End date: 20260323
+Town/City,Active users
+Council Bluffs,25
+Boardman,6
+San Jose,6
+Ashburn,5
+Burnaby,4
+New York,4
+Smethwick,3
+Warsaw,3
+Birmingham,2
+Hyderabad,2
+Paris,2
+Andorra la Vella,1
+Aspen,1
+Athens,1
+Berlin,1
+Chatham,1
+Chicago,1
+Colchester,1
+Delta,1
+Dronten,1
+Flint Hill,1
+Frankfurt am Main,1
+Hong Kong,1
+Houston,1
+Idaho Springs,1
+Jakarta,1
+Lille,1
+London,1
+Longwood,1
+Melbourne,1
+Miami,1
+Montreal,1
+Moses Lake,1
+Nashville,1
+North Bergen,1
+Oslo Municipality,1
+Phnom Penh,1
+Phoenix,1
+Podgorica,1
+Rabat,1
+Rosario,1
+Rutherford,1
+Sandston,1
+Santa Clara,1
+Santa Fe,1
+Shinjuku City,1
+Surat Thani,1
+
+#  
+# Start date: 20260224
+# End date: 20260323
+Audience name,Active users
+All Users,117

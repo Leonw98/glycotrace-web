@@ -521,7 +521,7 @@ footer {
 
 /* Utility Classes for New Pages */
 .py-80 { padding: 80px 0; }
-.text-center { text-align: center; }
+.text-centre { text-align: center; }
 .last-updated { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 32px; }
 .legal-section { text-align: left; }
 .legal-section h2 { margin-bottom: 16px; color: var(--secondary); }
