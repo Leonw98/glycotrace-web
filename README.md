@@ -3,8 +3,8 @@
 A personal metabolic health tool built for the community, specializing in Type 3c diabetes and enzyme therapy tracking.
 
 ## Recent Changes
-- **Icon Restoration**: Restored the original colorful emojis for the "Features for Everyone" section (⚡, 💊, 📸, 🔥, 🥗, 🧠) to provide a more vibrant and distinct look.
-- **Project Structure**: Organized assets and initial website layout.
+- **Icon Restoration**: Restored the original colourful emojis for the "Features for Everyone" section (⚡, 💊, 📸, 🔥, 🥗, 🧠) to provide a more vibrant and distinct look.
+- **Project Structure**: Organised assets and initial website layout.
 
 ## Project Roadmap
 - [x] Initial landing page design

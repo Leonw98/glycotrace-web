@@ -16,12 +16,12 @@ GlycoTrace is a specialized retrospective metabolic analysis platform designed f
 
 ## Target Audience
 - **Type 3c Diabetics:** Those managing pancreatic-related metabolic conditions.
-- **High-Performance Athletes:** Weightlifters and professionals using data to optimize metabolic stability during physical stress.
+- **High-Performance Athletes:** Weightlifters and professionals using data to optimise metabolic stability during physical stress.
 - **Wellness Enthusiasts:** Individuals seeking a clean, logical calorie and glucose tracker without medical jargon.
 
 ## Technical Standards
 - High-contrast mmol/L graphs.
-- Color-coded glucose thresholds:
+- Colour-coded glucose thresholds:
   - Red: <3.9 mmol/L (Hypo risk)
   - Green: 3.9 - 10.0 mmol/L (Stability range)
   - Amber: 10.1 - 13.0 mmol/L (Mild spike)

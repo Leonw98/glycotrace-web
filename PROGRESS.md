@@ -1,5 +1,12 @@
 # GlycoTrace Project Progress
 
+## 🚀 Daily Log: 27 Mar 2026 (AdMob Monetization & Verification)
+
+### **1. AdMob Compliance (Authorized Digital Sellers)**
+*   **app-ads.txt Implementation:** Created and hosted the `app-ads.txt` file at the root domain (`glycotrace.co.uk/app-ads.txt`) to satisfy IAB Tech Lab standards and Google AdMob ownership verification.
+*   **Snippet Integration:** Verified the Publisher ID (`pub-3517713458492504`) and association with `google.com` as a DIRECT seller.
+*   **Crawler Optimization:** Confirmed `robots.txt` allows full access to the root directory for the `Google-adstxt` crawler.
+
 ## 🚀 Daily Log: 24 Mar 2026 (SEO & Conversion Overhaul)
 
 ### **1. SEO & Internal Linking (Search Console Alignment)**
@@ -10,7 +17,7 @@
 ### **2. Conversion & Content Optimization**
 *   **Hero Refinement:** Updated the primary H1 to "Precision Tracking for Type 3c Diabetes" to better target the core audience and reduce bounce rates (currently ~80%).
 *   **Urgency Widget:** Refined the beta intake CTA to "Join the March Intake" to create a stronger call-to-action for the final 4 pilot spots.
-*   **Meta Description Update:** Optimized the home page meta description to highlight "forensic insights" and "specialized tracking" for Type 3c, T1, and T2 diabetes.
+*   **Meta Description Update:** Optimized the home page meta description to highlight "forensic insights" and "specialised tracking" for Type 3c, T1, and T2 diabetes.
 
 ### **3. Content Strategy**
 *   **Latest Insight:** Featured "The 14-Day Gap: Why Insulin 'Stops Working'" in the primary news teaser to drive deeper engagement from first-time visitors.

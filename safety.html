@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Safety & Clinical Logic Guide | GlycoTrace</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="Clinical safety protocols, intended use, and technical logic for GlycoTrace. Understanding the 'Primary Authority' principle for metabolic health.">
+    <link rel="canonical" href="https://glycotrace.co.uk/safety.html">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .legal-section ul { list-style: none; padding: 0; margin-bottom: 20px; }
+        .legal-section li { color: var(--text-dim); padding: 6px 0 6px 20px; position: relative; line-height: 1.6; }
+        .legal-section li::before { content: ""; position: absolute; left: 0; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: var(--secondary); }
+        .legal-section li strong { color: #fff; }
+        
+        .warning-box { 
+            background: rgba(255, 68, 68, 0.1); 
+            border: 1px solid rgba(255, 68, 68, 0.3);
+            border-left: 4px solid #ff4444;
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box h3 { color: #ff4444; margin-top: 0; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .warning-box p { margin-bottom: 0; color: #fff; font-weight: 600; }
+
+        .logic-card {
+            background: rgba(34, 211, 238, 0.05);
+            border: 1px solid rgba(34, 211, 238, 0.2);
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 12px;
+        }
+        .logic-card h2 { color: var(--secondary); margin-top: 0; }
+        .logic-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--secondary);
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 800;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="legal-page">
+    <div class="glow-bg"></div>
+    <nav>
+        <div class="container nav-container">
+            <a href="/" class="logo-wrapper" style="text-decoration: none;">
+                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
+                <span class="logo-text">GlycoTrace</span>
+            </a>
+            <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="nav-links">
+                <a href="/#story">The Mission</a>
+                <a href="science.html">The Science</a>
+                <a href="news.html">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Project Support</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="calculators.html">Calculators</a>
+                <a href="apply.html" class="btn-nav">Join the Beta</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-80">
+        <div class="section-tag">Compliance & Safety</div>
+        <h1>User Safety & Clinical Logic Guide</h1>
+        <p class="last-updated">Version: 2026.1.1 | Classification: Retrospective Metabolic Analysis Tool</p>
+
+        <section class="legal-section glass-card">
+            <h2>1. Intended Use: Retrospective Analysis</h2>
+            <p>GlycoTrace is designed as a <strong>retrospective data integration and analysis platform</strong>. Its primary function is to consolidate historical data from FreeStyle Libre, Garmin, and MyFitnessPal to identify metabolic patterns and reduce the cognitive burden associated with Type 3c Diabetes and ADHD.</p>
+            
+            <div class="warning-box">
+                <h3>⚠️ NOT A REAL-TIME MONITOR</h3>
+                <p>GlycoTrace is an analytical overlay. It is not a replacement for your FreeStyle Libre sensor, blood glucose meter, or manual tracking methods prescribed by your clinical team.</p>
+            </div>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>2. The "Primary Authority" Principle</h2>
+            <p>In any instance of data discrepancy, the <strong>Primary Medical Device</strong> (e.g., your Libre Reader or CGM) and your physical symptoms are the <strong>sole authorities</strong> for medical action.</p>
+            <ul>
+                <li><strong>No Medical Advice:</strong> GlycoTrace does not calculate insulin doses or provide diagnostic conclusions.</li>
+                <li><strong>Validation:</strong> All retrospective insights provided by GlycoTrace must be reviewed with a qualified healthcare professional before making any changes to your treatment plan.</li>
+            </ul>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>3. Notification Logic & Limitations</h2>
+            <p>GlycoTrace utilizes time-based push notifications to assist with the executive function challenges of ADHD (e.g., dose reminders, enzyme timing).</p>
+            <ul>
+                <li><strong>Data Latency:</strong> Notifications triggered via Libre LinkUp sync are subject to cloud-to-cloud latency and internet connectivity. There may be a delay between a glucose event and a GlycoTrace notification.</li>
+                <li><strong>Never in Isolation:</strong> Notifications should serve as a "prompt for review" only. They must never be used in isolation to justify an insulin bolus or corrective action. Always verify the current "live" reading on your primary CGM app or reader.</li>
+            </ul>
+        </section>
+
+        <section class="legal-section glass-card">
+            <h2>4. Technical Resilience & Connectivity</h2>
+            <p>As a sovereign data tool, GlycoTrace relies on third-party API stability.</p>
+            <ul>
+                <li><strong>Sync Dependency:</strong> If Libre LinkUp, Garmin Connect, or MyFitnessPal servers are offline, GlycoTrace logic may be based on "stale" data.</li>
+                <li><strong>User Responsibility:</strong> It is the user's responsibility to ensure their mobile device is not in "Low Power Mode" or "Do Not Disturb," which may suppress life-critical timing reminders.</li>
+            </ul>
+        </section>
+
+        <div class="logic-card">
+            <span class="logic-tag">White Paper: Clinical & Technical Logic</span>
+            <h2>Safety-Critical Redundancy</h2>
+            <p style="color: var(--text-dim); line-height: 1.6;">
+                <strong>Technical Methodology:</strong> We are implementing "Safety-Critical Redundancy." By explicitly defining the app as a "Retrospective Analysis" tool, we are separating the Data Visualization Layer from the Primary Diagnostic Layer. This ensures that the logic governing notifications is legally and technically classified as "Advisory Alerts" rather than "Diagnostic Triggers," satisfying the 2026 IEC 62304 standards for medical device software.
+            </p>
+            <p style="color: var(--text-dim); line-height: 1.6; margin-top: 16px;">
+                <strong>Medical Justification:</strong> Patient safety in Type 3c management requires the mitigation of Automation Bias. By instructing users that notifications "should never be used in isolation," we are addressing a key requirement of the UK MHRA Software as a Medical Device (SaMD) safety labeling. We are enforcing a "Human-in-the-loop" protocol for every metabolic decision.
+            </p>
+            <p style="color: var(--text-dim); line-height: 1.6; margin-top: 16px;">
+                <strong>Source Audit:</strong> This safety guide serves as our Post-Market Surveillance (PMS) foundation. It provides users with a clear "Expected Performance" baseline, allowing them to identify and report "Behavioral Deviations" in the software. This transparency is a core requirement for GDPR/UK MDR compliance in 2026.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="science.html">The Science</a>
+                    <a href="tutorials.html">Tutorials</a>
+                    <a href="news.html">News</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="calculators.html">Calculators</a>
+                    <a href="freelance.html">Project Support</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                    <a href="safety.html">User Safety</a>
+                    <a href="delete_account.html">Delete Account</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                    <p class="legal">England & Wales Co. No. 17048417</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

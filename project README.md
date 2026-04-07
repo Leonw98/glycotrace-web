@@ -1,6 +1,6 @@
 # GlycoTrace v2.0
 
-A high-performance personal metabolic analysis platform built with Flutter and Supabase. Developed by **GlycoTrace Ltd**, this tool provides retrospective analysis for FreeStyle Libre users, with specialized support for Type 1, Type 3c, and Pre-Diabetic profiles.
+A high-performance personal metabolic analysis platform built with Flutter and Supabase. Developed by **GlycoTrace Ltd**, this tool provides retrospective analysis for FreeStyle Libre users, with specialised support for Type 1, Type 3c, and Pre-Diabetic profiles.
 
 ## 🌟 Key Features
 *   **The Daily Pulse:** Automated background sync via LibreLinkUp with multi-region network resilience.

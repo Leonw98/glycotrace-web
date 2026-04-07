@@ -92,7 +92,7 @@ For calculations to be considered "Reliable" in the Insights tab:
 *   **Type 2:** 
     *   **Focus:** Insulin Sensitivity.
     *   **Metabolic Switch:** Typically occurs 6–12 hours post-prandial depending on insulin resistance levels.
-    *   **Benefit:** IF is a recognized tool for reducing resistance and aiding remission (NICE/ADA).
+    *   **Benefit:** IF is a recognised tool for reducing resistance and aiding remission (NICE/ADA).
 *   **Pre-Diabetic:**
     *   **Focus:** Resistance Reversal & Pancreatic Recovery.
     *   **Metabolic Switch:** Typically 10–14 hours post-prandial.
@@ -100,4 +100,5 @@ For calculations to be considered "Reliable" in the Insights tab:
 *   **Non-Diabetic (Wellness):**
     *   **Focus:** Autophagy & Fat Oxidation.
     *   **Metabolic Switch:** 12–16 hours post-prandial (Glycogen depletion baseline).
+
 

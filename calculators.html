@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metabolic Calculators | PERT & Insulin Bolus Tools | GlycoTrace</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="Free interactive calculators for Type 3c diabetes. Calculate your PERT (Enzyme) dosage and insulin-to-carb bolus with precision.">
+    <link rel="canonical" href="https://glycotrace.co.uk/calculators.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
+    <style>
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        @media (max-width: 900px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .calc-card {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .calc-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+
+        .calc-header i {
+            color: var(--secondary);
+        }
+
+        .result-box {
+            margin-top: auto;
+            padding: 24px;
+            background: rgba(34, 211, 238, 0.1);
+            border: 1px solid var(--secondary);
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .result-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary);
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .result-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .input-hint {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            accent-color: var(--secondary);
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            appearance: none;
+        }
+
+        .warning-section {
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(255, 68, 68, 0.05);
+            border: 1px solid rgba(255, 68, 68, 0.2);
+            border-radius: 24px;
+        }
+
+        .warning-content {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .warning-icon {
+            color: #ff4444;
+            flex-shrink: 0;
+        }
+
+        .warning-text h3 {
+            color: #ff4444;
+            margin-bottom: 12px;
+        }
+
+        .warning-text p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .authority-reminder {
+            margin-top: 24px;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border-left: 4px solid var(--secondary);
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+    </style>
+</head>
+<body class="calculators-page">
+    <div class="glow-bg"></div>
+    
+    <nav>
+        <div class="container nav-container">
+            <a href="/" class="logo-wrapper" style="text-decoration: none;">
+                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
+                <span class="logo-text">GlycoTrace</span>
+            </a>
+            <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="nav-links">
+                <a href="/#story">The Mission</a>
+                <a href="science.html">The Science</a>
+                <a href="news.html">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Project Support</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="calculators.html" style="color: var(--secondary);">Calculators</a>
+                <a href="apply.html" class="btn-nav">Join the Beta</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-80 text-centre">
+        <div class="container">
+            <div class="section-tag">Precision Tools</div>
+            <h1>Metabolic <span class="gradient-text">Calculators</span></h1>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--text-dim);">Specialised tools for Type 3c management. Calculate your enzyme needs and insulin bolus with clinical logic.</p>
+        </div>
+    </header>
+
+    <main class="container py-80">
+        <div class="calculator-grid">
+            <!-- PERT Calculator -->
+            <section class="glass-card calc-card" id="pert-calc">
+                <div class="calc-header">
+                    <i data-lucide="pill"></i>
+                    <h2>PERT (Enzyme) Calculator</h2>
+                </div>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Calculate your Creon/enzyme dosage based on the fat content of your meal.</p>
+                
+                <div class="expanded-form">
+                    <div class="form-group">
+                        <label for="fat-grams">Grams of Fat in Meal</label>
+                        <input type="number" id="fat-grams" placeholder="e.g. 25" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lipase-units">Lipase Units per Gram of Fat</label>
+                        <div class="slider-container">
+                            <input type="range" id="lipase-slider" min="500" max="4000" step="100" value="2000">
+                            <input type="number" id="lipase-units" value="2000" min="500" max="4000" style="width: 100px;">
+                        </div>
+                        <p class="input-hint">Default is 2000 units/g. Range: 500 - 4000.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="capsule-strength">Capsule Strength (Units)</label>
+                        <select id="capsule-strength">
+                            <option value="10000">10,000</option>
+                            <option value="24000">24,000</option>
+                            <option value="25000" selected>25,000</option>
+                            <option value="36000">36,000</option>
+                            <option value="40000">40,000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-label">Recommended Capsules</div>
+                    <div class="result-value" id="pert-result">0</div>
+                </div>
+            </section>
+
+            <!-- Insulin Bolus Calculator -->
+            <section class="glass-card calc-card" id="insulin-calc">
+                <div class="calc-header">
+                    <i data-lucide="syringe"></i>
+                    <h2>Insulin Bolus Calculator</h2>
+                </div>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Calculate your rapid-acting insulin dose based on your carbohydrate intake.</p>
+
+                <div class="expanded-form">
+                    <div class="form-group">
+                        <label for="carb-grams">Total Carbohydrates (Grams)</label>
+                        <input type="number" id="carb-grams" placeholder="e.g. 60" min="0" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="carb-ratio">Your Insulin-to-Carb Ratio</label>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="color: var(--text-dim);">1 unit per</span>
+                            <input type="number" id="carb-ratio" placeholder="e.g. 10" min="1" step="0.5">
+                            <span style="color: var(--text-dim);">grams</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-box" style="background: rgba(129, 140, 248, 0.1); border-color: var(--accent);">
+                    <div class="result-label" style="color: var(--accent);">Insulin Dose</div>
+                    <div class="result-value" id="insulin-result">0.0</div>
+                </div>
+            </section>
+        </div>
+
+        <section class="warning-section">
+            <div class="warning-content">
+                <div class="warning-icon">
+                    <i data-lucide="alert-triangle" size="40"></i>
+                </div>
+                <div class="warning-text">
+                    <h3>Important Medical Disclaimer</h3>
+                    <p>Calculators are for informational purposes only. Never adjust your medication without consulting your clinical team. These formulas are general guidelines and individual requirements vary significantly based on activity, stress, and metabolic health.</p>
+                </div>
+            </div>
+            <div class="authority-reminder">
+                <strong>Primary Authority Reminder:</strong> Your physical symptoms and primary medical devices (CGM/BGM) always take precedence over application logic. If you feel unwell, follow your clinical team's emergency protocol regardless of the calculator output.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="science.html">The Science</a>
+                    <a href="tutorials.html">Tutorials</a>
+                    <a href="news.html">News</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="calculators.html">Calculators</a>
+                    <a href="freelance.html">Project Support</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                    <a href="safety.html">User Safety</a>
+                    <a href="delete_account.html">Delete Account</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                    <p class="legal">England & Wales Co. No. 17048417</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            // PERT Calculator Logic
+            const fatInput = document.getElementById('fat-grams');
+            const lipaseSlider = document.getElementById('lipase-slider');
+            const lipaseInput = document.getElementById('lipase-units');
+            const strengthSelect = document.getElementById('capsule-strength');
+            const pertResult = document.getElementById('pert-result');
+
+            function calculatePERT() {
+                const fat = parseFloat(fatInput.value) || 0;
+                const unitsPerGram = parseFloat(lipaseInput.value) || 0;
+                const strength = parseFloat(strengthSelect.value) || 1;
+                
+                if (fat === 0) {
+                    pertResult.textContent = '0';
+                    return;
+                }
+
+                const totalUnits = fat * unitsPerGram;
+                const capsules = Math.ceil(totalUnits / strength);
+                pertResult.textContent = capsules;
+            }
+
+            fatInput.addEventListener('input', calculatePERT);
+            strengthSelect.addEventListener('change', calculatePERT);
+            
+            lipaseSlider.addEventListener('input', (e) => {
+                lipaseInput.value = e.target.value;
+                calculatePERT();
+            });
+
+            lipaseInput.addEventListener('input', (e) => {
+                lipaseSlider.value = e.target.value;
+                calculatePERT();
+            });
+
+            // Insulin Calculator Logic
+            const carbInput = document.getElementById('carb-grams');
+            const ratioInput = document.getElementById('carb-ratio');
+            const insulinResult = document.getElementById('insulin-result');
+
+            function calculateInsulin() {
+                const carbs = parseFloat(carbInput.value) || 0;
+                const ratio = parseFloat(ratioInput.value) || 0;
+
+                if (carbs === 0 || ratio <= 0) {
+                    insulinResult.textContent = '0.0';
+                    return;
+                }
+
+                const dose = carbs / ratio;
+                // Round to nearest 0.5
+                const roundedDose = Math.round(dose * 2) / 2;
+                insulinResult.textContent = roundedDose.toFixed(1);
+            }
+
+            carbInput.addEventListener('input', calculateInsulin);
+            ratioInput.addEventListener('input', calculateInsulin);
+        });
+    </script>
+</body>
+</html>

@@ -17,7 +17,7 @@
 3. **The Phantom Auditor:** A synchronization layer that identifies discrepancies between asynchronous LLU data and manual logs.
 4. **Safety-Aware Fasting:** Automatic "Safety Pivot" that pauses fasting timers and prioritizes metabolic stability if glucose drops below 4.0 mmol/L.
 5. **Separation of Averages:** Critical UI requirement to split **Basal** and **Bolus** averages for clear insulin sensitivity insights.
-6. **Visual Standards:** Minimalist, high-contrast mmol/L graphs with color-coded thresholds (Red <3.9, Green 3.9-10, Amber 10.1-13, Dark Red >13).
+6. **Visual Standards:** Minimalist, high-contrast mmol/L graphs with colour-coded thresholds (Red <3.9, Green 3.9-10, Amber 10.1-13, Dark Red >13).
 
 ## ✅ Completed in this Session
 1. **Branding:** Renamed project from "Glucose Tracker" to **GlycoTrace** across all platforms. Generated production icons.
@@ -38,7 +38,7 @@
    - Implemented **Contextual Success** notifications for stable glucose windows.
    - Added **Lite Mode (Diary Only)** for non-medical users.
 8. **Performance & Accuracy:**
-   - **Parallel Search:** Optimized food database/API retrieval to reduce latency.
+   - **Parallel Search:** Optimised food database/API retrieval to reduce latency.
    - **Nutrition Normalization:** Fixed Open Food Facts mapping to prioritize 100g data and ensured consistency across history logs.
 9. **Metabolic Standards & Safety:**
    - Updated `STANDARDS.md` with refined Pharmacokinetics and Retrospective Calculation philosophy.
@@ -94,3 +94,4 @@
 - "Help me design a set of 4 screenshots for a metabolic analysis app listing."
 - "What is the best way to handle 'Closed Testing' for 20 people in the Google Play Console?"
 - "How do I integrate RevenueCat into this Flutter app to handle actual payments for the Premium tier?"
+

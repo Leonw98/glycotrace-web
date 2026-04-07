@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlycoTrace | Specialized Type 3c Diabetes App</title>
+    <title>GlycoTrace | Specialised Type 3c Diabetes App</title>
     <link rel="icon" type="image/png" href="logo.png">
-    <meta name="description" content="The specialized glucose tracker for Type 3c, Type 1, and Type 2 diabetes. Track blood sugar, enzymes, insulin, and exercise with AI-powered forensic insights.">
+    <meta name="description" content="The specialised glucose tracker for Type 3c, Type 1, and Type 2 diabetes. Track blood sugar, enzymes, insulin, and exercise with AI-powered forensic insights.">
     <meta name="keywords" content="Type 3c diabetes app, glucose tracker, pancreatic diabetes, enzyme tracker, PERT tracker, blood sugar tracker, Type 1 diabetes app, insulin tracker, LibreLink companion, CGM tracker, glucose variability, time in range">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://glycotrace.co.uk/">
-    <meta property="og:title" content="GlycoTrace: Specialized Type 3c Diabetes App">
+    <meta property="og:title" content="GlycoTrace: Specialised Type 3c Diabetes App">
     <meta property="og:description" content="Track glucose, enzymes, and insulin. Get AI-powered insights specifically designed for the Type 3c community.">
     <meta property="og:image" content="https://glycotrace.co.uk/Assets/Dash.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GlycoTrace: Specialized Type 3c Diabetes App">
-    <meta name="twitter:description" content="Specialized glucose and enzyme tracking for Type 3c diabetes. AI insights for better metabolic stability.">
+    <meta name="twitter:title" content="GlycoTrace: Specialised Type 3c Diabetes App">
+    <meta name="twitter:description" content="Specialised glucose and enzyme tracking for Type 3c diabetes. AI insights for better metabolic stability.">
     <meta name="twitter:image" content="https://glycotrace.co.uk/Assets/Dash.png">
     <link rel="canonical" href="https://glycotrace.co.uk/">
     <link rel="stylesheet" href="style.css">
@@ -100,10 +100,10 @@
     
     <nav>
         <div class="container nav-container">
-            <div class="logo-wrapper">
+            <a href="/" class="logo-wrapper" style="text-decoration: none;">
                 <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
                 <span class="logo-text">GlycoTrace</span>
-            </div>
+            </a>
             <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
             <div class="nav-links">
                 <a href="#story">The Mission</a>
@@ -112,7 +112,8 @@
                 <a href="resources.html">Resources</a>
                 <a href="freelance.html">Project Support</a>
                 <a href="tutorials.html">Tutorials</a>
-                <a href="apply.html" class="btn-nav">Help me test</a>
+                <a href="calculators.html">Calculators</a>
+                <a href="apply.html" class="btn-nav">Join the Beta</a>
             </div>
         </div>
     </nav>
@@ -120,12 +121,14 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="badge-premium">The Specialized Type 3c Solution</span>
+                <span class="badge-premium">The Specialised Type 3c Solution</span>
                 <h1>Precision Tracking for <span class="gradient-text">Type 3c</span> Diabetes.</h1>
                 <p>GlycoTrace is the dedicated <strong>metabolic auditing platform</strong> designed specifically for the complexities of pancreatic diabetes, enzyme therapy, and retrospective data analysis.</p>  
                 <div class="hero-btns">
-                    <a href="apply.html" class="btn-primary-fancy">Join the March Intake</a>   
-                    <a href="#features" class="btn-glass">See how it works</a>
+                    <a href="apply.html" class="btn-primary-fancy">Join the Beta</a>   
+                    <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.tracker" target="_blank" class="play-store-badge">
+                        <img src="Assets/google-play-badge.png" alt="Get it on Google Play" class="play-badge">
+                    </a>
                 </div>
             </div>
         </div>
@@ -198,8 +201,8 @@
                 </div>
                 <div class="glass-card feature-item">
                     <div class="icon-glow">📸</div>
-                    <h3>Garmin Photo Import</h3>
-                    <p><span class="tag-soon">BETA</span> Import exercise stats directly from a photo of your Garmin Connect screen via on-device OCR.</p>
+                    <h3>Zero-Latency Garmin Import</h3>
+                    <p>I deliberately dropped the slow 6-hour Health Connect sync. Instead, import stats instantly via **on-device OCR** from your Garmin or fitness watch screen. No waiting, just precision.</p>
                 </div>
                 <div class="glass-card feature-item">
                     <div class="icon-glow">🔥</div>
@@ -208,8 +211,8 @@
                 </div>
                 <div class="glass-card feature-item">
                     <div class="icon-glow">🥗</div>
-                    <h3>Rapid Calorie Tracking</h3>
-                    <p>A fast, clean interface for logging food and seeing the immediate 'Why' behind every spike.</p>
+                    <h3>ADHD-Optimized Logging</h3>
+                    <p>Designed for speed and "Bulk Logging." A fast, clean interface for logging food and exercise, making it easy to catch up if you've missed a few entries.</p>
                 </div>
                 <div class="glass-card feature-item">
                     <div class="icon-glow">🧠</div>
@@ -220,7 +223,39 @@
         </div>
     </section>
 
-        <section id="screenshots" class="screenshots-premium">
+        <section id="roadmap" class="features-premium" style="background: rgba(15, 12, 29, 0.4); border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">The Future</div>
+                <h2 class="title-fancy">The Roadmap.</h2>
+                <p style="color: var(--text-dim); margin-top: 10px;">High-impact features currently in development.</p>
+            </div>
+            <div class="feature-grid-fancy">
+                <div class="glass-card feature-item">
+                    <div class="icon-glow" style="filter: grayscale(1) opacity(0.7);">🛡️</div>
+                    <h3>Stacked Dose Auditor</h3>
+                    <p>Smart safety alerts that track your active insulin peaks to prevent "insulin stacking" and severe hypos during correction doses.</p>
+                </div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow" style="filter: grayscale(1) opacity(0.7);">⚡</div>
+                    <h3>ADHD "Interim" Logging</h3>
+                    <p>A zero-friction placeholder engine. Type "Pizza" in a meeting, and GlycoTrace will nudge you to flesh out the details later when life slows down.</p>
+                </div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow" style="filter: grayscale(1) opacity(0.7);">📊</div>
+                    <h3>Logging Confidence Scores</h3>
+                    <p>Tell the AI how precise your log was. Did you weigh the carbs, or was it a "best guess"? Glycoflow adjusts its clinical weights based on your confidence.</p>
+                </div>
+                <div class="glass-card feature-item">
+                    <div class="icon-glow" style="filter: grayscale(1) opacity(0.7);">🤖</div>
+                    <h3>GlycoAgent Proactive AI</h3>
+                    <p>Moving from retrospective analysis to proactive guidance. An AI partner that identifies successful patterns and suggests lunch based on your best 16:8 fasts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots-premium">
         <div class="container">
             <div class="section-header">
                 <div class="section-tag">Visual Tour</div>
@@ -263,21 +298,26 @@
         <div class="container">
             <div class="cta-glass-card">
                 <h2>I'd love your feedback.</h2>
-                <p>The app is in early beta, and I'm looking for <strong>20 testers</strong> to help me refine it. Whether you're a data nerd or just want an easier way to track, your voice matters.</p>
+                <p>I'm looking for testers across the spectrum: <strong>Type 3c, Type 1, Type 2, or Pre-diabetes</strong>. There's also a <strong>Non-Diabetic Mode</strong> for anyone monitoring glucose for general wellness.</p>
+                
+                <p style="margin-top: -20px; font-size: 1.1rem; opacity: 0.9;">Designed with <strong>ADHD in mind</strong>—it's built for speed, making it easy to log single entries or bulk-log if you've forgotten a few days.</p>
 
-                <div class="pilot-constraints" style="margin: 20px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                    <p style="margin: 0; font-size: 0.9rem;"><strong>🚀 Pilot Scope:</strong> This build is <strong>Android-only</strong> (hardened on Pixel 9). iOS support is deferred as I'm a solo founder with a zero-budget hardware stack.</p>
+                <div class="pilot-constraints" style="margin: 20px 0; padding: 15px; background: rgba(34, 211, 238, 0.05); border-radius: 12px; border: 1px solid var(--secondary);">
+                    <p style="margin: 0; font-size: 0.9rem;"><strong>🚀 Platform Status:</strong> Currently <strong>Android-only</strong>. I'm a solo founder managing production costs, but if the feedback is strong, an iOS version is definitely on the roadmap!</p>
                 </div>
 
-                <!-- Urgency Widget -->
-                <div class="spots-remaining" style="margin: 30px 0; padding: 20px; background: rgba(34, 211, 238, 0.1); border: 1px solid var(--secondary); border-radius: 12px; text-align: center;">
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--secondary); margin-bottom: 5px;">Current Intake</div>
-                    <div style="font-size: 2rem; font-weight: 800; color: #fff;"><span class="gradient-text">16 / 20</span> Spots Filled</div>
-                    <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">Join the final 4 testers in the March cohort.</p>
+                <div class="badge-row">
+                    <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.tracker" target="_blank">
+                        <img src="Assets/google-play-badge.png" alt="Get it on Google Play" class="play-badge">
+                    </a>
+                    <a href="https://play.google.com/apps/testing/com.glucosefreaks.tracker" target="_blank" class="btn-glass" style="display: flex; align-items: center; gap: 8px; padding: 10px 24px; font-size: 0.9rem; height: 60px;">
+                        <i data-lucide="flask-conical" style="width: 18px; height: 18px;"></i>
+                        Opt-in for Testing
+                    </a>
                 </div>
 
                 <div style="margin-top: 40px;">
-                    <a href="apply.html" class="btn-primary-fancy" style="display: inline-block; font-size: 1.2rem; padding: 22px 48px;">Apply for the Beta Intake</a>
+                    <a href="apply.html" class="btn-primary-fancy" style="display: inline-block; font-size: 1.2rem; padding: 22px 48px;">How to Join</a>
                 </div>
                 
                 <p class="disclaimer" style="margin-top: 32px; max-width: 100%; font-size: 0.75rem; opacity: 0.7;">
@@ -295,12 +335,17 @@
                     <span>GlycoTrace</span>
                 </div>
                 <div class="footer-links">
+                    <a href="/">Home</a>
                     <a href="science.html">The Science</a>
                     <a href="tutorials.html">Tutorials</a>
+                    <a href="news.html">News</a>
                     <a href="resources.html">Resources</a>
+                    <a href="calculators.html">Calculators</a>
                     <a href="freelance.html">Project Support</a>
                     <a href="community_guidelines.html">Community Guidelines</a>
                     <a href="privacy_policy.html">Privacy Policy</a>
+                    <a href="safety.html">User Safety</a>
+                    <a href="delete_account.html">Delete Account</a>
                 </div>
                 <div class="footer-info">
                     <p>&copy; 2026 GlycoTrace Ltd.</p>

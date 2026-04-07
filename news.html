@@ -45,10 +45,10 @@
     
     <nav>
         <div class="container nav-container">
-            <div class="logo-wrapper" onclick="window.location.href='/'" style="cursor: pointer;">
+            <a href="/" class="logo-wrapper" style="text-decoration: none;">
                 <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
                 <span class="logo-text">GlycoTrace</span>
-            </div>
+            </a>
             <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
             <div class="nav-links">
                 <a href="/#story">The Mission</a>
@@ -57,7 +57,8 @@
                 <a href="resources.html">Resources</a>
                 <a href="freelance.html">Project Support</a>
                 <a href="tutorials.html">Tutorials</a>
-                <a href="/#beta" class="btn-nav">Help me test</a>
+                <a href="calculators.html">Calculators</a>
+                <a href="apply.html" class="btn-nav">Join the Beta</a>
             </div>
         </div>
     </nav>
@@ -77,8 +78,38 @@
     </header>
 
     <main class="container py-80">
-        <!-- Section: Featured Deep Dive (The 14-Day Gap & Hunger Trap) -->
-        <article class="glass-card" style="margin-bottom: 60px; padding: 0; overflow: hidden; border-color: var(--secondary);">
+        <!-- Section: Latest Feature & Personal Insight (The Injury Loop) -->
+        <article class="glass-card" style="margin-bottom: 60px; padding: 0; overflow: hidden; border-color: var(--secondary); background: rgba(34, 211, 238, 0.02);">
+            <div style="width: 100%; height: 400px; overflow: hidden; background: #000;">
+                <img src="Assets/victor-freitas-WvDYdXDzkhs-unsplash.jpg" alt="Person resting after injury" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+            </div>
+            <div style="padding: 40px;">
+                <div class="section-tag" style="background: var(--primary); color: #fff;">New Feature: Wellbeing Logs</div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">The Injury Loop: When the 'Outlet' Becomes the 'Stressor'</h2>
+                <p style="font-size: 1.1rem; color: var(--text-dim); margin-bottom: 24px;">
+                    It’s a matching set now. Last year it was the left hamstring; this month, it’s the right. For a Type 3c diabetic who relies on heavy lifting as a metabolic "release valve," a torn hamstring isn't just a physical injury—it's a systemic disruption.
+                </p>
+                
+                <div class="feature-grid-fancy" style="margin-bottom: 32px; grid-template-columns: 1fr 1fr;">
+                    <div>
+                        <h4 style="color: var(--secondary); margin-bottom: 12px;">The Science of the 'Night Trap'</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 16px;">When physical outlets are removed, cortisol rises. For many of us, this manifests as late-night food struggles. Even with the best tools, the "consequences" are easier to see than the "cravings" are to stop. Recent data from <em>ScienceDaily</em> (March 2026) highlights the staggering global disparity in metabolic care costs—reminding us that the "mental load" of management is often as heavy as the physical one.</p>
+                    </div>
+                    <div class="glass-card" style="background: rgba(255,255,255,0.03);">
+                        <h4 style="color: var(--secondary); margin-bottom: 12px;">Introducing: Mood Context</h4>
+                        <p style="font-size: 0.9rem;">I've added a <strong>Daily Mood & WHO-5 Wellbeing System</strong> to GlycoTrace. By logging tags like <em>#stressed</em> or <em>#brain_fog</em>, the AI now receives clinical context (e.g., <code>MOOD_CONTEXT: 2[tired,stressed]</code>) to help explain why your glucose is behaving differently during recovery.</p>
+                    </div>
+                </div>
+
+                <div class="hero-btns" style="justify-content: flex-start; gap: 20px;">
+                    <a href="calculators.html" class="btn-primary-fancy">Check Your Ratios</a>
+                    <a href="https://www.sciencedaily.com/releases/2026/03/260325055441.htm" target="_blank" class="btn-glass" style="font-size: 0.8rem;">Read Cost-of-Care Research</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section: Previous Deep Dive (The 14-Day Gap) -->
+        <article class="glass-card" style="margin-bottom: 60px; padding: 0; overflow: hidden; opacity: 0.9;">
             <div style="width: 100%; height: 450px; overflow: hidden; background: #000;">
                 <img src="Assets/andrew-valdivia-0-A_G_XeUqc-unsplash.jpg" alt="Empty gym bench in dramatic lighting" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
             </div>
@@ -110,7 +141,7 @@
                 </div>
 
                 <div class="hero-btns" style="justify-content: flex-start; gap: 20px;">
-                    <a href="/#beta" class="btn-primary-fancy">Join the Beta & Audit Your Data</a>
+                    <a href="apply.html" class="btn-primary-fancy">Join the Beta & Audit Your Data</a>
                     <a href="https://zoe.com/learn/insulin-resistance-diet" target="_blank" class="btn-glass" style="font-size: 0.8rem;">View Science (via ZOE)</a>
                 </div>
             </div>
@@ -130,7 +161,7 @@
                 </div>
                 <h3 style="margin-bottom: 16px;">Beyond the Weight-Loss Hype: The Real Impact of GLP-1s</h3>
                 <p style="color: var(--text-dim); margin-bottom: 20px;">It’s hard to open a news app without seeing Wegovy or Ozempic framed as "the latest weight-loss trend." But as this recent NICE report reminds us, these aren't just lifestyle drugs: they are revolutionary tools for metabolic protection. While the world focuses on the scales, we're focusing on the fact that these treatments are significantly reducing heart disease and kidney failure in the diabetic community.</p>
-                <div style="display: flex; align-items: centre; gap: 12px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
                     <a href="https://www.nice.org.uk/news/articles/major-changes-to-type-2-diabetes-treatment-could-save-thousands-of-lives" target="_blank" class="btn-glass" style="padding: 8px 16px; font-size: 0.8rem;">Read NICE Article</a>
                     <span style="font-size: 0.8rem; font-style: italic; color: var(--secondary);">Why it matters: At GlycoTrace, we value organ protection over "trends."</span>
                 </div>
@@ -142,7 +173,7 @@
                 <p style="font-size: 1rem; color: var(--text-dim); margin-bottom: 16px;">
                     "I’d love to hear your experiences in getting the right treatment. While it appears 'easy' for non-diabetics to access these medications in the media, is the system actually working for those of us with chronic metabolic needs? I can’t use these medications myself due to my history with **pancreatitis**, so I’m relying on your data and stories to help GlycoTrace understand the real-world impact."
                 </p>
-                <a href="/#beta" class="btn-nav" style="display: inline-block; font-size: 0.8rem;">Join the conversation in the Beta</a>
+                <a href="apply.html" class="btn-nav" style="display: inline-block; font-size: 0.8rem;">Join the Beta</a>
             </div>
         </section>
 
@@ -184,12 +215,15 @@
                 <div class="footer-links">
                     <a href="/">Home</a>
                     <a href="science.html">The Science</a>
-                    <a href="news.html">News</a>
                     <a href="tutorials.html">Tutorials</a>
+                    <a href="news.html">News</a>
                     <a href="resources.html">Resources</a>
+                    <a href="calculators.html">Calculators</a>
                     <a href="freelance.html">Project Support</a>
                     <a href="community_guidelines.html">Community Guidelines</a>
                     <a href="privacy_policy.html">Privacy Policy</a>
+                    <a href="safety.html">User Safety</a>
+                    <a href="delete_account.html">Delete Account</a>
                 </div>
                 <div class="footer-info">
                     <p>&copy; 2026 GlycoTrace Ltd.</p>
