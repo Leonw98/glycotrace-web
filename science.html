@@ -3,292 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Science | GlycoTrace Metabolic Logic</title>
-    <link rel="icon" type="image/png" href="logo.png">
-    <meta name="description" content="Explore the clinical and technical logic behind GlycoTrace. Read our white paper, clinical source map, and data ethics philosophy.">
-    <link rel="canonical" href="https://glycotrace.co.uk/science.html">
+    <title>Type 3c: The Hidden Diabetes - GlycoTrace</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        .science-nav {
-            position: sticky;
-            top: 100px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .science-nav a {
-            color: var(--text-dim);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        .science-nav a:hover {
-            color: var(--secondary);
-        }
-        .science-grid {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 40px;
-        }
-        @media (max-width: 992px) {
-            .science-grid {
-                grid-template-columns: 1fr;
-            }
-            .science-nav {
-                position: static;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-bottom: 30px;
-            }
-        }
-        .clinical-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.9rem;
-        }
-        .clinical-table th, .clinical-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .clinical-table th {
-            color: var(--secondary);
-            font-weight: 600;
-        }
-        .audit-verdict {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 800;
-            text-transform: uppercase;
-        }
-        .verdict-high { background: rgba(255, 68, 68, 0.2); color: #ff4444; }
-        .verdict-medium { background: rgba(255, 187, 51, 0.2); color: #ffbb33; }
-        .verdict-low { background: rgba(0, 200, 81, 0.2); color: #00c851; }
-    </style>
 </head>
-<body class="science-page">
-    <div class="glow-bg"></div>
-    
-    <nav>
-        <div class="container nav-container">
-            <a href="/" class="logo-wrapper" style="text-decoration: none;">
-                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
-                <span class="logo-text">GlycoTrace</span>
-            </a>
-            <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-            <div class="nav-links">
-                <a href="/#story">The Mission</a>
-                <a href="science.html" style="color: var(--secondary);">The Science</a>
-                <a href="news.html">News</a>
-                <a href="resources.html">Resources</a>
-                <a href="freelance.html">Project Support</a>
-                <a href="tutorials.html">Tutorials</a>
-                <a href="calculators.html">Calculators</a>
-                <a href="apply.html" class="btn-nav">Join the Beta</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="py-80 text-centre">
-        <div class="container">
-            <div class="section-tag">Clinical Foundations</div>
-            <h1>The Metabolic <span class="gradient-text">Logic</span></h1>
-            <p style="max-width: 700px; margin: 0 auto; color: var(--text-dim);">Transparency, clinical accuracy, and forensic auditing for the Type 3c community.</p>
-        </div>
+<body>
+    <header>
+        <h1>GlycoTrace Science</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="science.html">The Science</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="news.html">News</a>
+        </nav>
     </header>
 
-    <main class="container py-80">
-        <div class="science-grid">
-            <aside>
-                <nav class="science-nav glass-card">
-                    <h4 style="margin-bottom: 10px; color: var(--text-main);">Contents</h4>
-                    <a href="#whitepaper">1. White Paper</a>
-                    <a href="#clinical-map">2. Clinical Source Map</a>
-                    <a href="#audit">3. Independent AI Audit</a>
-                    <a href="#ethics">4. Data Ethics</a>
-                </nav>
-            </aside>
+    <main>
+        <article>
+            <h2>Type 3c: The Hidden Diabetes You’ve Never Heard Of</h2>
+            <p class="meta">Published: April 15, 2026</p>
+            
+            <p>When we talk about diabetes, the conversation almost always revolves around two names: Type 1, an autoimmune condition where the body attacks its own insulin-producing cells, and Type 2, a metabolic condition centered on insulin resistance. But what if the diabetes doesn't stem from either of these mechanisms? What if it's the direct result of physical damage to the pancreas itself?</p>
+            
+            <p>Enter <strong>Type 3c diabetes</strong>, a lesser-known but surprisingly common form of diabetes that is frequently misdiagnosed.</p>
 
-            <div class="science-content">
-                <!-- White Paper Section -->
-                <section id="whitepaper" class="legal-section glass-card mb-40" style="padding: 40px; margin-bottom: 40px;">
-                    <div class="section-tag" style="margin-bottom: 20px;">v1.2.2</div>
-                    <h2>GlycoTrace White Paper</h2>
-                    <p class="last-updated">Architectural Proof for Metabolic Stability & Forensic Data Auditing</p>
-                    
-                    <div style="margin-top: 30px;">
-                        <h3>1. Executive Statement</h3>
-                        <p>GlycoTrace is a retrospective metabolic analysis platform designed to bridge the gap between "Raw Data" and "Clinical Insight." Developed under the <strong>"Product Founder"</strong> mindset, it addresses the specific fragmentation challenges faced by Type 3c Diabetics and individuals with ADHD, where data discipline is the primary engine for health.</p>
+            <h3>What is Type 3c Diabetes?</h3>
+            <p>Type 3c diabetes, or <strong>pancreatogenic diabetes</strong>, isn't caused by an autoimmune attack or insulin resistance. It's the direct result of physical damage to the pancreas. This damage impairs the pancreas's ability to produce insulin, digestive enzymes, and other critical hormones.</p>
+            <p>It's estimated that Type 3c may account for <strong>5-10% of all diabetes cases</strong> in Western populations, but many of these individuals are incorrectly labeled as having Type 2.</p>
 
-                        <h3>2. Technical Methodology: "Security-as-Code"</h3>
-                        <p>We utilise a <strong>Zero-Client-Token Architecture</strong> to protect sensitive health data (PII/PHI).</p>
-                        <ul>
-                            <li><strong>LibreLinkUp Proxy:</strong> The user's LibreLink bearer token never touches the mobile device. Authentication and synchronisation are handled server-side via Supabase Edge Functions, reducing the attack surface to zero on the client side.</li>
-                            <li><strong>Hybrid Reservoir Search:</strong> Local "Staple" matching (0ms) followed by a debounced (400ms) query to our MotherDuck Global Reservoir.</li>
-                        </ul>
+            <h3>How is it Different? The Three Types of Diabetes Compared</h3>
+            <p>Understanding the cause is key to understanding the condition. Here’s a simple breakdown:</p>
+            
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Type 1 Diabetes</th>
+                    <th>Type 2 Diabetes</th>
+                    <th>Type 3c Diabetes</th>
+                </tr>
+                <tr>
+                    <td><strong>Primary Cause</strong></td>
+                    <td>Autoimmune destruction of insulin-producing cells.</td>
+                    <td>Insulin resistance (the body doesn't use insulin efficiently).</td>
+                    <td>Physical damage to the pancreas.</td>
+                </tr>
+                <tr>
+                    <td><strong>Insulin Status</strong></td>
+                    <td>Absolute deficiency (no insulin is produced).</td>
+                    <td>Relative deficiency and/or resistance.</td>
+                    <td>Partial to total deficiency, plus a loss of other key hormones.</td>
+                </tr>
+                <tr>
+                    <td><strong>Typical Onset</strong></td>
+                    <td>Sudden, often in childhood.</td>
+                    <td>Gradual, often in adults.</td>
+                    <td>Follows a pancreatic disease or injury.</td>
+                </tr>
+                <tr>
+                    <td><strong>Core Treatment</strong></td>
+                    <td>Mandatory lifelong insulin.</td>
+                    <td>Lifestyle changes, oral medication, sometimes insulin.</td>
+                    <td>Insulin and Pancreatic Enzyme Replacement Therapy (PERT).</td>
+                </tr>
+            </table>
 
-                        <h3>3. The "Brain": Metabolic Logic & Formulas</h3>
-                        <h4>A. Momentum Analysis ($G_v$)</h4>
-                        <p>The core differentiator of GlycoTrace is <strong>Glucose Velocity ($G_v$)</strong>.</p>
-                        <p><strong>Formula:</strong> $G_v = (G_{now} - G_{30m}) / 0.5$ (expressed in mmol/L per hour).</p>
-                        <p>The AI distinguishes between exogenous spikes (carb-heavy meals) and endogenous "stress dumps" (anaerobic exercise) by correlating $G_v$ with recent log data.</p>
+            <h3>How Do You Get It? The Root Causes</h3>
+            <p>Type 3c is a secondary condition. It only appears after the pancreas has been damaged by something else. The primary causes include:</p>
+            <ul>
+                <li><strong>Chronic Pancreatitis:</strong> The leading cause, responsible for nearly 80% of cases.</li>
+                <li><strong>Pancreatic Cancer:</strong> About 8% of Type 3c cases are linked to pancreatic tumors.</li>
+                <li><strong>Cystic Fibrosis:</strong> A genetic disorder that can cause scarring of the pancreas.</li>
+                <li><strong>Pancreatectomy:</strong> Surgical removal of all or part of the pancreas.</li>
+                <li><strong>Hemochromatosis:</strong> A condition where excess iron builds up in the body and damages organs, including the pancreas.</li>
+            </ul>
 
-                        <h4>B. The Phantom Auditor 3.0</h4>
-                        <p>Standard CGM algorithms often suffer from "sensor lag" or false low alarms. The Auditor performs a retrospective comparison between live "alert" values and stable historical CSV data to identify "near misses" and algorithm flaws.</p>
+            <h3>Can It Get Worse? Is It Reversible?</h3>
+            <p>This is a crucial difference between Type 3c and Type 2. Because Type 3c is caused by permanent, physical damage to the pancreas, it is generally considered <strong>progressive and not reversible</strong>.</p>
+            <p>Once the insulin-producing cells are destroyed, they do not grow back. Furthermore, if the underlying condition (like chronic pancreatitis) continues to progress, a person's ability to produce insulin may decline further over time, often requiring an escalation in treatment from oral medications to insulin.</p>
 
-                        <h4>C. Insulin Safety: 4-Hour Linear Decay</h4>
-                        <p>GlycoTrace rejects the "flat sum" model of insulin tracking. We use a <strong>4-hour clinical linear decay model</strong> for Active Insulin (IOB) to prevent dangerous "insulin stacking."</p>
-                    </div>
-                </section>
+            <h3>The Unique Challenge: "Brittle" Diabetes</h3>
+            <p>Perhaps the most defining characteristic of Type 3c is its "brittle" nature. The damaged pancreas doesn't just stop making insulin; it also stops making <strong>glucagon</strong>—the hormone that tells your body to release stored sugar when your blood glucose gets too low.</p>
+            <p>Without this natural safety net, individuals with Type 3c are at a much higher risk of severe, unpredictable hypoglycemia (low blood sugar). They experience wild glycemic swings that are notoriously difficult to manage with standard treatment protocols.</p>
 
-                <!-- Clinical Map Section -->
-                <section id="clinical-map" class="legal-section glass-card mb-40" style="padding: 40px; margin-bottom: 40px;">
-                    <div class="section-tag" style="margin-bottom: 20px;">Evidence Base</div>
-                    <h2>Clinical Source Map</h2>
-                    <p>Evidence base for every metabolic threshold, algorithm, and clinical label in the app.</p>
+            <h3>How Technology Like GlycoTrace Can Help</h3>
+            <p>For a condition as volatile as Type 3c, standard glucose monitoring isn't always enough. This is where deeper insights become critical. Understanding the <strong>"momentum"</strong> of your glucose levels—what we call Glucose Velocity ($G_v$)—can help distinguish between a spike caused by food (exogenous) and one caused by internal hormonal factors (endogenous).</p>
+            <p>Tools like <strong>GlycoTrace</strong>, which are designed to provide this deeper layer of analysis, can be invaluable for navigating the challenges of a "brittle" diabetic state and providing a clearer picture of what's happening inside your body.</p>
 
-                    <div style="margin-top: 30px;">
-                        <h3>Glucose Thresholds (TIR)</h3>
-                        <table class="clinical-table">
-                            <thead>
-                                <tr>
-                                    <th>Parameter</th>
-                                    <th>Value</th>
-                                    <th>Source</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lower bound</td>
-                                    <td>3.9 mmol/L (70 mg/dL)</td>
-                                    <td><a href="https://www.nice.org.uk/guidance/ng17" target="_blank">NICE NG17</a> / <a href="https://doi.org/10.2337/dci19-0028" target="_blank">Battelino et al. 2019</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Upper bound</td>
-                                    <td>10.0 mmol/L (180 mg/dL)</td>
-                                    <td><a href="https://www.nice.org.uk/guidance/ng17" target="_blank">NICE NG17</a> / <a href="https://doi.org/10.2337/dci19-0028" target="_blank">Battelino et al. 2019</a></td>
-                                </tr>
-                                <tr>
-                                    <td>TIR Target</td>
-                                    <td>>= 70%</td>
-                                    <td><a href="https://diabetesjournals.org/clinical/article/42/1/4/154101/Standards-of-Care-in-Diabetes-2024-Abridged-for" target="_blank">ADA Standards 2024</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h3>Glycaemic Variability (CV%)</h3>
-                        <p><strong>Formula:</strong> CV = (SD / Mean) x 100</p>
-                        <p>Stable threshold: <strong>< 36%</strong> (<a href="https://doi.org/10.2337/dc17-1600" target="_blank">Danne et al., 2017</a>). CV% is the internationally recommended metric because it is independent of the mean glucose level.</p>
-
-                        <h3>The GLUT4 Translocation Logic</h3>
-                        <p>Muscle contraction translocates GLUT4 transporters to the cell surface independently of insulin signalling (<a href="https://journals.physiology.org/doi/full/10.1152/physrev.00015.2012" target="_blank">Richter & Hargreaves, 2013</a>). This additive effect creates compound hypo risk during exercise, which GlycoTrace flags via its <strong>Post-Exercise Sensitivity Boost</strong> analysis.</p>
-
-                        <h3>GMI (Estimated HbA1c)</h3>
-                        <p>The Glucose Management Indicator provides an estimate of your lab HbA1c based on CGM data, using the validated formula established by <a href="https://doi.org/10.2337/dc18-1581" target="_blank">Bergenstal et al. (2018)</a>.</p>
-                    </div>
-                </section>
-
-                <!-- Audit Section -->
-                <section id="audit" class="legal-section glass-card mb-40" style="padding: 40px; margin-bottom: 40px;">
-                    <div class="section-tag" style="margin-bottom: 20px;">Audit v1.1.1</div>
-                    <h2>Independent AI Audit Report</h2>
-                    <p>Conducted by Claude Code (Sonnet 3.7) to verify clinical logic integrity.</p>
-
-                    <div style="margin-top: 30px;">
-                        <table class="clinical-table">
-                            <thead>
-                                <tr>
-                                    <th>Area</th>
-                                    <th>Severity</th>
-                                    <th>Verdict</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Insulin Persistence (Decay)</td>
-                                    <td><span class="audit-verdict verdict-medium">Medium</span></td>
-                                    <td>Logic correct: independent per-dose decay verified.</td>
-                                </tr>
-                                <tr>
-                                    <td>Search Race Condition</td>
-                                    <td><span class="audit-verdict verdict-high">High</span></td>
-                                    <td>Race condition identified in search results: fix implemented.</td>
-                                </tr>
-                                <tr>
-                                    <td>RLS Security Policies</td>
-                                    <td><span class="audit-verdict verdict-low">Low</span></td>
-                                    <td>Supabase RLS correctly scopes user data access.</td>
-                                </tr>
-                                <tr>
-                                    <td>Libre Password Storage</td>
-                                    <td><span class="audit-verdict verdict-medium">Medium</span></td>
-                                    <td>Transitioning to token-only storage for higher security.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 20px;">*The full audit report is available upon request for accredited medical research bodies.</p>
-                    </div>
-                </section>
-
-                <!-- Ethics Section -->
-                <section id="ethics" class="legal-section glass-card" style="padding: 40px;">
-                    <div class="section-tag" style="margin-bottom: 20px;">Philosophy</div>
-                    <h2>Data Ethics & Research Philosophy</h2>
-                    <div style="margin-top: 30px;">
-                        <h3>No Sale of Personal Data</h3>
-                        <p>GlycoTrace was born as a personal data project. We maintain a fundamental policy: <strong>We do not sell individual user data to third parties, advertisers, or data brokers.</strong></p>
-
-                        <h3>Open Science Commitment</h3>
-                        <p>We believe in the power of Open Science. We partner with accredited research bodies to advance the understanding of glucose velocity ($G_v$) and insulin-to-carb efficiency in real-world settings.</p>
-
-                        <h3>Anonymisation Shields</h3>
-                        <ul>
-                            <li><strong>Level 1 (Aggregated):</strong> High-level trend analysis (for example, "average spike for high-protein meals") with zero identification risk.</li>
-                            <li><strong>Level 2 (De-identified):</strong> Research-only datasets where PII is stripped, timestamps are jittered, and UUIDs are masked.</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </div>
+        </article>
     </main>
 
-    <footer class="container">
-        <div class="footer-grid">
-            <div class="footer-logo">
-                <img src="logo.png" alt="Logo" class="footer-img">
-                <span>GlycoTrace</span>
-            </div>
-            <div class="footer-links">
-                <a href="/">Home</a>
-                <a href="science.html">The Science</a>
-                <a href="tutorials.html">Tutorials</a>
-                <a href="news.html">News</a>
-                <a href="resources.html">Resources</a>
-                <a href="calculators.html">Calculators</a>
-                <a href="freelance.html">Project Support</a>
-                <a href="community_guidelines.html">Community Guidelines</a>
-                <a href="privacy_policy.html">Privacy Policy</a>
-                <a href="safety.html">User Safety</a>
-                <a href="delete_account.html">Delete Account</a>
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2026 GlycoTrace Ltd.</p>
-                <p class="legal">England & Wales Co. No. 17048417</p>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2026 GlycoTrace. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            lucide.createIcons();
-        });
-    </script>
 </body>
 </html>
