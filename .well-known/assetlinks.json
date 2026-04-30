@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.glucosefreaks.tracker",
+      "sha256_cert_fingerprints": [
+        "7B:57:58:77:43:87:0F:33:28:FA:5A:90:56:BE:39:86:53:6A:23:9A:5E:BA:8E:24:FF:77:91:AD:CB:A3:B3:2C"
+      ]
+    }
+  }
+]
