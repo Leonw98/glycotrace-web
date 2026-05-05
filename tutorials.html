@@ -9,6 +9,114 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .tutorial-section { margin-bottom: 56px; }
+        .tutorial-section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--secondary);
+            border: 1px solid rgba(34,211,238,0.3);
+            border-radius: 20px;
+            padding: 4px 14px;
+            margin-bottom: 20px;
+        }
+        .tutorial-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .tutorial-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.25s, transform 0.2s;
+        }
+        .tutorial-card:hover { border-color: rgba(34,211,238,0.4); transform: translateY(-2px); }
+        .tutorial-video-slot {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: rgba(10, 8, 20, 0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+        }
+        .tutorial-video-slot iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .play-placeholder {
+            width: 52px;
+            height: 52px;
+            background: rgba(34,211,238,0.12);
+            border: 1.5px solid rgba(34,211,238,0.35);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .play-placeholder svg { color: var(--secondary); }
+        .coming-soon-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            background: rgba(255,255,255,0.05);
+            padding: 3px 10px;
+            border-radius: 10px;
+            border: 1px solid var(--glass-border);
+        }
+        .tutorial-card-body { padding: 16px 18px 20px; }
+        .tutorial-num {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: var(--secondary);
+            opacity: 0.7;
+            margin-bottom: 4px;
+        }
+        .tutorial-card-body h3 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 8px; line-height: 1.35; }
+        .tutorial-card-body p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.55; margin: 0; }
+        .tut-soon-badge {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 3px 8px;
+        }
+        .welcome-banner {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: rgba(34,211,238,0.05);
+            border: 1px solid rgba(34,211,238,0.25);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 56px;
+        }
+        .welcome-banner .icon { font-size: 2.2rem; flex-shrink: 0; }
+        .welcome-banner h2 { font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .welcome-banner p { font-size: 0.9rem; color: var(--text-dim); margin: 0 0 14px; }
+        @media (max-width: 600px) {
+            .welcome-banner { flex-direction: column; padding: 20px; }
+            .tutorial-card-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body class="tutorials-page">
     <div class="glow-bg"></div>
@@ -31,26 +139,279 @@
             </div>
         </div>
     </nav>
+
     <main class="container py-80">
         <h1>GlycoTrace Tutorials</h1>
-        <div class="tutorial-grid feature-grid-fancy">
-            <div class="glass-card">
-                <h2>LibreLinkUp Glucose Sync</h2>
-                <p>Learn how to automate your FreeStyle Libre glucose sync for invisible, real-time metabolic tracking.</p>
-                <a href="#" class="btn-glass">Coming Soon</a>
-            </div>
-            <div class="glass-card">
-                <h2>Type 3c Pancreatic Care</h2>
-                <p>Master our specialised enzyme tracker for Type 3c diabetes and comprehensive pancreatic health management.</p>
-                <a href="#" class="btn-glass">Coming Soon</a>
-            </div>
-            <div class="glass-card">
-                <h2>Garmin Exercise Import</h2>
-                <p>Learn how to use on-device OCR for instant exercise logging. We use direct photo scanning because standard API syncs are too slow (4-6 hour delay) for real-time insights.</p>
-                <a href="#" class="btn-glass">Coming Soon</a>
+        <p style="text-align: center; color: var(--text-dim); max-width: 600px; margin: 0 auto 56px; font-size: 1rem;">
+            Short video walkthroughs for every feature. Built by the same person who coded it — so you get the straight version, not the marketing one.
+        </p>
+
+        <!-- Welcome video banner -->
+        <div class="welcome-banner">
+            <div class="icon">🎬</div>
+            <div>
+                <h2>Start here — Welcome to GlycoTrace</h2>
+                <p>Solo dev, built for myself. Personal story, what the app does, and who it's for. Under 90 seconds.</p>
+                <!-- When recorded, replace the line below with a YouTube embed -->
+                <span class="tut-soon-badge">Recording Soon</span>
             </div>
         </div>
+
+        <!-- Section 1: Getting Started -->
+        <div class="tutorial-section">
+            <div class="tutorial-section-label">Getting Started</div>
+            <div class="tutorial-card-grid">
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 01</div>
+                        <h3>First-time setup</h3>
+                        <p>Account creation, your diabetes type, units (mmol/L or mg/dL), and target ranges. Takes two minutes.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 02</div>
+                        <h3>Logging blood glucose</h3>
+                        <p>Manual readings, quick-add from dashboard, and how readings feed your Time in Range and GMI calculations.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 03</div>
+                        <h3>Logging food</h3>
+                        <p>Search the food database, log by text or voice, save favourites, and use quick-add for things you eat regularly.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 04</div>
+                        <h3>Logging exercise</h3>
+                        <p>Manual exercise entry, duration and intensity, and how sessions pair with glucose readings to show the glucose impact of each workout.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 05</div>
+                        <h3>Logging insulin</h3>
+                        <p>Basal vs bolus, units and timing, and why keeping both separate matters for your Insights screen accuracy.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 2: Understanding Your Data -->
+        <div class="tutorial-section">
+            <div class="tutorial-section-label">Understanding Your Data</div>
+            <div class="tutorial-card-grid">
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 06</div>
+                        <h3>Dashboard walkthrough</h3>
+                        <p>Every card on the main screen explained — glucose ring, meal and insulin summaries, mood log, and daily goal progress.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 07</div>
+                        <h3>History walkthrough</h3>
+                        <p>Browse your day-by-day log, filter by type, and understand what the timeline view is telling you about patterns over time.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 08</div>
+                        <h3>Insights walkthrough</h3>
+                        <p>Time in Range, GMI, insulin sensitivity, exercise impact, hypo analysis, and the Pattern Detective — all explained in plain English.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 3: Connections & Settings -->
+        <div class="tutorial-section">
+            <div class="tutorial-section-label">Connections &amp; Settings</div>
+            <div class="tutorial-card-grid">
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 09</div>
+                        <h3>Settings &amp; notifications</h3>
+                        <p>Target ranges, reminder schedules, protein cadence alerts, and how to make notifications actually useful rather than annoying.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 10</div>
+                        <h3>Syncing with FreeStyle Libre (LibreLink Up)</h3>
+                        <p>How to connect your Libre account so your sensor readings sync automatically in the background — and what to expect from the polling interval.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 11</div>
+                        <h3>Syncing with Garmin</h3>
+                        <p>Import exercise sessions from Garmin Connect — steps, heart rate, calories, and duration — straight into your exercise log.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 12</div>
+                        <h3>AI Coach walkthrough</h3>
+                        <p>How to ask the Coach questions, what it knows about your data, and the kinds of pattern questions it answers best.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-video-slot">
+                        <div class="play-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Recording Soon</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 13</div>
+                        <h3>Premium features</h3>
+                        <p>What's included in the trial and subscription, how to restore a purchase, and which features stay free forever.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 4: Coming Soon -->
+        <div class="tutorial-section">
+            <div class="tutorial-section-label">Coming Soon</div>
+            <div class="tutorial-card-grid">
+
+                <div class="tutorial-card" style="opacity: 0.65;">
+                    <div class="tutorial-video-slot" style="background: rgba(10,8,20,0.8);">
+                        <div class="play-placeholder" style="opacity: 0.5;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Feature in Development</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 14</div>
+                        <h3>Daily medication checklist</h3>
+                        <p>Set up your morning and evening medication reminders, add custom items, and track adherence over time.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-card" style="opacity: 0.65;">
+                    <div class="tutorial-video-slot" style="background: rgba(10,8,20,0.8);">
+                        <div class="play-placeholder" style="opacity: 0.5;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="coming-soon-label">Feature in Development</span>
+                    </div>
+                    <div class="tutorial-card-body">
+                        <div class="tutorial-num">Tutorial 15</div>
+                        <h3>Wellness modes</h3>
+                        <p>Set your goal — weight loss, low carb, high protein, or blood sugar management — and let the Coach adapt its observations to match.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Request / feedback nudge -->
+        <div class="glass-card" style="text-align: center; padding: 36px; margin-top: 20px;">
+            <div style="font-size: 1.8rem; margin-bottom: 12px;">💬</div>
+            <h3 style="margin-bottom: 10px;">Feedback welcome</h3>
+            <p style="color: var(--text-dim); max-width: 480px; margin: 0 auto 18px; font-size: 0.9rem;">
+                Dexcom user? Garmin user? Apple Watch? ADHD and finding logging hard? I want to hear specifically from you. I can ship changes fast.
+            </p>
+            <a href="mailto:team@glycotrace.co.uk" class="btn-glass">Contact: team@glycotrace.co.uk</a>
+        </div>
+
     </main>
+
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -77,10 +438,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            lucide.createIcons();
-        });
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
