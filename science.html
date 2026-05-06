@@ -33,105 +33,166 @@
     }
     </script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header>
-        <h1>GlycoTrace Science</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="science.html">The Science</a>
-            <a href="tutorials.html">Tutorials</a>
-            <a href="news.html">News</a>
-        </nav>
+    <div class="glow-bg"></div>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="/" class="logo-wrapper" style="text-decoration: none;">
+                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
+                <span class="logo-text">GlycoTrace</span>
+            </a>
+            <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="nav-links">
+                <a href="/#story">The Mission</a>
+                <a href="science.html" style="color: var(--secondary);">The Science</a>
+                <a href="news.html">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Hire Me</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="calculators.html">Calculators</a>
+                <a href="apply.html" class="btn-nav">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-80 text-centre">
+        <div class="container">
+            <div class="section-tag">The Science</div>
+            <h1>Type 3c: <span class="gradient-text">the hidden diabetes</span> you've never heard of</h1>
+            <p class="meta" style="margin-top: 16px; color: var(--text-dim);">Published 15 April 2026</p>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h2>Type 3c: The Hidden Diabetes You’ve Never Heard Of</h2>
-            <p class="meta">Published: April 15, 2026</p>
-            
-            <p>When we talk about diabetes, the conversation almost always revolves around two names: Type 1, an autoimmune condition where the body attacks its own insulin-producing cells, and Type 2, a metabolic condition centered on insulin resistance. But what if the diabetes doesn't stem from either of these mechanisms? What if it's the direct result of physical damage to the pancreas itself?</p>
-            
+    <main class="container py-80" style="padding-top: 0;">
+        <article class="prose" style="max-width: 820px; margin: 0 auto;">
+            <p>When we talk about diabetes, the conversation almost always revolves around two names: Type 1, an autoimmune condition where the body attacks its own insulin-producing cells, and Type 2, a metabolic condition centred on insulin resistance. But what if the diabetes doesn't stem from either of these mechanisms? What if it's the direct result of physical damage to the pancreas itself?</p>
+
             <p>Enter <strong>Type 3c diabetes</strong>, a lesser-known but surprisingly common form of diabetes that is frequently misdiagnosed.</p>
 
-            <h3>What is Type 3c Diabetes?</h3>
+            <h3>What is Type 3c diabetes?</h3>
             <p>Type 3c diabetes, or <strong>pancreatogenic diabetes</strong>, isn't caused by an autoimmune attack or insulin resistance. It's the direct result of physical damage to the pancreas. This damage impairs the pancreas's ability to produce insulin, digestive enzymes, and other critical hormones.</p>
-            <p>It's estimated that Type 3c may account for <strong>5-10% of all diabetes cases</strong> in Western populations, but many of these individuals are incorrectly labeled as having Type 2.</p>
+            <p>It's estimated that Type 3c may account for <strong>5 to 10% of all diabetes cases</strong> in Western populations, but many of these individuals are incorrectly labelled as having Type 2.</p>
 
-            <h3>How is it Different? The Three Types of Diabetes Compared</h3>
-            <p>Understanding the cause is key to understanding the condition. Here’s a simple breakdown:</p>
-            
-            <table>
-                <tr>
-                    <th>Feature</th>
-                    <th>Type 1 Diabetes</th>
-                    <th>Type 2 Diabetes</th>
-                    <th>Type 3c Diabetes</th>
-                </tr>
-                <tr>
-                    <td><strong>Primary Cause</strong></td>
-                    <td>Autoimmune destruction of insulin-producing cells.</td>
-                    <td>Insulin resistance (the body doesn't use insulin efficiently).</td>
-                    <td>Physical damage to the pancreas.</td>
-                </tr>
-                <tr>
-                    <td><strong>Insulin Status</strong></td>
-                    <td>Absolute deficiency (no insulin is produced).</td>
-                    <td>Relative deficiency and/or resistance.</td>
-                    <td>Partial to total deficiency, plus a loss of other key hormones.</td>
-                </tr>
-                <tr>
-                    <td><strong>Typical Onset</strong></td>
-                    <td>Sudden, often in childhood.</td>
-                    <td>Gradual, often in adults.</td>
-                    <td>Follows a pancreatic disease or injury.</td>
-                </tr>
-                <tr>
-                    <td><strong>Core Treatment</strong></td>
-                    <td>Mandatory lifelong insulin.</td>
-                    <td>Lifestyle changes, oral medication, sometimes insulin.</td>
-                    <td>Insulin and Pancreatic Enzyme Replacement Therapy (PERT).</td>
-                </tr>
-            </table>
+            <h3>How is it different? The three types of diabetes compared</h3>
+            <p>Understanding the cause is key to understanding the condition. Here's a simple breakdown.</p>
 
-            <h3>How Do You Get It? The Root Causes</h3>
+            <div class="compare-wrap">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Type 1</th>
+                            <th>Type 2</th>
+                            <th>Type 3c</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primary cause</td>
+                            <td>Autoimmune destruction of insulin-producing cells.</td>
+                            <td>Insulin resistance (the body doesn't use insulin efficiently).</td>
+                            <td>Physical damage to the pancreas.</td>
+                        </tr>
+                        <tr>
+                            <td>Insulin status</td>
+                            <td>Absolute deficiency (no insulin produced).</td>
+                            <td>Relative deficiency and/or resistance.</td>
+                            <td>Partial to total deficiency, plus a loss of other key hormones.</td>
+                        </tr>
+                        <tr>
+                            <td>Typical onset</td>
+                            <td>Sudden, often in childhood.</td>
+                            <td>Gradual, often in adults.</td>
+                            <td>Follows a pancreatic disease or injury.</td>
+                        </tr>
+                        <tr>
+                            <td>Core treatment</td>
+                            <td>Mandatory lifelong insulin.</td>
+                            <td>Lifestyle changes, oral medication, sometimes insulin.</td>
+                            <td>Insulin and Pancreatic Enzyme Replacement Therapy (PERT).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>How do you get it? The root causes</h3>
             <p>Type 3c is a secondary condition. It only appears after the pancreas has been damaged by something else. The primary causes include:</p>
             <ul>
-                <li><strong>Chronic Pancreatitis:</strong> The leading cause, responsible for nearly 80% of cases.</li>
-                <li><strong>Pancreatic Cancer:</strong> About 8% of Type 3c cases are linked to pancreatic tumors.</li>
-                <li><strong>Cystic Fibrosis:</strong> A genetic disorder that can cause scarring of the pancreas.</li>
-                <li><strong>Pancreatectomy:</strong> Surgical removal of all or part of the pancreas.</li>
-                <li><strong>Hemochromatosis:</strong> A condition where excess iron builds up in the body and damages organs, including the pancreas.</li>
+                <li><strong>Chronic pancreatitis:</strong> the leading cause, responsible for nearly 80% of cases.</li>
+                <li><strong>Pancreatic cancer:</strong> about 8% of Type 3c cases are linked to pancreatic tumours.</li>
+                <li><strong>Cystic fibrosis:</strong> a genetic disorder that can cause scarring of the pancreas.</li>
+                <li><strong>Pancreatectomy:</strong> surgical removal of all or part of the pancreas.</li>
+                <li><strong>Haemochromatosis:</strong> a condition where excess iron builds up in the body and damages organs, including the pancreas.</li>
             </ul>
 
-            <h3>Can It Get Worse? Is It Reversible?</h3>
+            <h3>Can it get worse? Is it reversible?</h3>
             <p>This is a crucial difference between Type 3c and Type 2. Because Type 3c is caused by permanent, physical damage to the pancreas, it is generally considered <strong>progressive and not reversible</strong>.</p>
             <p>Once the insulin-producing cells are destroyed, they do not grow back. Furthermore, if the underlying condition (like chronic pancreatitis) continues to progress, a person's ability to produce insulin may decline further over time, often requiring an escalation in treatment from oral medications to insulin.</p>
 
-            <h3>The Unique Challenge: "Brittle" Diabetes</h3>
-            <p>Perhaps the most defining characteristic of Type 3c is its "brittle" nature. The damaged pancreas doesn't just stop making insulin; it also stops making <strong>glucagon</strong>—the hormone that tells your body to release stored sugar when your blood glucose gets too low.</p>
-            <p>Without this natural safety net, individuals with Type 3c are at a much higher risk of severe, unpredictable hypoglycemia (low blood sugar). They experience wild glycemic swings that are notoriously difficult to manage with standard treatment protocols.</p>
+            <h3>The unique challenge: "brittle" diabetes</h3>
+            <p>Perhaps the most defining characteristic of Type 3c is its "brittle" nature. The damaged pancreas doesn't just stop making insulin; it also stops making <strong>glucagon</strong>, the hormone that tells your body to release stored sugar when your blood glucose gets too low.</p>
+            <p>Without this natural safety net, individuals with Type 3c are at a much higher risk of severe, unpredictable hypoglycaemia (low blood sugar). They experience wild glycaemic swings that are notoriously difficult to manage with standard treatment protocols.</p>
 
-            <h3>How Technology Like GlycoTrace Can Help</h3>
-            <p>For a condition as volatile as Type 3c, standard glucose monitoring isn't always enough. This is where deeper insights become critical. Understanding the <strong>"momentum"</strong> of your glucose levels—what we call Glucose Velocity ($G_v$)—can help distinguish between a spike caused by food (exogenous) and one caused by internal hormonal factors (endogenous).</p>
+            <h3>How technology like GlycoTrace can help</h3>
+            <p>For a condition as volatile as Type 3c, standard glucose monitoring isn't always enough. This is where deeper insights become critical. Understanding the <strong>"momentum"</strong> of your glucose levels, what we call Glucose Velocity (G<sub>v</sub>), can help distinguish between a spike caused by food (exogenous) and one caused by internal hormonal factors (endogenous).</p>
             <p>Tools like <strong>GlycoTrace</strong>, which are designed to provide this deeper layer of analysis, can be invaluable for navigating the challenges of a "brittle" diabetic state and providing a clearer picture of what's happening inside your body.</p>
-
-            <h3>Get the App</h3>
-            <p>GlycoTrace is free on Google Play. If you also take <strong>Creon</strong> or another PERT, pair it with <strong>GlucoEnzyme</strong>, our dedicated quick-calculator for pancreatic enzyme dosing.</p>
-            <ul>
-                <li><a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.tracker" target="_blank">Get GlycoTrace on Google Play</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glucolog" target="_blank">Get GlucoEnzyme (Creon / PERT calculator)</a></li>
-                <li><a href="specialized-vs-general.html">Compare to mySugr, Glucose Buddy, Health2Sync</a></li>
-            </ul>
-
         </article>
+
+        <section class="cta-fancy" style="margin-top: 80px;">
+            <div class="cta-glass-card">
+                <h2>Get the apps</h2>
+                <p>GlycoTrace is free on Google Play. If you also take Creon or another PERT, pair it with GlucoEnzyme, our dedicated quick-calculator for pancreatic enzyme dosing.</p>
+                <div class="hero-btns">
+                    <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.tracker" target="_blank" class="btn-primary-fancy">GlycoTrace on Google Play</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glucolog" target="_blank" class="btn-glass">GlucoEnzyme (PERT calculator)</a>
+                    <a href="specialized-vs-general.html" class="btn-glass">Compare to mySugr, Glucose Buddy, Health2Sync</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p><a href="/">Home</a> &middot; <a href="apply.html">Download</a> &middot; <a href="specialized-vs-general.html">Compare Trackers</a> &middot; <a href="news.html">News</a> &middot; <a href="resources.html">Resources</a> &middot; <a href="calculators.html">Calculators</a> &middot; <a href="tutorials.html">Tutorials</a> &middot; <a href="freelance.html">Hire Me</a></p>
-        <p><a href="community_guidelines.html">Community Guidelines</a> &middot; <a href="privacy_policy.html">Privacy Policy</a> &middot; <a href="safety.html">User Safety</a> &middot; <a href="delete_account.html">Delete Account</a></p>
-        <p>&copy; 2026 GlycoTrace Ltd. GlycoTrace and GlucoEnzyme are not medical devices — always consult your clinician.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="science.html">The Science</a>
+                    <a href="tutorials.html">Tutorials</a>
+                    <a href="news.html">News</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="calculators.html">Calculators</a>
+                    <a href="freelance.html">Hire Me</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                    <a href="safety.html">User Safety</a>
+                    <a href="delete_account.html">Delete Account</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                    <p class="legal">England &amp; Wales Co. No. 17048417</p>
+                    <div style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+                        <p style="font-size: 0.75rem; opacity: 0.65; line-height: 1.5;"><strong>Medical Disclaimer:</strong> GlycoTrace is a personal data logging tool, not a medical device. It does not provide medical advice, diagnosis, or treatment. Always consult your diabetes healthcare team — including your doctor, diabetes nurse specialist, or dietitian — before changing your insulin, medication, or treatment plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
 </body>
 </html>
