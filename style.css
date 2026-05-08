@@ -617,7 +617,8 @@ footer {
 .screenshots-premium { padding: 120px 0; background: rgba(0,0,0,0.2); }
 .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
 .screenshot-item { padding: 20px; text-align: center; }
-.screenshot-item img { width: 100%; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--glass-border); transition: transform 0.3s; }
+.screenshot-item img { width: 100%; height: auto; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--glass-border); transition: transform 0.3s; }
+.screenshot-item.portrait { max-width: 300px; margin: 0 auto; }
 .screenshot-item:hover img { transform: scale(1.05); }
 .screenshot-item h4 { font-size: 1rem; color: var(--secondary); }
 
