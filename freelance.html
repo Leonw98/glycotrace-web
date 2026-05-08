@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 
     <!-- Professional Consulting Schema (JSON-LD) -->
     <script type="application/ld+json">
@@ -104,7 +105,7 @@
             <div class="section-tag">Limited Availability</div>
             <h1>Technical Operations & <span class="gradient-text">Hire Me</span></h1>
             <p style="max-width: 800px; margin: 24px auto; color: var(--text-dim); font-size: 1.2rem;">
-                I'm a builder who sees ideas through to shipping. GlycoTrace started as a problem I kept chipping away at until it became a real app on the Play Store. I bring the same persistence to client projects — messy data, stalled processes, half-finished tools.
+                I'm a builder who sees ideas through to shipping. GlycoTrace started as a problem I kept chipping away at until it became a real app on the Play Store. I bring the same persistence to client projects: messy data, stalled processes, half-finished tools.
             </p>
             <div class="hero-btns" style="margin-top: 32px;">
                 <a href="https://www.upwork.com/freelancers/~014bccaa700b2c5759" target="_blank" class="btn-primary-fancy">Hire me on Upwork</a>
@@ -133,13 +134,124 @@
             </div>
         </div>
 
+        <section class="py-80">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <div class="section-tag">Proof of Work</div>
+                <h2>What I've actually shipped.</h2>
+                <p style="max-width: 720px; margin: 16px auto 0; color: var(--text-dim); font-size: 1.1rem;">
+                    A live Android app on the Play Store, backed by a production Postgres schema. Not a prototype, not a tutorial fork.
+                </p>
+            </div>
+
+            <div class="feature-grid-fancy" style="margin-bottom: 48px;">
+                <div class="glass-card" style="text-align: center;">
+                    <div style="font-size: 2.8rem; font-weight: 800; color: var(--secondary); line-height: 1;">23</div>
+                    <div style="color: var(--text-dim); margin-top: 8px;">production tables</div>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <div style="font-size: 2.8rem; font-weight: 800; color: var(--secondary); line-height: 1;">21</div>
+                    <div style="color: var(--text-dim); margin-top: 8px;">foreign-key relationships</div>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <div style="font-size: 2.8rem; font-weight: 800; color: var(--secondary); line-height: 1;">3</div>
+                    <div style="color: var(--text-dim); margin-top: 8px;">device integrations (Libre, Garmin, OCR)</div>
+                </div>
+            </div>
+
+            <div class="glass-card" style="padding: 32px; overflow-x: auto;">
+                <h3 style="margin-bottom: 8px;">App backend architecture</h3>
+                <p style="color: var(--text-dim); margin-bottom: 24px;">Supabase / Postgres. Multi-source ingestion, real-time sync, AI chat history, telemetry, all routed through one identity.</p>
+                <div class="mermaid" style="text-align: center;">
+flowchart LR
+    USR(("auth.users"))
+
+    subgraph LOG["Time-series logs"]
+      direction TB
+      L1["glucose_readings"]
+      L2["food_entries"]
+      L3["exercise_entries"]
+      L4["insulin_entries"]
+      L5["daily_med_logs"]
+      L6["steps_entries"]
+      L7["weight_entries"]
+      L8["wellbeing_logs"]
+      L9["hypo_reflections"]
+      L10["sensor_alarms"]
+    end
+
+    subgraph SYN["Sync layer"]
+      direction TB
+      S1["pending_sync_items"]
+      S2["user_integrations"]
+      S3["user_heartbeats"]
+    end
+
+    subgraph AIO["AI &amp; telemetry"]
+      direction TB
+      A1["ai_chat_logs"]
+      A2["search_logs"]
+      A3["app_feedback"]
+      A4["glucoenzyme_events"]
+    end
+
+    subgraph REF["Food reference"]
+      direction TB
+      R1["foods"]
+      R2["food_units"]
+      R3["master_food_staples"]
+      R4["saved_meals"]
+    end
+
+    subgraph CFG["Configuration"]
+      direction TB
+      C1["user_settings"]
+      C2["daily_logs"]
+      C3["beta_applications"]
+    end
+
+    USR --> LOG
+    USR --> SYN
+    USR --> AIO
+    USR --> CFG
+    SYN -->|writes| LOG
+    LOG -.->|references| REF
+    R1 --> R2
+    L1 -.-> L9
+                </div>
+            </div>
+
+            <div class="feature-grid-fancy" style="margin-top: 48px;">
+                <figure class="glass-card" style="padding: 0; overflow: hidden; margin: 0;">
+                    <img src="Assets/Dash.png" alt="GlycoTrace dashboard" width="1080" height="2223" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; background: #000;">
+                    <figcaption style="padding: 20px;">
+                        <strong>Custom dashboard</strong>
+                        <p style="color: var(--text-dim); margin-top: 4px; font-size: 0.9rem;">User-configurable widgets, glucose-aware layout.</p>
+                    </figcaption>
+                </figure>
+                <figure class="glass-card" style="padding: 0; overflow: hidden; margin: 0;">
+                    <img src="Assets/Insights.png" alt="GlycoTrace AI insights" width="1080" height="2224" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; background: #000;">
+                    <figcaption style="padding: 20px;">
+                        <strong>AI insights</strong>
+                        <p style="color: var(--text-dim); margin-top: 4px; font-size: 0.9rem;">Pattern detection across glucose, food, exercise and sleep.</p>
+                    </figcaption>
+                </figure>
+                <figure class="glass-card" style="padding: 0; overflow: hidden; margin: 0;">
+                    <img src="Assets/Timeline.png" alt="GlycoTrace timeline view" width="1080" height="2221" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; background: #000;">
+                    <figcaption style="padding: 20px;">
+                        <strong>Glucose timeline</strong>
+                        <p style="color: var(--text-dim); margin-top: 4px; font-size: 0.9rem;">Multi-source overlay with manual + sensor correlation.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
         <section class="story py-80">
             <div class="story-grid-fancy">
                 <div class="story-text-premium">
                     <div class="section-tag">The Approach</div>
                     <h2>Finish what you started.</h2>
                     <p>I'm not selling consulting packages. I'm the person you bring in when an idea has been sitting half-built for months and you need someone who will keep going until it's actually done.</p>
-                    <p>Building GlycoTrace taught me that most projects don't fail from lack of skill — they fail from lack of follow-through. I bring follow-through.</p>
+                    <p>Building GlycoTrace taught me that most projects don't fail from lack of skill. They fail from lack of follow-through. I bring follow-through.</p>
                     
                     <div class="glass-card" style="margin-top: 40px; padding: 30px;">
                         <h4 style="color: var(--secondary); margin-bottom: 16px;">Skills</h4>
@@ -176,7 +288,7 @@
         <section class="cta-fancy">
             <div class="cta-glass-card">
                 <h2>Got something stuck?</h2>
-                <p>If there's a project you need finished — data work, automation, a tool that never quite shipped — I'd like to hear about it.</p>
+                <p>If there's a project you need finished, whether that's data work, automation, or a tool that never quite shipped, I'd like to hear about it.</p>
                 <div class="hero-btns">
                     <a href="https://www.upwork.com/freelancers/~014bccaa700b2c5759" target="_blank" class="btn-primary-fancy">Hire me on Upwork</a>
                     <a href="mailto:team@glycotrace.co.uk" class="btn-glass">Email direct</a>
@@ -213,6 +325,23 @@
     </footer>
 
     <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                background: 'transparent',
+                primaryColor: '#1a1730',
+                primaryBorderColor: '#22D3EE',
+                primaryTextColor: '#F8FAFC',
+                lineColor: '#818CF8',
+                secondaryColor: '#13102a',
+                tertiaryColor: '#0F0C1D',
+                clusterBkg: 'rgba(255,255,255,0.02)',
+                clusterBorder: 'rgba(255,255,255,0.12)',
+                edgeLabelBackground: '#0F0C1D'
+            }
+        });
         document.addEventListener('DOMContentLoaded', () => {
             lucide.createIcons();
         });

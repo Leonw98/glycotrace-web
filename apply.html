@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download GlycoTrace &amp; GlucoEnzyme | Google Play</title>
+    <title>GlycoTrace v2 — Coming Soon | Join the Waitlist</title>
     <link rel="icon" type="image/png" href="logo.png">
-    <meta name="description" content="Download GlycoTrace (diabetes, GLP-1 and calorie tracker) and GlucoEnzyme (quick Creon / PERT calculator) free on Google Play.">
+    <meta name="description" content="GlycoTrace v2 is being rebuilt from the ground up. Join the waitlist and be first to know when it launches on Google Play.">
     <link rel="canonical" href="https://glycotrace.co.uk/apply.html">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Download GlycoTrace & GlucoEnzyme | Google Play">
-    <meta property="og:description" content="Two free Android apps. GlycoTrace — full diabetes, GLP-1 and calorie tracker. GlucoEnzyme — quick Creon / PERT dose calculator.">
+    <meta property="og:title" content="GlycoTrace v2 — Coming Soon">
+    <meta property="og:description" content="GlycoTrace v2 is being rebuilt from the ground up. Join the waitlist and be first to know when it launches.">
     <meta property="og:url" content="https://glycotrace.co.uk/apply.html">
-    <meta property="og:image" content="https://glycotrace.co.uk/logo.png">
+    <meta property="og:image" content="https://glycotrace.co.uk/Assets/Dash.png">
 
     <link rel="stylesheet" href="style.css?v=1.5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2E0YZX9L4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R2E0YZX9L4');
+    </script>
 </head>
 <body>
     <div class="glow-bg"></div>
-    
+
     <nav>
         <div class="container nav-container">
             <a href="/" class="logo-wrapper" style="text-decoration: none;">
@@ -32,61 +40,78 @@
             </a>
             <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
             <div class="nav-links">
-                <a href="/">Back to Home</a>
+                <a href="/">Home</a>
                 <a href="science.html">The Science</a>
+                <a href="tutorials.html">Tutorials</a>
                 <a href="calculators.html">Calculators</a>
             </div>
         </div>
     </nav>
 
+    <!-- Hero -->
     <header class="py-80 text-centre">
         <div class="container">
-            <div class="section-tag">Now Live on Google Play</div>
-            <h1 class="title-fancy">Download <span class="gradient-text">the Apps</span></h1>
-            <p style="max-width: 720px; margin: 0 auto; color: var(--text-dim);">
-                Two free Android apps. <strong>GlycoTrace</strong> is the full diabetes, GLP-1 and calorie tracker for <strong>Type 1, Type 2, Type 3c, pre-diabetes</strong> and non-diabetic wellness users. <strong>GlucoEnzyme</strong> is a dedicated quick-calculator for <strong>Creon / PERT</strong> users.
+            <div class="section-tag" style="background: rgba(251,191,36,0.15); color: #fbbf24; border-color: rgba(251,191,36,0.3);">🚀 Coming Soon</div>
+            <h1 class="title-fancy">GlycoTrace <span class="gradient-text">v2</span></h1>
+            <p style="max-width: 680px; margin: 0 auto 40px; color: var(--text-dim); font-size: 1.1rem; line-height: 1.7;">
+                Rebuilt from the ground up — faster logging, smarter AI insights, and full compliance. Android first, iOS to follow. Leave your email and we'll notify you the moment it's live.
             </p>
+
+            <!-- Waitlist form -->
+            <div id="waitlist-wrap" style="max-width: 520px; margin: 0 auto;">
+                <form id="waitlist-form" style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+                    <input
+                        type="email"
+                        id="waitlist-email"
+                        placeholder="your@email.com"
+                        required
+                        style="flex: 1; min-width: 240px; padding: 16px 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: #fff; font-size: 1rem; font-family: inherit; outline: none;"
+                    >
+                    <button type="submit" class="btn-primary-fancy" style="padding: 16px 32px; font-size: 1rem; white-space: nowrap;">
+                        Notify Me
+                    </button>
+                </form>
+                <p id="waitlist-msg" style="margin-top: 16px; font-size: 0.9rem; min-height: 24px;"></p>
+                <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-dim);">No spam. One email when v2 launches. Unsubscribe any time.</p>
+            </div>
         </div>
     </header>
 
+    <!-- What's coming -->
     <section class="py-80" style="padding-top: 0;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; max-width: 960px; margin: 0 auto;">
+            <div class="section-tag" style="text-align:center; display:block; width:fit-content; margin: 0 auto 40px;">What's in v2</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 960px; margin: 0 auto;">
 
-                <div class="glass-card" style="padding: 40px 30px; border-color: var(--secondary);">
-                    <div class="section-tag" style="background: var(--primary); color: #fff;">The Full Tracker</div>
-                    <h2 style="margin: 12px 0 8px; font-size: 1.6rem;">GlycoTrace</h2>
-                    <p style="color: var(--text-dim); font-size: 0.95rem;">Blood sugar, insulin, GLP-1 (Ozempic / Mounjaro), food, exercise and CGM audit. AI-powered retrospective insights and monthly PDF reports.</p>
-                    <ul style="color: var(--text-dim); font-size: 0.9rem; margin: 16px 0 24px; padding-left: 20px;">
+                <div class="glass-card" style="padding: 32px 28px; border-color: var(--secondary);">
+                    <div class="section-tag" style="background: var(--primary); color: #fff; margin-bottom: 16px;">The Full Tracker</div>
+                    <h2 style="margin: 0 0 8px; font-size: 1.5rem;">GlycoTrace</h2>
+                    <p style="color: var(--text-dim); font-size: 0.95rem; margin-bottom: 16px;">Blood sugar, insulin, GLP-1, food, exercise and CGM audit in one place. AI-powered retrospective insights and monthly PDF reports.</p>
+                    <ul style="color: var(--text-dim); font-size: 0.9rem; padding-left: 20px; margin: 0;">
                         <li style="margin-bottom: 6px;">Type 1 · Type 2 · Type 3c · Pre-diabetes</li>
-                        <li style="margin-bottom: 6px;">GLP-1 injection &amp; response tracking</li>
-                        <li style="margin-bottom: 6px;">Non-diabetic calorie &amp; exercise mode</li>
-                        <li style="margin-bottom: 0;">LibreLink CSV import + Time in Range</li>
+                        <li style="margin-bottom: 6px;">GLP-1 (Ozempic / Mounjaro) tracking</li>
+                        <li style="margin-bottom: 6px;">LibreLink CGM import + Time in Range</li>
+                        <li style="margin-bottom: 6px;">Hypo-aware logging + check-in reminders</li>
+                        <li style="margin-bottom: 0;">Cause &amp; Effect chart with carb &amp; mood overlays</li>
                     </ul>
-                    <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.tracker" target="_blank" style="display: inline-block;">
-                        <img src="Assets/google-play-badge.png?v=3" alt="Get GlycoTrace on Google Play" class="play-badge">
-                    </a>
                 </div>
 
-                <div class="glass-card" style="padding: 40px 30px;">
-                    <div class="section-tag">Companion · PERT Calculator</div>
-                    <h2 style="margin: 12px 0 8px; font-size: 1.6rem;">GlucoEnzyme</h2>
-                    <p style="color: var(--text-dim); font-size: 0.95rem;">A focused, sub-10-second <strong>Creon / PERT dose calculator</strong> for pancreatic enzyme replacement therapy. Enter fat + carbs, get the dose.</p>
-                    <ul style="color: var(--text-dim); font-size: 0.9rem; margin: 16px 0 24px; padding-left: 20px;">
+                <div class="glass-card" style="padding: 32px 28px;">
+                    <div class="section-tag" style="margin-bottom: 16px;">Companion · PERT Calculator</div>
+                    <h2 style="margin: 0 0 8px; font-size: 1.5rem;">GlucoEnzyme</h2>
+                    <p style="color: var(--text-dim); font-size: 0.95rem; margin-bottom: 16px;">Sub-10-second Creon / PERT dose calculator for pancreatic enzyme replacement therapy. Enter fat + carbs, get the dose.</p>
+                    <ul style="color: var(--text-dim); font-size: 0.9rem; padding-left: 20px; margin: 0;">
                         <li style="margin-bottom: 6px;">For Creon, Nutrizym, Pancrex users</li>
                         <li style="margin-bottom: 6px;">Personal lipase-per-gram-fat ratio</li>
                         <li style="margin-bottom: 6px;">100% offline — no account needed</li>
                         <li style="margin-bottom: 0;">Pairs with GlycoTrace for full auditing</li>
                     </ul>
-                    <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glucolog" target="_blank" style="display: inline-block;">
-                        <img src="Assets/google-play-badge.png?v=3" alt="Get GlucoEnzyme on Google Play" class="play-badge">
-                    </a>
                 </div>
 
             </div>
 
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="/" class="btn-glass" style="display: inline-block; text-decoration: none; padding: 15px 30px;">Back to Home</a>
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="/" class="btn-glass" style="padding: 15px 30px;">Back to Home</a>
             </div>
         </div>
     </section>
@@ -120,8 +145,37 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            lucide.createIcons();
+        lucide.createIcons();
+
+        const SUPABASE_URL  = 'https://wklflsykzbepcilorvjd.supabase.co';
+        const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndrbGZsc3lremJlcGNpbG9ydmpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDMyNTcsImV4cCI6MjA4NDU3OTI1N30.yM5HX_WSuYgSimjndWgAqSdOw7hhqzQSsiEgCpqUU7o';
+        const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+
+        document.getElementById('waitlist-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('waitlist-email').value.trim();
+            const msg   = document.getElementById('waitlist-msg');
+            const btn   = e.target.querySelector('button');
+
+            btn.textContent = 'Adding...';
+            btn.disabled = true;
+
+            const { error } = await sb.from('waitlist').insert({ email, app_interest: 'both' });
+
+            if (error && error.code === '23505') {
+                msg.style.color = '#4ade80';
+                msg.textContent = "You're already on the list — we'll let you know when v2 launches!";
+            } else if (error) {
+                msg.style.color = '#f87171';
+                msg.textContent = 'Something went wrong. Please try again or email team@glycotrace.co.uk';
+                btn.textContent = 'Notify Me';
+                btn.disabled = false;
+            } else {
+                msg.style.color = '#4ade80';
+                msg.textContent = "You're on the list! We'll email you when GlycoTrace v2 hits Google Play. 🎉";
+                e.target.style.display = 'none';
+                gtag('event', 'waitlist_signup', { email });
+            }
         });
     </script>
 </body>
