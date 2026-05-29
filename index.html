@@ -34,12 +34,16 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "SoftwareApplication",
+          "@type": ["SoftwareApplication", "MobileApplication"],
           "@id": "https://glycotrace.co.uk/#app",
-          "name": "GlycoTrace",
+          "name": "GlycoTrace: Diabetes & Carbs",
           "operatingSystem": "Android",
           "applicationCategory": "HealthApplication",
+          "applicationSubCategory": "Diabetes Management",
           "description": "Free glucose tracker for Type 1, Type 2, and Type 3c diabetes. AI-powered insights, time in range analysis, insulin tracking, food logging, exercise impact, and monthly PDF health reports.",
+          "softwareVersion": "1.2.5",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.glucosefreaks.glycotrace",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.glucosefreaks.glycotrace",
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -48,7 +52,7 @@
           "author": {
             "@type": "Person",
             "name": "Leon Wilkinson",
-            "jobTitle": "Founder & Developer"
+            "jobTitle": "Lead Developer"
           },
           "featureList": [
             "Blood glucose tracking and Time in Range analysis",
