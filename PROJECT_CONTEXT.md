@@ -86,7 +86,7 @@
 ## 🚀 Next Steps / Roadmap
 1. **Critical Bug Fixes:** Restore Graph zoom, fix decimal rounding/readability, and debug data persistence (Weight/Height/Fasting).
 2. **Settings Logic:** Fix "Fresh Start" averages reset.
-3. **Internal Testing:** Deploy to Play Store "Internal Testing" track for GlycoTrace Ltd (Corporate account status simplifies the 20-tester rule).
+3. **Internal Testing:** Deploy to Play Store "Internal Testing" track for LW Data Labs Ltd (Corporate account status simplifies the 20-tester rule).
 4. **AI Migration Plan:** Draft Vertex AI transition roadmap for public launch.
 
 ## 💡 Conversation Prompts for Gemini

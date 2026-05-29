@@ -8,7 +8,7 @@
 ---
 
 ## 🏢 Company Context
-- **Name:** GlycoTrace Ltd
+- **Name:** LW Data Labs Ltd
 - **Company No:** 17048417 (England & Wales)
 - **Support Email:** team@glycotrace.co.uk
 - **Domain:** glycotrace.co.uk
