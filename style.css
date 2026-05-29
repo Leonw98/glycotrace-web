@@ -257,9 +257,11 @@ h1 {
     letter-spacing: -1.5px;
 }
 
+h1, h2, h3, .title-fancy { overflow-wrap: break-word; }
+
 .feature-grid-fancy {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 32px;
 }
 
@@ -525,6 +527,9 @@ footer {
 @media (max-width: 768px) {
     h1 { font-size: 3.2rem; letter-spacing: -2px; }
     .hero p { font-size: 1.1rem; }
+    .title-fancy { font-size: 2.4rem; letter-spacing: -1px; }
+    .cta-glass-card { padding: 48px 24px; }
+    .cta-glass-card h2 { font-size: 2.2rem; letter-spacing: -1px; }
     .story-grid-fancy { grid-template-columns: 1fr; gap: 40px; }
     .hero-btns { flex-direction: column; }
     .fancy-form { flex-direction: column; }

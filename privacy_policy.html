@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="logo.png">
     <meta name="description" content="Learn how GlycoTrace protects your metabolic health data and maintains your privacy. UK GDPR compliant.">
     <link rel="canonical" href="https://glycotrace.co.uk/privacy_policy.html">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.7">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         .legal-section ul { list-style: none; padding: 0; margin-bottom: 20px; }
@@ -20,6 +20,8 @@
         .legal-table td { color: var(--text-dim); font-size: 0.9rem; }
         .legal-table a { color: var(--accent); text-decoration: none; }
         .legal-table a:hover { text-decoration: underline; }
+        .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .table-wrap .legal-table { min-width: 480px; }
         .legal-highlight { background: rgba(59, 91, 219, 0.1); border-left: 3px solid var(--primary); padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
         .legal-highlight strong { color: #fff; }
         .legal-highlight p { margin: 0; }
@@ -88,6 +90,7 @@
 
         <section class="legal-section glass-card">
             <h2>2. Legal Basis for Processing</h2>
+            <div class="table-wrap">
             <table class="legal-table">
                 <tr><th>Processing Activity</th><th>Legal Basis (UK GDPR)</th></tr>
                 <tr><td>Core app functionality (storing and analysing your health data)</td><td><strong>Explicit consent</strong> (Article 9(2)(a)): provided when you create an account and begin logging health data</td></tr>
@@ -97,6 +100,7 @@
                 <tr><td>Subscription management (RevenueCat)</td><td><strong>Contract performance</strong> (Article 6(1)(b))</td></tr>
                 <tr><td>Anonymised research data (see Section 7)</td><td><strong>Explicit opt-in consent</strong> (Article 9(2)(a))</td></tr>
             </table>
+            </div>
         </section>
 
         <section class="legal-section glass-card">
@@ -139,6 +143,7 @@
 
         <section class="legal-section glass-card">
             <h2>5. Third-Party Services</h2>
+            <div class="table-wrap">
             <table class="legal-table">
                 <tr><th>Service</th><th>Purpose</th><th>Data Shared</th><th>Policy</th></tr>
                 <tr>
@@ -184,6 +189,7 @@
                     <td><a href="https://world.openfoodfacts.org/privacy">Link</a></td>
                 </tr>
             </table>
+            </div>
         </section>
 
         <section class="legal-section glass-card">
@@ -288,7 +294,7 @@
                     <a href="delete_account.html">Delete Account</a>
                 </div>
                 <div class="footer-info">
-                    <p>&copy; 2026 GlycoTrace Ltd.</p>
+                    <p>&copy; 2026 LW Data Labs Ltd.</p>
                 </div>
             </div>
         </div>
