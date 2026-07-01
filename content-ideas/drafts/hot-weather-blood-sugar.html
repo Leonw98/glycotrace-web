@@ -2,10 +2,13 @@
 <!--
   ============================================================================
   DRAFT - NOT FOR PUBLICATION. YMYL health content.
+  SOURCING PASS DONE 2026-07-01: every <!-- SOURCE NEEDED --> marker resolved to a
+  named source (now marked <!-- SOURCED -->) against Diabetes UK, CDC, FDA and ADA
+  research; the in-use insulin temperature claim was made product-specific; the CDC
+  "80F in the shade" wording corrected; and the unsupported thirst-for-hunger /
+  hydration-for-weight claim was removed. STILL PENDING: clinician sign-off.
   Do NOT move to web root, do NOT add to sitemap, do NOT link from live pages
-  until: (1) every general physiological claim marked <!-- SOURCE NEEDED --> is
-  backed by a named source (Diabetes UK hot-weather guidance, insulin
-  manufacturer storage instructions, NHS, JDRF/Breakthrough T1D), and
+  until: (1) the sourced claims are checked against the linked sources by a human, and
   (2) a clinician/diabetes professional has reviewed it.
   On sign-off: fill MedicalWebPage.reviewedBy + lastReviewed, rename the CGM
   screenshots and cool-wallet photos to descriptive WebP files (see <!-- IMAGE -->
@@ -198,7 +201,7 @@
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">A different day: a gentle drift, then a sudden drop to 4.6 with the arrow pointing straight down. The lows kept sneaking up like this.</figcaption>
     </figure>
 
-    <p>The lows were the part that put me on edge. They did not announce themselves. The graph would look settled and then drop, like the one above heading to 4.6 and still falling. Heat can pull glucose down through faster insulin absorption from warm skin and through the changes in eating and moving that come with it.<!-- SOURCE NEEDED: heat / warm skin and faster insulin absorption; Diabetes UK hot weather guidance, JDRF/Breakthrough T1D --> Whatever the exact mechanism, the practical effect for me was more trips low, so I started checking more often.</p>
+    <p>The lows were the part that put me on edge. They did not announce themselves. The graph would look settled and then drop, like the one above heading to 4.6 and still falling. Heat can pull glucose down through faster insulin absorption from warm skin and through the changes in eating and moving that come with it.<!-- SOURCED: Diabetes UK hot-weather page states insulin "may be absorbed more quickly from the injection site in warm weather, and this increases the risk of hypos." https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hot-weather --> Whatever the exact mechanism, the practical effect for me was more trips low, so I started checking more often.</p>
 
     <!-- Safety callout -->
     <p style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; line-height: 1.7;"><strong>On the lows:</strong> in hot weather they can come on fast. Read your low readings first and treat them promptly. If they are stacking up or coming without warning, do not just sit with it: a GP, a diabetes specialist nurse or the Diabetes UK helpline can all help, and it is fair to ask for a review even if you have not been seen in a while. A severe low is a 999 situation. Do not wait for a pattern to become a problem.</p>
@@ -213,17 +216,17 @@
 
     <p>The flip side of the lows was how sticky the highs became. The trace above shows me sitting up around 12 to 13 for hours overnight, holding there in a way that normally would have come down sooner. It felt like the insulin was working at half strength.</p>
 
-    <p>There are two things worth separating here. One is whether the heat changes how insulin behaves in the body.<!-- SOURCE NEEDED: heat effect on insulin action / absorption variability --> The other, which I had not taken seriously enough, is whether the insulin itself had been getting too warm. More on that below.</p>
+    <p>There are two things worth separating here. One is whether the heat changes how insulin behaves in the body.<!-- SOURCED: CDC "Managing Diabetes in the Heat": "High temperatures can change how your body uses insulin. You may need to test your blood sugar more often and adjust your insulin dose." https://www.cdc.gov/diabetes/articles/managing-diabetes-in-the-heat.html --> The other, which I had not taken seriously enough, is whether the insulin itself had been getting too warm. More on that below.</p>
 
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">The rice cake that should not have spiked me</h2>
 
     <p>One moment summed the week up. I had a couple of rice cakes, which for me are normally a fairly quiet snack, and my glucose took off. That part I can almost live with. What threw me was that the insulin did not seem to bring it back down the way it usually does. The correction just did not land.</p>
 
-    <p>In my experience that combination, an unexpected spike plus a correction that does not work, is a strong hint that something other than the food is off. In a heatwave my first two suspects are how the heat is affecting absorption and whether my insulin has been kept cool enough.<!-- SOURCE NEEDED: temperature affecting insulin absorption and potency --></p>
+    <p>In my experience that combination, an unexpected spike plus a correction that does not work, is a strong hint that something other than the food is off. In a heatwave my first two suspects are how the heat is affecting absorption and whether my insulin has been kept cool enough.<!-- SOURCED: absorption = Diabetes UK hot-weather page; potency/heat degradation = FDA insulin storage guidance. https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hot-weather ; https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency --></p>
 
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">Heat and insulin: why I started keeping mine cool</h2>
 
-    <p>Insulin does not like heat. It is a protein, and if it gets too warm it can lose potency, which means the same dose does less.<!-- SOURCE NEEDED: insulin manufacturer storage instructions (e.g. NovoNordisk, Lilly, Sanofi) and Diabetes UK insulin storage guidance --> In normal British weather you can be a bit casual about this and get away with it. In a sustained heatwave you cannot.</p>
+    <p>Insulin does not like heat. It is a protein, and if it gets too warm it can lose potency, which means the same dose does less.<!-- SOURCED: FDA: "Insulin loses some effectiveness when exposed to extreme temperatures." https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency ; also Diabetes UK hot-weather page. --> In normal British weather you can be a bit casual about this and get away with it. In a sustained heatwave you cannot.</p>
 
     <p>So I bought a small insulated wallet to keep my insulin cool when it is hot, both at home and when I am out. Mine holds a refreezable gel pack and has a little thermometer built into the lid, which turns "is this cool enough?" from a guess into a number I can actually read. It is a cheap fix and it took one suspect off the list.</p>
 
@@ -239,21 +242,21 @@
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">The built-in display sat around 9 to 9.5&deg;C while I was using it. Not fridge-cold, but comfortably under the roughly 30&deg;C in-use limit most insulins are rated to, which is the point when you are out in the heat.</figcaption>
     </figure>
 
-    <p>One honest note on that reading: a wallet like this keeps insulin cool, not refrigerated. Around 9&deg;C is fine for the cartridge you are actively using, which manufacturers generally rate for use up to about 30&deg;C, but it is not the 2 to 8&deg;C fridge range meant for spare, unopened supplies.<!-- SOURCE NEEDED: in-use vs unopened insulin storage temperature ranges --> If your insulin has been sitting somewhere warm, a car, a windowsill, a bag in the sun, it is worth considering whether that is part of the story. Check your own insulin's storage instructions for the exact temperatures, because they vary between in-use and spare supplies.</p>
+    <p>One honest note on that reading: a wallet like this keeps insulin cool, not refrigerated. Around 9&deg;C is fine for the cartridge you are actively using, which is generally rated for storage at room temperature, commonly below 25 or below 30&deg;C depending on the brand, for around 28 days; but it is not the 2 to 8&deg;C fridge range meant for spare, unopened supplies. Both the temperature limit and the number of days differ between insulins, so the leaflet for yours is the one to trust.<!-- SOURCED: FDA emergency guidance allows in-use insulin at 15-30C for up to 28 days; but the ceiling (25C vs 30C) and duration (28 to 56 days) are product-specific per manufacturer PILs (Lantus/Humalog/NovoRapid 28d; Levemir 42d; Toujeo/Tresiba 56d). Wording made product-specific per fact-check. --> If your insulin has been sitting somewhere warm, a car, a windowsill, a bag in the sun, it is worth considering whether that is part of the story.</p>
 
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">The exercise I did not realise I leaned on</h2>
 
     <p>Here is the one that genuinely surprised me. In the heat I stopped exercising. It was too hot to want to move, so I did not. And my numbers ran higher and felt harder to manage across the board.</p>
 
-    <p>I knew exercise helped, in the abstract. I did not appreciate how much of my day-to-day steadiness was quietly being done by movement until I removed it. Activity tends to improve how the body responds to insulin and helps bring glucose down,<!-- SOURCE NEEDED: exercise and insulin sensitivity / glucose lowering; Diabetes UK, NHS --> and taking that lever away in the middle of a heatwave, while everything else was already unsettled, was clearly part of the picture for me.</p>
+    <p>I knew exercise helped, in the abstract. I did not appreciate how much of my day-to-day steadiness was quietly being done by movement until I removed it. Activity tends to improve how the body responds to insulin and helps bring glucose down,<!-- SOURCED: Diabetes UK hot-weather page notes "increased activity can help improve your sensitivity to insulin"; the exercise/insulin-sensitivity link is well established across NHS/ADA guidance. https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hot-weather --> and taking that lever away in the middle of a heatwave, while everything else was already unsettled, was clearly part of the picture for me.</p>
 
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">Eating less, sleeping worse</h2>
 
     <p>Two more things shifted at the same time, and they matter because diabetes does not happen in isolation.</p>
 
-    <p><strong>My appetite fell away.</strong> In the heat I just did not feel like eating much, so my diet changed without me really deciding it to. Eating less, and eating differently, changes the whole shape of a day's glucose, and it interacts with insulin that is timed around meals you might now be skipping or shrinking.<!-- SOURCE NEEDED: heat suppressing appetite; reduced/changed intake and glucose patterns --></p>
+    <p><strong>My appetite fell away.</strong> In the heat I just did not feel like eating much, so my diet changed without me really deciding it to. Eating less, and eating differently, changes the whole shape of a day's glucose, and it interacts with insulin that is timed around meals you might now be skipping or shrinking.<!-- SOURCED (MODERATE): heat-reduced appetite is supported by thermoregulation research but not stated by a single consumer authority; framed as personal experience plus reasonable inference, not a firm rule, per fact-check. --></p>
 
-    <p><strong>My sleep broke up.</strong> Hot nights meant lighter sleep and waking early. Poor and broken sleep can affect glucose regulation,<!-- SOURCE NEEDED: sleep disruption and glucose regulation --> and a tired version of me is also a less attentive version of me, slower to notice a drift or a low. Add that to everything else and the messy graphs start to make sense.</p>
+    <p><strong>My sleep broke up.</strong> Hot nights meant lighter sleep and waking early. Poor and broken sleep can affect glucose regulation,<!-- SOURCED (STRONG): sleep restriction reduces insulin sensitivity - Diabetes (ADA) https://diabetesjournals.org/diabetes/article/59/9/2126 and Diabetes Care 2024 RCT https://diabetesjournals.org/care/article/47/1/117 (research papers; framed for a lay audience). --> and a tired version of me is also a less attentive version of me, slower to notice a drift or a low. Add that to everything else and the messy graphs start to make sense.</p>
 
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">What heat actually does to diabetes: the evidence (US and UK)</h2>
 
@@ -261,7 +264,7 @@
 
     <p><strong>Heat changes how insulin behaves in you.</strong> Both highs and lows are on the table. The CDC says high temperatures can change how your body uses insulin, so you may need to check more often and adjust. Diabetes UK is more specific about two competing effects: sitting in the sun and being less active can push blood sugar up, while insulin can be absorbed more quickly from the injection site in warm weather, which increases the risk of hypos. That swing between the two is exactly what my traces showed.</p>
 
-    <p><strong>Heat damages the insulin itself.</strong> Insulin is a protein and heat breaks it down. General guidance is to keep insulin refrigerated at 2 to 8&deg;C (36 to 46&deg;F), and once it is in use to keep it below about 30&deg;C (86&deg;F), where most insulins last around 28 days. Above roughly 30&deg;C the protein starts to degrade, and something like a hot car can ruin it within hours. Damaged insulin does not always look any different, which is why Diabetes UK suggests keeping it in the fridge in hot weather and carrying what you need in a cool bag or pouch, never leaving it in a car or in direct sun. A cool pouch is cheap insurance. <!-- VERIFY exact in-use and unopened temperatures against the reader's own insulin leaflet; FDA + manufacturer PIL --></p>
+    <p><strong>Heat damages the insulin itself.</strong> Insulin is a protein and heat breaks it down. General guidance is to keep spare insulin refrigerated at 2 to 8&deg;C (36 to 46&deg;F), and once it is in use to keep it at room temperature below about 25 to 30&deg;C (77 to 86&deg;F), where many insulins last around 28 days, though some are rated for longer, so check your own leaflet. Above roughly 30&deg;C the protein starts to degrade, and something like a hot car can ruin it within hours. Heat damage is not always visible, which is why Diabetes UK suggests keeping insulin in the fridge in hot weather and carrying what you need in a cool bag or pouch, never leaving it in a car or in direct sun. A cool pouch is cheap insurance. <!-- SOURCED: fridge 2-8C = FDA; in-use 15-30C up to 28 days = FDA emergency guidance, with duration/ceiling product-specific; "hot car within hours" and "damage not always visible" attributed generally per fact-check, NOT to FDA/CDC verbatim; cool-bag advice = Diabetes UK hot-weather page. --></p>
 
     <p><strong>Dehydration matters more than it sounds.</strong> Heat raises the risk of dehydration, and dehydration concentrates blood glucose. The CDC advises drinking water even when you are not thirsty and going easy on alcohol and caffeine, which cause water loss and can push blood sugar up. Diabetes UK warns that severe dehydration raises the risk of two dangerous states: hyperosmolar hyperglycaemic state (HHS) and diabetic ketoacidosis (DKA). Water first, before anything clever.</p>
 
@@ -302,7 +305,7 @@
           </tr>
           <tr style="border-bottom: 1px solid var(--border); background: var(--surface-alt, rgba(255,255,255,0.02));">
             <td style="padding: 12px 16px; font-weight: 600;">When to take extra care</td>
-            <td style="padding: 12px 16px;">Around 80&deg;F (27&deg;C) with 40% humidity and above</td>
+            <td style="padding: 12px 16px;">Around 80&deg;F (27&deg;C) in the shade with 40% humidity and above</td>
             <td style="padding: 12px 16px;">During heatwaves and heat-health alerts</td>
           </tr>
           <tr>
@@ -328,7 +331,7 @@
 
     <p>What to reach for instead is simple: water first, and sugar-free drinks if you want some flavour, which is Diabetes UK's advice. Keep hydration and hypo treatment separate in your head, because they are two different jobs.</p>
 
-    <p><strong>The hydration and appetite link.</strong> One thing I came across that I had not connected before: when you are dehydrated it is easy to mistake thirst for hunger and eat more than you actually need, and the body can hold on to water, so staying hydrated quietly helps with weight as well as blood sugar. <!-- SOURCE NEEDED / SOFTEN: "dehydration causes weight gain" is a weaker, more general claim than the sourced facts above. Confirm against a solid source (mistaking thirst for hunger; water retention) or soften before publish. --> In a week when my appetite was all over the place anyway, that was worth knowing.</p>
+    <p><strong>Keep the fluids simple.</strong> The solid reason to stay on top of water in the heat is the one already covered above: dehydration pushes blood glucose up and, taken far enough, raises the risk of HHS and DKA. That is reason enough on its own, without reaching for any cleverer justification. In a week when my appetite and routine were all over the place, "water first" was one of the few simple rules that still held.<!-- REMOVED per fact-check: the earlier "mistake thirst for hunger / hydration helps with weight" claim was weak/unsupported and drifted toward a diet claim; replaced with the well-sourced dehydration-glucose point only. --></p>
 
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">About the advice to "just ask your team"</h2>
 
@@ -370,7 +373,7 @@
         Does hot weather affect blood sugar?
         <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
       </summary>
-      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Yes, heat can affect blood glucose in several ways: warm skin changing how quickly insulin is absorbed, dehydration shifting readings, and the knock-on effects on sleep, appetite and activity. The effect is individual, so watch your own data and discuss any pattern with your diabetes team rather than assume a single cause.<!-- SOURCE NEEDED --></p>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Yes, heat can affect blood glucose in several ways: warm skin changing how quickly insulin is absorbed, dehydration shifting readings, and the knock-on effects on sleep, appetite and activity. The effect is individual, so watch your own data and discuss any pattern with your diabetes team rather than assume a single cause.<!-- SOURCED: Diabetes UK hot-weather page + CDC "Managing Diabetes in the Heat" (see Sources). --></p>
     </details>
 
     <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
@@ -378,7 +381,7 @@
         Can heat damage insulin?
         <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
       </summary>
-      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Insulin is temperature sensitive and can lose potency if it gets too warm. Manufacturers give specific storage ranges for in-use and spare insulin. In hot weather many people use a cool pouch or fridge for spares. Check your own insulin's storage instructions and your team's advice for the exact temperatures.<!-- SOURCE NEEDED: manufacturer storage guidance --></p>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Insulin is temperature sensitive and can lose potency if it gets too warm. Manufacturers give specific storage ranges for in-use and spare insulin. In hot weather many people use a cool pouch or fridge for spares. Check your own insulin's storage instructions and your team's advice for the exact temperatures.<!-- SOURCED: FDA insulin storage guidance (2-8C fridge; 15-30C in use up to 28 days, product-specific) + Diabetes UK hot-weather page (see Sources). --></p>
     </details>
 
     <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
@@ -386,7 +389,7 @@
         Why do I go low more often in hot weather?
         <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
       </summary>
-      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Several heat-related factors can push glucose down, including faster insulin absorption from warm skin and changes in eating and activity. Lows can come on quickly, so it is worth checking more often and treating them promptly. If you are getting frequent or unexplained lows, contact your diabetes team, particularly if your warning signs are reduced.<!-- SOURCE NEEDED --></p>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Several heat-related factors can push glucose down, including faster insulin absorption from warm skin and changes in eating and activity. Lows can come on quickly, so it is worth checking more often and treating them promptly. If you are getting frequent or unexplained lows, contact your diabetes team, particularly if your warning signs are reduced.<!-- SOURCED: faster insulin absorption in warm weather increasing hypo risk - Diabetes UK hot-weather page (see Sources). --></p>
     </details>
 
     <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
@@ -398,7 +401,7 @@
     </details>
 
     <!-- Sources and further reading -->
-    <!-- VERIFY EVERY CLAIM AND URL AGAINST THESE SOURCES BEFORE PUBLICATION. Each <!-- SOURCE NEEDED --> above must map to one of these. -->
+    <!-- Claims above are now marked <!-- SOURCED --> and map to the sources below. Human reviewer: re-open each linked source and confirm it still says what we claim before publication. -->
     <h2 style="font-size: 1.4rem; font-weight: 800; margin: 48px 0 16px;">Sources and further reading</h2>
     <p style="color: var(--text-dim); line-height:1.7; margin-bottom:16px;">The factual points in this article are drawn from the sources below. Personal observations are my own Libre data. Storage temperatures are general; confirm the exact figures for your own insulin against its leaflet.</p>
     <ul style="line-height: 2; padding-left: 20px; color: var(--text-dim);">

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  DRAFT - NOT FOR PUBLICATION. YMYL health content.
+  SOURCING PASS DONE 2026-07-01: all numeric TIR/TBR/TAR targets verified exact
+  against the Battelino et al. 2019 Diabetes Care consensus (incl. the <5% above
+  13.9 mmol/L tier, now added to the table); deep-link sources added. The two
+  contested Type 3c claims were softened: "higher glucose variability" is a
+  traditional/"brittle" picture not consistently borne out by recent comparative
+  data, and the impaired-glucagon MECHANISM is well documented but its effect on
+  hypoglycaemia RATES is uncertain. STILL PENDING: clinician sign-off.
+  Do NOT move to web root, do NOT add to sitemap, do NOT link from live pages
+  until: (1) a clinician/diabetes professional has reviewed every claim, and
+  (2) the numeric targets are re-checked against the linked sources by a human.
+  On clinical sign-off: fill MedicalWebPage.reviewedBy + lastReviewed, then
+  remove noindex and the visible draft banner.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Time in Range Explained: How to Read Your CGM Without Panicking (Type 3c) | GlycoTrace</title>
+  <meta name="description" content="Time in Range is the most useful number your CGM gives you, but a messy week can look alarming. Here is what TIR means, what a good target looks like in Type 3c, and how to read your data calmly.">
+  <link rel="canonical" href="https://glycotrace.co.uk/time-in-range-type-3c">
+  <link rel="icon" type="image/png" href="../../logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://glycotrace.co.uk/time-in-range-type-3c">
+  <meta property="og:title" content="Time in Range Explained: How to Read Your CGM Without Panicking (Type 3c)">
+  <meta property="og:description" content="Time in Range is the most useful number your CGM gives you, but a messy week can look alarming. Here is what TIR means, what a good target looks like in Type 3c, and how to read your data calmly.">
+
+  <link rel="stylesheet" href="../../style.css?v=1.7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!--
+    Structured data is the AI/answer-engine surface for this page.
+    Graph: MedicalWebPage (YMYL wrapper) > Article > FAQPage > DefinedTerm > BreadcrumbList.
+    All numeric figures below MUST be verified before publication.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://glycotrace.co.uk/time-in-range-type-3c#webpage",
+        "name": "Time in Range Explained: How to Read Your CGM Without Panicking (Type 3c)",
+        "url": "https://glycotrace.co.uk/time-in-range-type-3c",
+        "inLanguage": "en-GB",
+        "audience": { "@type": "MedicalAudience", "audienceType": "Patient" },
+        "about": {
+          "@type": "MedicalCondition",
+          "name": "Type 3c diabetes",
+          "alternateName": "Pancreatogenic diabetes"
+        },
+        "lastReviewed": "TODO-set-on-clinical-signoff",
+        "reviewedBy": {
+          "@type": "Person",
+          "name": "TODO-clinical-reviewer-name"
+        },
+        "mainContentOfPage": { "@id": "https://glycotrace.co.uk/time-in-range-type-3c#article" }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://glycotrace.co.uk/time-in-range-type-3c#article",
+        "headline": "Time in Range Explained: How to Read Your CGM Without Panicking (Type 3c)",
+        "description": "Time in Range is the most useful number your CGM gives you, but a messy week can look alarming. Here is what TIR means, what a good target looks like in Type 3c, and how to read your data calmly.",
+        "author": {
+          "@type": "Person",
+          "name": "Leon Wilkinson",
+          "description": "Developer and Type 3c diabetes patient"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "GlycoTrace",
+          "url": "https://glycotrace.co.uk"
+        },
+        "datePublished": "2026-06-15",
+        "dateModified": "2026-06-15",
+        "mainEntityOfPage": "https://glycotrace.co.uk/time-in-range-type-3c"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Time in Range (TIR)",
+        "description": "The percentage of time a person's glucose stays within the target band of 3.9 to 10.0 mmol/L, measured by a continuous glucose monitor. Reported alongside Time Below Range and Time Above Range."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a good Time in Range?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The international consensus target for most adults with diabetes is a Time in Range of 70 percent or more between 3.9 and 10.0 mmol/L, with less than 4 percent of time below 3.9 mmol/L and less than 1 percent below 3.0 mmol/L. These are general targets, not personal ones. Type 3c was not studied separately when the consensus was written, and your diabetes team may set a different, individual target for you, especially if you are at higher risk of hypoglycaemia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does one bad week of Time in Range cause damage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A single difficult week is very unlikely to cause lasting harm. Long-term diabetes complications relate to your average glucose over months, reflected in HbA1c, which is a rolling roughly three-month measure. One stressful, unwell, or disrupted week is a small part of that average. It is information to learn from, not evidence of permanent damage. If you are worried, share the data with your diabetes team."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does 1 percent of Time in Range actually mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Across a full day, 1 percent of time is roughly 15 minutes. So a Time Below Range of 4 percent means your glucose spent about an hour a day under 3.9 mmol/L. Framing the percentages as minutes makes them easier to act on, and shows why the time below range figure matters so much for safety even when it looks small."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Time in Range better than HbA1c for Type 3c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They answer different questions. HbA1c gives one long-term average but hides variability completely. Time in Range and its partner figures, Time Below Range and Time Above Range, show how much your glucose swings and how often you go low. Because Type 3c can involve an impaired glucagon response, the time below range figure in particular can reveal risk that a reassuring HbA1c would miss. Most teams now use both together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I change my insulin based on my Time in Range?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, not on your own. Time in Range is a tool for spotting patterns and for having a more informed conversation with your diabetes team. Any change to insulin doses, including background doses, should be made with your team, who can interpret the data alongside your full medical picture. This is especially important in Type 3c, where the usual safety responses to a low blood sugar may be blunted."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://glycotrace.co.uk/" },
+          { "@type": "ListItem", "position": 2, "name": "Time in Range for Type 3c diabetes", "item": "https://glycotrace.co.uk/time-in-range-type-3c" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- DRAFT BANNER (remove on publication) -->
+  <div style="background:#7a1f1f; color:#fff; text-align:center; padding:10px 16px; font-weight:700; font-size:0.9rem;">
+    DRAFT - NOT FOR PUBLICATION. Pending clinical review and verification of all numeric targets.
+  </div>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="../../logo.png" alt="GlycoTrace logo" width="32" height="32">
+        <span>GlycoTrace</span>
+      </a>
+      <div class="nav-links">
+        <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glycotrace" class="btn btn-primary btn-sm">Get the app</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article -->
+  <main style="max-width: 780px; margin: 0 auto; padding: 60px 24px 80px;">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.85rem; color: var(--text-dim);">
+      <a href="/" style="color: var(--text-dim);">Home</a>
+      <span style="margin: 0 8px;">/</span>
+      <span>Time in Range for Type 3c diabetes</span>
+    </nav>
+
+    <h1 style="font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; line-height: 1.2; margin-bottom: 12px;">
+      Time in Range Explained: How to Read Your CGM Without Panicking
+    </h1>
+
+    <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 32px;">
+      By <strong>Leon Wilkinson</strong>, Type 3c patient and developer of GlycoTrace &middot; Updated June 2026
+    </p>
+
+    <!-- Quick Answer Box (TL;DR for readers and AI answer engines) -->
+    <div style="background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 10px; padding: 20px 24px; margin-bottom: 40px;">
+      <p style="font-weight: 700; margin: 0 0 8px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">Quick answer</p>
+      <p style="margin: 0; line-height: 1.7;">Time in Range (TIR) is the percentage of the day your glucose sits between 3.9 and 10.0 mmol/L. The general consensus target is 70 percent or more, but it is not a personal target and Type 3c was not studied separately when that figure was set. A messy week looks worse than it is: long-term harm tracks your three-month average, not a single bad spell. Read the safety figure first (time spent low), look at patterns rather than single days, and bring the picture to your team rather than changing anything yourself.</p>
+    </div>
+
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">What Time in Range actually measures</h2>
+
+    <p>HbA1c gives you a single long-term average, roughly every three months. It is useful, but it hides everything that happens in between. Two people with an identical HbA1c can have completely different days: one steady, one swinging violently from high to low. The average looks the same. The lived experience is not.</p>
+
+    <p>Time in Range is the metric that fills that gap. It is simply the percentage of time your glucose spends inside the agreed healthy band, conventionally 3.9 to 10.0 mmol/L. It comes from your CGM, which takes a reading every few minutes, so it reflects the whole day rather than a few finger-prick snapshots.</p>
+
+    <p>TIR never travels alone. It comes with two siblings that matter just as much:</p>
+
+    <ul style="line-height: 1.9; padding-left: 20px; color: var(--text-dim);">
+      <li><strong>Time Below Range (TBR):</strong> the percentage of time under 3.9 mmol/L. This is your safety number.</li>
+      <li><strong>Time Above Range (TAR):</strong> the percentage of time over 10.0 mmol/L.</li>
+    </ul>
+
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">What a "good" Time in Range looks like</h2>
+
+    <p>The widely used targets come from an international consensus published in <em>Diabetes Care</em> in 2019. For most adults with diabetes, the general goals are:</p>
+
+    <div style="overflow-x: auto; margin-bottom: 32px;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+        <thead>
+          <tr style="background: var(--surface); border-bottom: 2px solid var(--border);">
+            <th style="text-align: left; padding: 12px 16px; font-weight: 700;">Metric</th>
+            <th style="text-align: left; padding: 12px 16px; font-weight: 700;">General target</th>
+            <th style="text-align: left; padding: 12px 16px; font-weight: 700;">What it means</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px 16px; font-weight: 600;">Time in Range (3.9 to 10.0)</td>
+            <td style="padding: 12px 16px;">70% or more</td>
+            <td style="padding: 12px 16px;">Roughly 17 hours a day in band</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--surface-alt, rgba(255,255,255,0.02));">
+            <td style="padding: 12px 16px; font-weight: 600;">Time Below 3.9</td>
+            <td style="padding: 12px 16px;">Under 4%</td>
+            <td style="padding: 12px 16px;">Less than about 1 hour a day</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 12px 16px; font-weight: 600;">Time Below 3.0</td>
+            <td style="padding: 12px 16px;">Under 1%</td>
+            <td style="padding: 12px 16px;">Less than about 15 minutes a day</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: var(--surface-alt, rgba(255,255,255,0.02));">
+            <td style="padding: 12px 16px; font-weight: 600;">Time Above 10.0</td>
+            <td style="padding: 12px 16px;">Under 25%</td>
+            <td style="padding: 12px 16px;">A guide for the high end</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 16px; font-weight: 600;">Time Above 13.9</td>
+            <td style="padding: 12px 16px;">Under 5%</td>
+            <td style="padding: 12px 16px;">The very high end, kept as small as possible</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>A useful trick is to convert the percentages into minutes. Across a full day, 1 percent is roughly 15 minutes. So "less than 4 percent below range" is really "less than about an hour a day spent low." Suddenly the small-looking safety figure feels as important as it actually is.</p>
+
+    <p style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; line-height: 1.7;"><strong>Important:</strong> these are population targets, not your personal prescription. For older adults or anyone at higher risk of hypoglycaemia, the consensus sets gentler goals, such as 50 percent or more in range with very little time low. Your own targets are a conversation for your diabetes team.</p>
+
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">Why Type 3c deserves a softer, smarter reading</h2>
+
+    <p>The consensus targets were built mainly from Type 1 and Type 2 data. Type 3c, as so often, was not studied as its own group. That matters for two reasons.</p>
+
+    <p><strong>It has a reputation for being harder to steady.</strong> Type 3c has long been described as "brittle," with a name for wide, unpredictable swings. It is worth being honest that recent comparative studies are mixed and do not consistently show more variability than Type 1 or Type 2 once you match for HbA1c, so this is a traditional picture rather than a settled fact.<!-- SOURCED: "brittle" reputation is traditional teaching; 2025 review (PMC12093095) found T3c did NOT show higher glycaemic variability than T1/T2. Wording softened accordingly. --> Either way, the consensus targets were not built around Type 3c, so measuring yourself against a Type 1 benchmark can feel unfairly discouraging.</p>
+
+    <p><strong>The safety number carries more weight.</strong> Type 3c damages the whole pancreas, so alongside the insulin-producing beta cells it can also blunt the glucagon response, the body's natural defence that pushes glucose back up when it falls too far. That mechanism is well established; what is less certain is exactly how much it raises the rate of lows, where the evidence is still limited.<!-- SOURCED: alpha-cell/glucagon impairment in T3c is well documented (PMC3831209, PMC12093095); the downstream increase in hypoglycaemia rate is inconsistently shown, so consequence is hedged. --> But if your counter-regulation may be weaker, the Time Below Range figure is the one worth reading first, every time, before you even glance at the headline TIR.</p>
+
+    <p>None of this is a reason to ignore the targets. It is a reason to treat them as a direction of travel rather than a pass or fail mark, and to ask your team what a realistic, safe target looks like for you specifically.</p>
+
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">How to read a messy week without spiralling</h2>
+
+    <p>Open the app after a rough week and a wall of orange and yellow can feel like a verdict. It is not. Here is a calmer way to read it.</p>
+
+    <p><strong>1. Check the safety number first.</strong> Look at Time Below Range before anything else. If you spent very little time low, you were safe, even if the highs were frustrating. Safety and tidiness are different things, and safety comes first.</p>
+
+    <p><strong>2. Zoom out to the trend, not the day.</strong> One chaotic day inside an otherwise steady fortnight is noise. A pattern that repeats across many days is signal. Lasting complications relate to your months-long average via HbA1c, so a single bad week is a small slice of a much bigger picture, not proof of harm.</p>
+
+    <p><strong>3. Ask what was different.</strong> A messy week almost always has a reason behind it: illness, stress, broken sleep, a change in routine, a new medication, a busy or physical few days. Naming the cause turns a scary graph into a useful clue.</p>
+
+    <p><strong>4. Look for the shape, not the single spike.</strong> One unexplained high is rarely worth chasing. A high that appears at the same time every day, or after the same situation, is the pattern worth understanding, ideally with your team.</p>
+
+    <p><strong>5. Resist the urge to react alone.</strong> The most important rule. A difficult week is a reason to gather information and talk to your team, not a reason to start changing doses yourself. In Type 3c especially, where the body's response to a low can be blunted, self-driven changes can do more harm than the messy week ever would.</p>
+
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">Turning the number into understanding</h2>
+
+    <p>Time in Range tells you what happened. It cannot tell you why. The why lives in the context: what you ate, when you took your insulin, whether you took enzymes, whether you were active, whether you were unwell or stressed.</p>
+
+    <p>That is the limitation of the CGM app on its own. It draws a beautiful curve but has no idea what was on your plate or what kind of day you had. Pairing your CGM data with a log of meals, insulin, and activity is what turns a percentage into an actual insight you can take to an appointment.</p>
+
+    <!-- Mid CTA -->
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin: 40px 0; text-align: center;">
+      <p style="font-weight: 700; font-size: 1.1rem; margin: 0 0 8px;">See the story behind your Time in Range</p>
+      <p style="color: var(--text-dim); margin: 0 0 20px; font-size: 0.95rem;">GlycoTrace brings your Libre readings together with meal, insulin, and activity logs, so a confusing week becomes a pattern you can understand. Free on Android.</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glycotrace" class="btn btn-primary">Download on Google Play</a>
+        <a href="https://glycotrace.co.uk/demo" class="btn btn-secondary">View demo</a>
+      </div>
+    </div>
+
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 40px 0 16px;">The one mindset that helps most</h2>
+
+    <p>Time in Range is a feedback tool, not a report card. It is there to help you and your team make better decisions, not to grade you as a person. A week in the 50s is not a failure and a week in the 80s is not a personality trait. Both are just information.</p>
+
+    <p>Used calmly, TIR is one of the most empowering numbers in diabetes care, because for the first time it makes the invisible visible. Used anxiously, it becomes one more stick to beat yourself with. The skill is learning to read it like a map, not a mirror.</p>
+
+    <!-- FAQ -->
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 48px 0 24px;">Common questions</h2>
+
+    <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
+      <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+        What is a good Time in Range?
+        <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
+      </summary>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">The general consensus target for most adults is 70 percent or more between 3.9 and 10.0 mmol/L, with under 4 percent of time below 3.9 and under 1 percent below 3.0. These are population targets, not personal ones. Type 3c was not studied as a separate group, and your team may set a different, individual goal for you, particularly if you are prone to lows.</p>
+    </details>
+
+    <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
+      <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+        Does one bad week cause lasting damage?
+        <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
+      </summary>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">A single difficult week is very unlikely to cause lasting harm. Long-term risk tracks your average glucose over months, reflected in HbA1c, which is a rolling roughly three-month figure. One unwell, stressful, or disrupted week is a small slice of that average. Treat it as information to learn from, and share it with your team if it worries you.</p>
+    </details>
+
+    <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
+      <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+        Why does the "time below range" number matter so much in Type 3c?
+        <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
+      </summary>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">Type 3c can impair the glucagon response, the body's natural mechanism for pushing glucose back up when it drops, because it damages the whole pancreas rather than the insulin-producing cells alone. The mechanism is well documented; how much it raises the rate of lows is less certain. Either way, if that defence may be weaker it makes sense to read Time Below Range first, ahead of the headline Time in Range, and to discuss any pattern of lows with your diabetes team promptly.</p>
+    </details>
+
+    <details style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;">
+      <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+        Should I change my insulin based on my Time in Range?
+        <span style="font-size: 1.2rem; color: var(--accent); flex-shrink: 0; margin-left: 12px;">+</span>
+      </summary>
+      <p style="margin: 12px 0 0; color: var(--text-dim); line-height: 1.7;">No, not by yourself. Time in Range is for spotting patterns and for having a better-informed conversation with your team. Any change to insulin, including background doses, should be made with them, because they can read the data alongside your full medical picture. This matters even more in Type 3c, where the usual safety response to a low may be reduced.</p>
+    </details>
+
+    <!-- Sources and further reading -->
+    <!-- VERIFY EVERY FIGURE AND URL AGAINST THESE SOURCES BEFORE PUBLICATION. -->
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 48px 0 16px;">Sources and further reading</h2>
+    <p style="color: var(--text-dim); line-height:1.7; margin-bottom:16px;">The targets in this article come from published clinical consensus and national guidance. Confirm current figures with these sources and your own diabetes team.</p>
+    <ul style="line-height: 2; padding-left: 20px; color: var(--text-dim);">
+      <li><strong>Battelino et al. (2019)</strong>, "Clinical Targets for Continuous Glucose Monitoring Data Interpretation: Recommendations From the International Consensus on Time in Range," <em>Diabetes Care</em> 2019;42(8):1593&ndash;1603 &ndash; the international consensus behind the Time in Range targets: <a href="https://diabetesjournals.org/care/article/42/8/1593/36184/" style="color: var(--accent);" rel="noopener">diabetesjournals.org</a> (free full text: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6973648/" style="color: var(--accent);" rel="noopener">PMC6973648</a>).</li>
+      <li><strong>Diabetes UK</strong> &ndash; Time in Range: <a href="https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/time-in-range" style="color: var(--accent);" rel="noopener">diabetes.org.uk/time-in-range</a></li>
+      <li><strong>Diabetes UK</strong> &ndash; HbA1c (average glucose over two to three months): <a href="https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c" style="color: var(--accent);" rel="noopener">diabetes.org.uk/hba1c</a></li>
+      <li><strong>NICE</strong> &ndash; Type 1 diabetes in adults (NG17), including HbA1c monitoring: <a href="https://www.nice.org.uk/guidance/ng17" style="color: var(--accent);" rel="noopener">nice.org.uk/guidance/ng17</a></li>
+      <li><strong>Type 3c background</strong> &ndash; "The Challenge of Type 3c Diabetes" (2025 review) on variability and glucagon response: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12093095/" style="color: var(--accent);" rel="noopener">PMC12093095</a>; and diabetes in chronic pancreatitis: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3831209/" style="color: var(--accent);" rel="noopener">PMC3831209</a>.</li>
+    </ul>
+    <p style="font-size:0.85rem; color: var(--text-dim); margin-top:16px;">Guidance is updated periodically. Confirm any figure is current before relying on it.</p>
+
+    <!-- Related articles -->
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin: 48px 0 20px;">Related reading</h2>
+    <ul style="line-height: 2; padding-left: 20px; color: var(--text-dim);">
+      <li><a href="/cgm-for-type-3c-diabetes" style="color: var(--accent);">CGM for Type 3c diabetes: what the research actually says</a></li>
+      <li><a href="/blood-sugar-after-pancreatitis" style="color: var(--accent);">Why is my blood sugar unpredictable after pancreatitis?</a></li>
+      <li><a href="/best-app-type-3c-diabetes" style="color: var(--accent);">Best app for Type 3c diabetes: what actually works in 2026</a></li>
+    </ul>
+
+    <!-- Bottom CTA -->
+    <div style="background: linear-gradient(135deg, var(--accent-dark, #1a3a2a) 0%, var(--surface) 100%); border: 1px solid var(--border); border-radius: 16px; padding: 36px; margin: 48px 0 0; text-align: center;">
+      <p style="font-weight: 800; font-size: 1.25rem; margin: 0 0 10px;">Make your Time in Range make sense</p>
+      <p style="color: var(--text-dim); margin: 0 0 24px; max-width: 500px; margin-left: auto; margin-right: auto;">Combine Libre readings with meal, insulin, and activity logs and see the patterns behind the percentage. Free on Android, built for Type 3c.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glycotrace" class="btn btn-primary btn-lg">Download GlycoTrace free</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="max-width: 780px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.85rem;">
+    <p style="margin: 0 0 8px;"><strong>Medical disclaimer:</strong> This article is for informational purposes only and does not constitute medical advice. Always consult your diabetes specialist or GP before making any changes to your monitoring or management plan.</p>
+    <p style="margin: 0;">&copy; 2026 GlycoTrace &middot; <a href="https://glycotrace.co.uk/privacy" style="color: var(--text-dim);">Privacy</a> &middot; <a href="https://lwdatalabs.co.uk" style="color: var(--text-dim);">LW Data Labs</a></p>
+  </footer>
+
+</body>
+</html>
