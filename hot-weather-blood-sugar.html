@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <!--
-  ============================================================================
-  DRAFT - NOT FOR PUBLICATION. YMYL health content.
-  SOURCING PASS DONE 2026-07-01: every <!-- SOURCE NEEDED --> marker resolved to a
-  named source (now marked <!-- SOURCED -->) against Diabetes UK, CDC, FDA and ADA
-  research; the in-use insulin temperature claim was made product-specific; the CDC
-  "80F in the shade" wording corrected; and the unsupported thirst-for-hunger /
-  hydration-for-weight claim was removed. STILL PENDING: clinician sign-off.
-  Do NOT move to web root, do NOT add to sitemap, do NOT link from live pages
-  until: (1) the sourced claims are checked against the linked sources by a human, and
-  (2) a clinician/diabetes professional has reviewed it.
-  On sign-off: fill MedicalWebPage.reviewedBy + lastReviewed, rename the CGM
-  screenshots and cool-wallet photos to descriptive WebP files (see <!-- IMAGE -->
-  notes), move them to the web image path, then remove noindex and the visible
-  draft banner.
-  Lived-experience first person is intentional (E-E-A-T). Personal observations
-  stay as "in my experience"; only the general mechanisms need sourcing.
-  ============================================================================
+  Hot weather and blood sugar. Lived-experience article by a Type 3c patient.
+  Published 2026-07-01. Every general claim is sourced to Diabetes UK, CDC, FDA
+  or ADA research (see the inline SOURCED notes and the Sources section). This is
+  personal experience plus published guidance, not medical advice; framed as such
+  throughout. Not clinically reviewed; presented as patient experience, not a
+  clinical reference.
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
   <title>Hot Weather and Blood Sugar: What a UK Heatwave Did to Mine | GlycoTrace</title>
   <meta name="description" content="A prolonged UK heatwave sent my blood sugar all over the place: stubborn highs, sudden lows, and insulin that did not behave. Here is what happened, with my Libre traces.">
   <link rel="canonical" href="https://glycotrace.co.uk/hot-weather-blood-sugar">
-  <link rel="icon" type="image/png" href="../../logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://glycotrace.co.uk/hot-weather-blood-sugar">
   <meta property="og:title" content="Hot Weather and Blood Sugar: What a UK Heatwave Did to Mine">
   <meta property="og:description" content="A prolonged UK heatwave sent my blood sugar all over the place: stubborn highs, sudden lows, and insulin that did not behave. Here is what happened, with my Libre traces.">
+  <meta property="og:image" content="https://glycotrace.co.uk/Assets/General%20Photos/PXL_20260628_094059156.jpg">
 
-  <link rel="stylesheet" href="../../style.css?v=1.7">
+  <link rel="stylesheet" href="style.css?v=1.7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-  <!--
-    Structured data graph: MedicalWebPage (YMYL wrapper) > Article > FAQPage > BreadcrumbList.
-    Author is the patient (lived experience). Verify before publication.
-  -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2E0YZX9L4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R2E0YZX9L4');
+  </script>
+  <script src="Assets/analytics-events.js" defer></script>
+
+  <!-- Structured data: Article (patient author) > FAQPage > BreadcrumbList. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "MedicalWebPage",
-        "@id": "https://glycotrace.co.uk/hot-weather-blood-sugar#webpage",
-        "name": "Hot Weather and Blood Sugar: What a UK Heatwave Did to Mine",
-        "url": "https://glycotrace.co.uk/hot-weather-blood-sugar",
-        "inLanguage": "en-GB",
-        "audience": { "@type": "MedicalAudience", "audienceType": "Patient" },
-        "about": {
-          "@type": "MedicalCondition",
-          "name": "Diabetes",
-          "alternateName": "Type 3c diabetes"
-        },
-        "lastReviewed": "TODO-set-on-clinical-signoff",
-        "reviewedBy": {
-          "@type": "Person",
-          "name": "TODO-clinical-reviewer-name"
-        },
-        "mainContentOfPage": { "@id": "https://glycotrace.co.uk/hot-weather-blood-sugar#article" }
-      },
       {
         "@type": "Article",
         "@id": "https://glycotrace.co.uk/hot-weather-blood-sugar#article",
@@ -133,16 +110,11 @@
 </head>
 <body>
 
-  <!-- VISIBLE DRAFT BANNER: remove on publication -->
-  <div style="background:#7f1d1d; color:#fff; text-align:center; padding:10px 16px; font-size:0.85rem; font-weight:600;">
-    DRAFT, not published. Claims marked for sourcing and clinical review. Not medical advice.
-  </div>
-
   <!-- Nav -->
-  <nav style="border-bottom: 1px solid var(--border);">
-    <div style="max-width: 1080px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center;">
+  <nav class="navbar">
+    <div class="nav-container">
       <a href="/" class="nav-logo">
-        <img src="../../logo.png" alt="GlycoTrace logo" width="32" height="32">
+        <img src="logo.png" alt="GlycoTrace logo" width="32" height="32">
         <span>GlycoTrace</span>
       </a>
       <div class="nav-links">
@@ -165,8 +137,11 @@
       Hot weather and blood sugar: what a UK heatwave did to mine
     </h1>
 
-    <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 32px;">
+    <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 12px;">
       By <strong>Leon Wilkinson</strong>, Type 3c patient and developer of GlycoTrace &middot; June 2026
+    </p>
+    <p style="color: var(--text-dim); font-size: 0.85rem; font-style: italic; margin-bottom: 32px;">
+      I write this as someone living with Type 3c diabetes, not as a medical professional. It is my own experience alongside the published guidance I lean on, sourced at the end, not medical advice.
     </p>
 
     <!-- Quick Answer Box -->
@@ -189,7 +164,7 @@
 
     <!-- IMAGE: rename to hot-weather-blood-sugar-spike-then-crash.webp before publish; move to web image path -->
     <figure style="margin: 28px 0;">
-      <img src="../../Assets/Libre%20Screen/Screenshot_20260620-224358.png" alt="FreeStyle Libre graph showing blood sugar spiking to about 15.7 mmol/L in the late afternoon, then crashing steeply to around 4.7 mmol/L by early evening before bouncing around 6" style="width:100%; border:1px solid var(--border); border-radius:10px;">
+      <img src="Assets/Libre%20Screen/Screenshot_20260620-224358.png" alt="FreeStyle Libre graph showing blood sugar spiking to about 15.7 mmol/L in the late afternoon, then crashing steeply to around 4.7 mmol/L by early evening before bouncing around 6" style="width:100%; border:1px solid var(--border); border-radius:10px;">
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">An afternoon in the heatwave: a climb to about 15.7, then a steep crash down towards 4.7, then a bumpy evening. My own Libre trace.</figcaption>
     </figure>
 
@@ -197,7 +172,7 @@
 
     <!-- IMAGE: rename to hot-weather-blood-sugar-going-low.webp before publish -->
     <figure style="margin: 28px 0;">
-      <img src="../../Assets/Libre%20Screen/Screenshot_20260619-171117.png" alt="FreeStyle Libre graph showing blood sugar drifting around 7 to 8 mmol/L through the day, then a sudden drop to 4.6 mmol/L with a downward arrow and a 'glucose going low' alert" style="width:100%; border:1px solid var(--border); border-radius:10px;">
+      <img src="Assets/Libre%20Screen/Screenshot_20260619-171117.png" alt="FreeStyle Libre graph showing blood sugar drifting around 7 to 8 mmol/L through the day, then a sudden drop to 4.6 mmol/L with a downward arrow and a 'glucose going low' alert" style="width:100%; border:1px solid var(--border); border-radius:10px;">
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">A different day: a gentle drift, then a sudden drop to 4.6 with the arrow pointing straight down. The lows kept sneaking up like this.</figcaption>
     </figure>
 
@@ -210,7 +185,7 @@
 
     <!-- IMAGE: rename to hot-weather-blood-sugar-overnight-high.webp before publish -->
     <figure style="margin: 28px 0;">
-      <img src="../../Assets/Libre%20Screen/Screenshot_20260627-080726.png" alt="FreeStyle Libre graph showing blood sugar holding high around 12 to 13 mmol/L for hours overnight, then dropping into the target range to about 6 mmol/L by morning" style="width:100%; border:1px solid var(--border); border-radius:10px;">
+      <img src="Assets/Libre%20Screen/Screenshot_20260627-080726.png" alt="FreeStyle Libre graph showing blood sugar holding high around 12 to 13 mmol/L for hours overnight, then dropping into the target range to about 6 mmol/L by morning" style="width:100%; border:1px solid var(--border); border-radius:10px;">
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">Overnight in the heat: parked around 12 to 13 for hours, then finally dropping into range by morning.</figcaption>
     </figure>
 
@@ -232,13 +207,13 @@
 
     <!-- IMAGE: rename to insulin-cool-wallet-diabetes-travel-kit.webp before publish; convert to WebP and move to web image path -->
     <figure style="margin: 28px 0;">
-      <img src="../../Assets/General%20Photos/PXL_20260628_094059156.jpg" alt="An open insulated insulin cooling wallet holding an insulin pen, a lancing device, a vial of CareSens PRO glucose test strips and a refreezable gel cooling pack" style="width:100%; border:1px solid var(--border); border-radius:10px;">
+      <img src="Assets/General%20Photos/PXL_20260628_094059156.jpg" alt="An open insulated insulin cooling wallet holding an insulin pen, a lancing device, a vial of CareSens PRO glucose test strips and a refreezable gel cooling pack" style="width:100%; border:1px solid var(--border); border-radius:10px;">
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">My actual hot-weather kit: insulin pen, finger-prick lancet, CareSens test strips and a gel cooling pack, all in one insulated wallet.</figcaption>
     </figure>
 
     <!-- IMAGE: rename to insulin-cool-wallet-temperature-display.webp before publish; convert to WebP and move to web image path -->
     <figure style="margin: 28px 0;">
-      <img src="../../Assets/General%20Photos/PXL_20260628_102545163.jpg" alt="The closed insulin cooling wallet showing its built-in digital thermometer reading about 9.5 degrees Celsius" style="width:100%; border:1px solid var(--border); border-radius:10px;">
+      <img src="Assets/General%20Photos/PXL_20260628_102545163.jpg" alt="The closed insulin cooling wallet showing its built-in digital thermometer reading about 9.5 degrees Celsius" style="width:100%; border:1px solid var(--border); border-radius:10px;">
       <figcaption style="color: var(--text-dim); font-size: 0.85rem; margin-top: 8px;">The built-in display sat around 9 to 9.5&deg;C while I was using it. Not fridge-cold, but comfortably under the roughly 30&deg;C in-use limit most insulins are rated to, which is the point when you are out in the heat.</figcaption>
     </figure>
 

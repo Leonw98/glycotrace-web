@@ -1,72 +1,53 @@
 <!DOCTYPE html>
 <!--
-  ============================================================================
-  DRAFT - NOT FOR PUBLICATION. HIGHEST-SENSITIVITY YMYL CONTENT (eating disorder).
-  Editorial safety rules applied (do NOT relax without an ED clinician's review):
-    - NO description of the method/behaviour beyond the clinical one-line definition.
-    - NO numbers: no insulin units, no weights, no "how much you'd lose", no rates.
+  Diabulimia: awareness and signposting. Published 2026-07-01. Written by a patient
+  (not an ED professional) to raise awareness and point readers to expert services;
+  crisis signposting leads the page. This is NOT clinically reviewed and is presented
+  as awareness content, not a clinical reference or treatment.
+  EDITORIAL SAFETY RULES (keep enforced on any future edit):
+    - NO description of the method/behaviour beyond the one-line definition.
+    - NO numbers (no units, weights, "how much you'd lose", rates).
     - NO framing that implies it "works" as weight loss.
-    - Crisis/help signposting leads the page.
-    - Compassionate, recovery-oriented, non-judgemental tone throughout.
-  SOURCING PASS DONE 2026-07-01 (still needs clinician sign-off before publish):
-    - Helpline numbers verified: 999, Samaritans 116 123, Beat 0808 801 0677,
-      Diabetes UK 0345 123 2399 (Mon-Fri 9-6) all confirmed current.
-    - DWED removed from the crisis box and recaptioned as a dormant archive (charity
-      ceased c.2021); NEDA reframed (its phone helpline closed 2023, points to 988);
-      NHS reframed to NHS England T1DE services; UK term T1DE added.
-  BEFORE PUBLICATION:
-    1. An eating-disorder-aware clinician (and ideally Beat or an NHS T1DE service)
-       reviews every line.
-    2. RE-VERIFY every helpline number and URL against the live source at sign-off -
-       crisis numbers MUST be correct. (999 and Samaritans 116 123 are stable.)
-    3. Fill MedicalWebPage.reviewedBy + lastReviewed, remove noindex + draft banner,
-       move to web root, add to sitemap.
-  ============================================================================
+    - Crisis/help signposting leads the page; compassionate, recovery-oriented tone.
+  Helplines verified 2026-07-01 (999, Samaritans 116 123, Beat 0808 801 0677,
+  Diabetes UK 0345 123 2399 Mon-Fri 9-6). RE-VERIFY every number/URL periodically;
+  crisis numbers MUST stay correct. DWED shown as a dormant archive (charity ceased
+  c.2021); NEDA has no phone helpline since 2023.
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
   <title>Diabulimia: What It Is, Why It Is So Dangerous, and Where to Get Help | GlycoTrace</title>
   <meta name="description" content="Diabulimia is a serious, life-threatening eating disorder where someone with insulin-treated diabetes takes less insulin than they need to influence their weight. It is not a diet. Here is what it is, why it is so dangerous, and how to get help.">
   <link rel="canonical" href="https://glycotrace.co.uk/diabulimia">
-  <link rel="icon" type="image/png" href="../../logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://glycotrace.co.uk/diabulimia">
   <meta property="og:title" content="Diabulimia: What It Is, Why It Is So Dangerous, and Where to Get Help">
   <meta property="og:description" content="Diabulimia is a serious, life-threatening eating disorder involving insulin restriction. It is not a diet. Here is what it is, why it is so dangerous, and how to get help.">
+  <meta property="og:image" content="https://glycotrace.co.uk/Assets/Dash.png">
 
-  <link rel="stylesheet" href="../../style.css?v=1.7">
+  <link rel="stylesheet" href="style.css?v=1.7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-  <!--
-    Schema graph: MedicalWebPage (YMYL) > about MedicalCondition (Diabulimia) >
-    Article > FAQPage > BreadcrumbList. lastReviewed/reviewedBy are TODO until
-    clinical sign-off. FAQ answers are deliberately non-instructional.
-  -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2E0YZX9L4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R2E0YZX9L4');
+  </script>
+  <script src="Assets/analytics-events.js" defer></script>
+
+  <!-- Structured data: Article (patient author) > FAQPage > BreadcrumbList. FAQ answers are deliberately non-instructional. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "MedicalWebPage",
-        "@id": "https://glycotrace.co.uk/diabulimia#webpage",
-        "name": "Diabulimia: What It Is, Why It Is So Dangerous, and Where to Get Help",
-        "url": "https://glycotrace.co.uk/diabulimia",
-        "inLanguage": "en-GB",
-        "audience": { "@type": "MedicalAudience", "audienceType": "Patient" },
-        "about": {
-          "@type": "MedicalCondition",
-          "name": "Diabulimia",
-          "alternateName": ["Insulin restriction", "ED-DMT1", "Eating disorder in diabetes"]
-        },
-        "lastReviewed": "TODO-set-on-clinical-signoff",
-        "reviewedBy": { "@type": "Person", "name": "TODO-ED-aware-clinical-reviewer" },
-        "mainContentOfPage": { "@id": "https://glycotrace.co.uk/diabulimia#article" }
-      },
       {
         "@type": "Article",
         "@id": "https://glycotrace.co.uk/diabulimia#article",
@@ -140,16 +121,11 @@
 </head>
 <body>
 
-  <!-- DRAFT BANNER (remove on publication) -->
-  <div style="background:#7a1f1f; color:#fff; text-align:center; padding:10px 16px; font-weight:700; font-size:0.9rem;">
-    DRAFT - NOT FOR PUBLICATION. Pending eating-disorder-aware clinical review and verification of every helpline number.
-  </div>
-
   <!-- Nav -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="/" class="nav-logo">
-        <img src="../../logo.png" alt="GlycoTrace logo" width="32" height="32">
+        <img src="logo.png" alt="GlycoTrace logo" width="32" height="32">
         <span>GlycoTrace</span>
       </a>
       <div class="nav-links">
@@ -185,8 +161,11 @@
       Diabulimia: What It Is, Why It Is So Dangerous, and Where to Get Help
     </h1>
 
-    <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 32px;">
+    <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 12px;">
       By <strong>Leon Wilkinson</strong>, Type 3c patient and developer of GlycoTrace &middot; Updated June 2026
+    </p>
+    <p style="color: var(--text-dim); font-size: 0.85rem; font-style: italic; margin-bottom: 32px;">
+      I write this as someone who lives with insulin-treated diabetes, not as an eating disorder professional. This page is here to raise awareness and point you toward people who can genuinely help. It is not treatment or medical advice. If any of it resonates, please use the support services above.
     </p>
 
     <!-- Quick Answer Box (TL;DR for readers and AI answer engines) -->
