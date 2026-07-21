@@ -24,3 +24,7 @@ play_listing_*.txt
 
 # Pre-optimization image backups
 *.original.*
+
+# CF Pages deploy staging (transient)
+deploy/.staging/
+cf_token.txt

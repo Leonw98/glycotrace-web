@@ -1,0 +1,32 @@
+# Files excluded from the deployed Cloudflare Pages site.
+# Direct-upload publishes EVERYTHING in the repo root, so anything internal
+# must be listed here or it becomes publicly served on glycotrace.co.uk.
+# Syntax is the same as .gitignore.
+
+.git
+.github
+deploy
+
+# Internal docs / strategy / handovers (never public)
+*.md
+content-ideas
+docs
+
+# Ops + tooling
+*.sh
+*.py
+*.bat
+*.ps1
+*.bundle
+
+# Pre-optimization image backups
+*.original.*
+
+# Non-web binaries: badge kit (>25MiB, over the Pages per-file limit) and
+# GSC export zips that contain private search data. Videos (*.mp4) are kept
+# because index.html / our-story.html embed them.
+*.zip
+*.docx
+
+# GitHub Pages marker (not used by Cloudflare Pages)
+CNAME

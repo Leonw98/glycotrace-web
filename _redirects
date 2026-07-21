@@ -1,2 +1,8 @@
+# Cloudflare Pages redirects. https://developers.cloudflare.com/pages/configuration/redirects/
+# NOTE: Pages already 308-redirects /foo.html -> /foo automatically, so you do
+# NOT need rules for that. Only add rules for GENUINE slug changes so old
+# indexed URLs 301 to the new one and keep their ranking. Add real rules once
+# the GSC "Why pages aren't indexed" drilldown names the exact offending URLs.
+
 /privacy                /privacy_policy.html    301
 /privacy-policy         /privacy_policy.html    301
