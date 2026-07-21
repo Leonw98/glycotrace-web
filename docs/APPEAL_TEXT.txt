@@ -1,0 +1,83 @@
+GOOGLE PLAY APPEAL — Health Content and Services Policy
+App: GlycoTrace: Diabetes Tracker (com.glycotrace.app)
+Date: 2026-05-08
+
+──────────────────────────────────────────────────────
+SUMMARY OF CHANGES MADE
+──────────────────────────────────────────────────────
+
+We have made the following changes in direct response to the policy violation
+notice. All changes are present in the updated build submitted with this appeal.
+
+1. PLAY STORE LISTING — Medical disclaimer added to full description
+   The updated listing description now begins the body text with a clearly
+   labelled ⚕ MEDICAL DISCLAIMER block stating:
+
+   "GlycoTrace is a personal data logging tool, not a medical device. It does
+   not provide medical advice, diagnosis, or treatment. Always consult your
+   doctor, diabetes nurse specialist, or dietitian before changing your insulin
+   dose, medication, or treatment plan."
+
+   We also softened language that could be read as medical-device claims:
+   - "clinical-grade monthly reports" → "PDF reports to help prepare for
+     appointments with your diabetes team"
+   - "Doctor-Ready PDF Reports" → "PDF Reports"
+   - "gold-standard clinical metric" → "widely-used metric"
+   - GMI (HbA1c estimate) section now includes: "This is an estimate only —
+     always use a lab-confirmed HbA1c for clinical decisions."
+
+2. IN-APP — Persistent disclaimer on the Insights screen
+   The Insights screen (where Time in Range, GMI, Glycaemic Variability, and
+   all other health metrics are displayed) now shows a permanent disclaimer
+   banner at the bottom of the metrics view:
+
+   "These metrics are for personal tracking only and do not constitute medical
+   advice. Always consult your doctor, diabetes nurse specialist, or qualified
+   healthcare professional before making changes to your insulin, medication,
+   or treatment plan."
+
+   This is visible every time a user accesses the Insights screen without
+   requiring any user action.
+
+3. IN-APP — Settings screen Medical Disclaimer section expanded
+   The existing "Medical Disclaimer" section in Settings (Metabolic Profile)
+   has been expanded from a narrow dietary note to a full disclaimer covering:
+   - The app is not a medical device
+   - No medical advice, diagnosis, or treatment is provided
+   - HbA1c estimates, TIR, and all metrics are for informational purposes only
+   - Users must consult their healthcare team before making clinical decisions
+
+4. IN-APP — Onboarding disclaimer (existing, shown at first launch)
+   The onboarding screen already displays a prominent disclaimer with a
+   health_and_safety icon:
+
+   "GlycoTrace is a personal tracking tool, not a medical device. Always
+   consult your healthcare team — doctor, diabetes nurse, or dietitian —
+   before changing your insulin, medication, or treatment plan."
+
+──────────────────────────────────────────────────────
+STATEMENT OF COMPLIANCE
+──────────────────────────────────────────────────────
+
+GlycoTrace is a personal data logging tool built by a person living with
+Type 3c diabetes. It does not diagnose, treat, or prescribe. All glucose
+readings, insulin logs, and nutrition data are entered by the user and
+displayed back to them for their own reference.
+
+The app has been updated to ensure that:
+- Every screen showing health metrics includes or is preceded by a clear
+  reminder to consult a qualified healthcare professional
+- The Play Store listing explicitly states the app is not a medical device
+- No language in the listing or app implies the app provides clinical
+  diagnoses or treatment decisions
+
+We believe the updated app and listing are fully compliant with the Health
+Content and Services policy.
+
+──────────────────────────────────────────────────────
+CONTACT
+──────────────────────────────────────────────────────
+Leon Wilkinson
+LW Data Labs Ltd — England & Wales Co. No. 17048417
+team@glycotrace.co.uk
+https://glycotrace.co.uk
