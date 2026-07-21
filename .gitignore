@@ -21,3 +21,6 @@ project_skills_manifest.txt
 Reports/
 *.zip
 play_listing_*.txt
+
+# Pre-optimization image backups
+*.original.*
