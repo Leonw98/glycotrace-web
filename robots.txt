@@ -1,3 +1,47 @@
+# GlycoTrace robots.txt
+#
+# Posture: stay fully crawlable for search and AI answer engines (they cite
+# and recommend us to people searching for Type 3c diabetes tools), while
+# opting out of AI training-corpus scraping.
+#
+# To flip any bot from block to welcome, move it between the two groups below.
+
+# --- AI training crawlers: opted out (do not train models on our content) ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+# --- AI answer / search crawlers: welcome (they cite and recommend us) ---
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# --- Everyone else (Googlebot, Bingbot, and all other crawlers): full access ---
 User-agent: *
 Allow: /
 
