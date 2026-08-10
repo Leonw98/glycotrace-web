@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlycoTrace Web App | Log Diabetes Data in Your Browser</title>
+    <meta name="description" content="Use GlycoTrace in any browser, on iPhone, iPad, Mac or Windows. Log glucose, food, enzymes, insulin, exercise and medication with no app to install. Same account and same data as the Android app.">
+    <meta name="keywords" content="diabetes app for iphone, diabetes tracker browser, web based diabetes log, glucose tracker online, type 3c diabetes app iphone, diabetes app no download, log glucose in browser, PERT tracker web">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="canonical" href="https://glycotrace.co.uk/web-app">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GlycoTrace Web App: Log Your Diabetes Data in Any Browser">
+    <meta property="og:description" content="No install, no waiting for the iOS app. Log glucose, food, enzymes, insulin and exercise from your browser on any device. Free to start.">
+    <meta property="og:url" content="https://glycotrace.co.uk/web-app">
+    <meta property="og:image" content="https://glycotrace.co.uk/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://glycotrace.co.uk/web-app",
+          "url": "https://glycotrace.co.uk/web-app",
+          "name": "GlycoTrace Web App: Log Your Diabetes Data in Any Browser",
+          "description": "Use GlycoTrace in any browser, on iPhone, iPad, Mac or Windows. Log glucose, food, enzymes, insulin, exercise and medication with no app to install.",
+          "isPartOf": { "@id": "https://glycotrace.co.uk/#organisation" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "LW Data Labs Ltd",
+            "logo": { "@type": "ImageObject", "url": "https://glycotrace.co.uk/logo.png" }
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "GlycoTrace Web App",
+          "url": "https://glycotrace-webapp.pages.dev",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Any browser, including iOS, iPadOS, macOS, Windows and Android",
+          "browserRequirements": "Requires a modern browser with JavaScript enabled",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "LW Data Labs Ltd"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is there a GlycoTrace app for iPhone?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There is no native iOS app yet, but you do not have to wait for one. The GlycoTrace web app runs in Safari, Chrome and any other modern browser on iPhone and iPad, and it supports full logging. You can create an account and start tracking today. Add it to your home screen and it opens like an app."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need the Android app before I can use the web app?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. You can create a brand-new account directly in the browser using an email address or by signing in with Google. The Android app is optional."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it the same data as the Android app?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The web app and the Android app share one account and one database, so anything you log in the browser appears on your phone and anything you log on your phone appears in the browser. Sign in with the same details in both places."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What can I log in the browser?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Glucose readings, food with carbohydrates and macros, pancreatic enzyme (PERT) doses alongside meals, rapid and long-acting insulin, exercise, weight, medication and appointments. You can also import a CGM CSV export, review and edit your history, and set weekly goals."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I import my FreeStyle Libre data in the browser?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The web app accepts a glucose CSV export, for example from LibreView. It reads the glucose and timestamp columns and ignores the rest, and the imported readings sync to your phone as well."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the web app cost anything?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Creating an account and logging your data in the browser is free."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css?v=1.7">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="/" class="logo-wrapper" style="text-decoration: none;">
+                <img src="logo.png" alt="GlycoTrace Logo" class="nav-logo">
+                <span class="logo-text">GlycoTrace</span>
+            </a>
+            <button class="nav-toggle" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="nav-links">
+                <a href="/#story">The Mission</a>
+                <a href="science.html">The Science</a>
+                <a href="news.html">News</a>
+                <a href="resources.html">Resources</a>
+                <a href="freelance.html">Hire Me</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="web-app.html">Web App</a>
+                <a href="apply.html" class="btn-nav">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-80 text-centre">
+        <div class="container">
+            <div class="section-tag">No Install Required</div>
+            <h1>GlycoTrace, straight from your <span class="gradient-text">browser</span></h1>
+            <p style="max-width: 720px; margin: 16px auto 0; color: var(--text-dim); font-size: 1.2rem;">
+                Log your glucose, food, enzymes, insulin and exercise on any device with a browser. That includes iPhone and iPad, where there is no App Store version yet. Same account, same data, nothing to download.
+            </p>
+            <div class="hero-btns" style="justify-content: center; margin-top: 32px;">
+                <a href="https://glycotrace-webapp.pages.dev" target="_blank" rel="noopener" class="btn-primary-fancy">Open the web app</a>
+                <a href="https://play.google.com/store/apps/details?id=com.glucosefreaks.glycotrace" target="_blank" rel="noopener" class="btn-nav" style="display:inline-flex;align-items:center;">Get the Android app</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-80" style="padding-top: 0;">
+
+        <section class="glass-card legal-section" style="max-width: 860px; margin: 0 auto 32px;">
+            <h2>If you are on an iPhone, you do not have to wait</h2>
+            <p>The native iOS app is still in development. That is the honest position, and for a long time it meant anyone on an iPhone simply could not use GlycoTrace. The web app closes that gap. It opens in Safari, Chrome or any modern browser, it handles full logging rather than a cut-down view, and you can create an account and start today.</p>
+            <p>On an iPhone, open the web app in Safari, tap the share icon, then choose <strong>Add to Home Screen</strong>. It gets its own icon and opens without the browser chrome, so day to day it behaves much like an installed app.</p>
+        </section>
+
+        <section style="max-width: 980px; margin: 0 auto;">
+            <h2 class="text-centre" style="margin-bottom: 8px;">What you can log in the browser</h2>
+            <p class="text-centre" style="color: var(--text-dim); max-width: 640px; margin: 0 auto 32px;">Everything the daily log needs, not a read-only summary.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 24px;">
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">Glucose</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Readings in mmol/L, plotted across 7, 14, 30 or 90 days with time in range and your average.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">Food and carbs</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Search your recent foods, common staples or the Open Food Facts database, then log carbohydrates, protein, fat and calories.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">PERT enzymes</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Record Creon and other enzyme doses against the meal they belong to, so the two are never separated.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">Insulin</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Rapid-acting and long-acting logged separately, with the time you actually took the dose.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">Exercise and weight</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Activity type and duration, plus weight over time, both sitting alongside your glucose rather than in another app.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">Medication and appointments</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Keep doses and upcoming clinic dates in the same record as the data you will be discussing.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">CGM CSV import</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Upload a glucose export from LibreView or a similar service. The imported readings sync to your phone too.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="margin-top: 0;">History and goals</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Review past entries, correct anything you got wrong, and set weekly targets for calories, carbs, protein and fat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-card legal-section" style="max-width: 860px; margin: 48px auto 0;">
+            <h2>One account, both places</h2>
+            <p>The web app and the Android app are two front doors to the same record. They share one login and one database, so a meal logged on your laptop at work is on your phone before you get home, and a reading taken on your phone is there when you sit down to review the week on a bigger screen.</p>
+            <p>Reviewing a month of data is genuinely easier on a laptop than on a handset, which is worth knowing before your next clinic appointment.</p>
+        </section>
+
+        <section class="glass-card legal-section" style="max-width: 860px; margin: 32px auto 0;">
+            <h2>What the Android app still does better</h2>
+            <p>It would be misleading to claim the browser version matches the phone app feature for feature. It does not, and some things genuinely need a phone. The Android app adds:</p>
+            <ul style="color: var(--text-dim); padding-left: 20px;">
+                <li style="margin-bottom: 8px;"><strong>Barcode scanning</strong> for packaged food, which needs a camera</li>
+                <li style="margin-bottom: 8px;"><strong>AI food estimation and voice entry</strong> for logging a meal without typing it out</li>
+                <li style="margin-bottom: 8px;"><strong>Automatic LibreLink sync</strong>, rather than importing a CSV yourself</li>
+                <li style="margin-bottom: 8px;"><strong>Insights and pattern analysis</strong> across your logged history</li>
+                <li style="margin-bottom: 8px;"><strong>Clinical PDF reports</strong> to take to appointments</li>
+                <li style="margin-bottom: 0;"><strong>Reminders and a home-screen widget</strong></li>
+            </ul>
+            <p style="margin-top: 16px;">If you have an Android phone, use that as your main log and treat the browser as the comfortable place to review. If you are on iPhone, the web app is the whole product for now, and your data will be waiting when the iOS version lands.</p>
+        </section>
+
+        <section style="max-width: 820px; margin: 56px auto 0;">
+            <h2 class="text-centre" style="margin-bottom: 32px;">Web app: common questions</h2>
+
+            <div class="glass-card legal-section" style="margin-bottom: 16px;">
+                <h3 style="margin-top: 0;">Is there a GlycoTrace app for iPhone?</h3>
+                <p style="color: var(--text-dim); margin-bottom: 0;">Not on the App Store yet, but the web app runs on iPhone and iPad today and supports full logging. Add it to your home screen and it opens like an app.</p>
+            </div>
+
+            <div class="glass-card legal-section" style="margin-bottom: 16px;">
+                <h3 style="margin-top: 0;">Do I need the Android app first?</h3>
+                <p style="color: var(--text-dim); margin-bottom: 0;">No. You can create a new account directly in the browser with an email address, or sign in with Google. The Android app is optional.</p>
+            </div>
+
+            <div class="glass-card legal-section" style="margin-bottom: 16px;">
+                <h3 style="margin-top: 0;">Is it the same data as my phone?</h3>
+                <p style="color: var(--text-dim); margin-bottom: 0;">Yes. One account, one database. Sign in with the same details and everything is there in both places.</p>
+            </div>
+
+            <div class="glass-card legal-section" style="margin-bottom: 16px;">
+                <h3 style="margin-top: 0;">Can I import my FreeStyle Libre data?</h3>
+                <p style="color: var(--text-dim); margin-bottom: 0;">Yes. Upload a glucose CSV export, for example from LibreView. It reads the glucose and timestamp columns and ignores everything else.</p>
+            </div>
+
+            <div class="glass-card legal-section">
+                <h3 style="margin-top: 0;">Does it cost anything?</h3>
+                <p style="color: var(--text-dim); margin-bottom: 0;">No. Creating an account and logging your data in the browser is free.</p>
+            </div>
+        </section>
+
+        <section class="cta-fancy">
+            <div class="cta-glass-card">
+                <h2>Open it in the browser you already have.</h2>
+                <p>No download, no App Store wait. Create an account and log your first reading in under a minute.</p>
+                <a href="https://glycotrace-webapp.pages.dev" target="_blank" rel="noopener" class="btn-primary-fancy">Open the web app</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo" class="footer-img">
+                    <span>GlycoTrace</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="science.html">The Science</a>
+                    <a href="tutorials.html">Tutorials</a>
+                    <a href="web-app.html">Web App</a>
+                    <a href="news.html">News</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="calculators.html">Calculators</a>
+                    <a href="freelance.html">Hire Me</a>
+                    <a href="community_guidelines.html">Community Guidelines</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                    <a href="safety.html">User Safety</a>
+                    <a href="delete_account.html">Delete Account</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 LW Data Labs Ltd.</p>
+                    <p class="legal">England &amp; Wales Co. No. 17048417</p>
+                    <div style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+                        <p style="font-size: 0.75rem; opacity: 0.65; line-height: 1.5;"><strong>Medical Disclaimer:</strong> GlycoTrace is a personal data logging tool, not a medical device. It does not provide medical advice, diagnosis, or treatment. Always consult your diabetes healthcare team, including your doctor, diabetes nurse specialist, or dietitian, before changing your insulin, medication, or treatment plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
